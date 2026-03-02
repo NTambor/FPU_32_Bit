@@ -7,12 +7,26 @@
 * holding middle data and mapping combine instruction
 * 
 */
-module core #(
-    parameter DATA_MEM_ADDR_BITS = 8,
-    parameter DATA_MEM_DATA_BITS = 8,
-    parameter PROGRAM_MEM_ADDR_BITS = 8,
-    parameter PROGRAM_MEM_DATA_BITS = 16,
-    parameter THREADS_PER_BLOCK = 4
-) ()
+module FPU_32_controller #(
+
+) (
+    input logic a,
+    input logic b,
+    input logic operand,
+    input logic resultsign,
+    output logic [7:0] resultexp,
+    output logic [22:0] resultmantisa,
+
+    
+    output logic signA
+    output logic signB
+    output logic [7:0] expA,
+    output logic [7:0] expB,
+    output logic [22:0] mantisaA,
+    output logic [22:0] mantisaB,
+    output logic sub,
+
+    output logic [31:0]final
+    )
 
 endmodule

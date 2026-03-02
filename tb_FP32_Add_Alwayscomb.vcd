@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_FP32_Add_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_FP32_Add" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="538.618 ns"></ZoomEndTime>
+      <Cursor1Time time="345.563 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="298"></NameColumnWidth>
+      <ValueColumnWidth column_width="243"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="24" />
+   <wvobject fp_name="/tb_FP32_Add/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/expa" type="array">
+      <obj_property name="ElementShortName">expa[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expa[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/expb" type="array">
+      <obj_property name="ElementShortName">expb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/mantisaA" type="array">
+      <obj_property name="ElementShortName">mantisaA[22:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaA[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/mantisaB" type="array">
+      <obj_property name="ElementShortName">mantisaB[22:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaB[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/exp" type="array">
+      <obj_property name="ElementShortName">exp[8:0]</obj_property>
+      <obj_property name="ObjectShortName">exp[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/mantisa" type="array">
+      <obj_property name="ElementShortName">mantisa[23:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisa[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expa" type="array">
+      <obj_property name="ElementShortName">expa[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expa[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expb" type="array">
+      <obj_property name="ElementShortName">expb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaA" type="array">
+      <obj_property name="ElementShortName">mantisaA[22:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaA[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaB" type="array">
+      <obj_property name="ElementShortName">mantisaB[22:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaB[22:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/exp" type="array">
+      <obj_property name="ElementShortName">exp[8:0]</obj_property>
+      <obj_property name="ObjectShortName">exp[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisa" type="array">
+      <obj_property name="ElementShortName">mantisa[23:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisa[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expmiddle" type="array">
+      <obj_property name="ElementShortName">expmiddle[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expmiddle[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expmiddlea" type="array">
+      <obj_property name="ElementShortName">expmiddlea[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expmiddlea[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expmiddleb" type="array">
+      <obj_property name="ElementShortName">expmiddleb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expmiddleb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaA0" type="array">
+      <obj_property name="ElementShortName">mantisaA0[23:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaA0[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaB0" type="array">
+      <obj_property name="ElementShortName">mantisaB0[23:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaB0[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaAshift" type="array">
+      <obj_property name="ElementShortName">mantisaAshift[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaAshift[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaBshift" type="array">
+      <obj_property name="ElementShortName">mantisaBshift[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaBshift[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/mantisaresult" type="array">
+      <obj_property name="ElementShortName">mantisaresult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">mantisaresult[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/expadd" type="array">
+      <obj_property name="ElementShortName">expadd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expadd[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_FP32_Add/uut/four_man" type="array">
+      <obj_property name="ElementShortName">four_man[63:0]</obj_property>
+      <obj_property name="ObjectShortName">four_man[63:0]</obj_property>
+   </wvobject>
+</wave_config>
