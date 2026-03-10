@@ -1,0 +1,6 @@
+{
+"DESIGN_NAME": "FP32_ADD",
+"VERILOG_FILES": ["dir::FP32_ADD.sv"],
+"CLOCK_PERIOD": 25,
+"CLOCK_PORT": "clk"
+}
