@@ -1,0 +1,1 @@
+openroad -no_splash -gui /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/gui.tcl

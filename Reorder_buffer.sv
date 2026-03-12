@@ -12,11 +12,11 @@ module Reorder_buffer #(
     input logic [31:0] value1,
     input logic [31:0] value2,
     input logic [2:0] enable_write,
-    input logic [($clog2(BUFFER_SIZE)-1:0)] write_location0,
-    input logic [($clog2(BUFFER_SIZE)-1:0)] write_location1,
-    input logic [($clog2(BUFFER_SIZE)-1:0)] write_location2,
+    input logic [$clog2(BUFFER_SIZE)-1:0] write_location0,
+    input logic [$clog2(BUFFER_SIZE)-1:0] write_location1,
+    input logic [$clog2(BUFFER_SIZE)-1:0] write_location2,
     output logic [31:0]out,
-    output logic [($clog2(BUFFER_SIZE)-1:0)] data_location,
+    output logic [$clog2(BUFFER_SIZE)-1:0] data_location,
     output logic success,
     output logic done
 );
@@ -27,15 +27,12 @@ reg [$clog2(BUFFER_SIZE-1):0] tail;
 reg full;
 reg empty;
 
-wire index1 = $clog2(BUFFER_SIZE)-1;
-wire index2 = (($clog2(BUFFER_SIZE)-1)*2);
-wire index3 = (($clog2(BUFFER_SIZE)-1)*3);
 wire [$clog2(BUFFER_SIZE)-1:0] next_head = (head == BUFFER_SIZE-1) ? 0 : head + 1;
 wire [$clog2(BUFFER_SIZE)-1:0] next_tail = (tail == BUFFER_SIZE-1) ? 0 : tail + 1;
 
 always @(posedge clk) begin
     if(reset) begin
-        for(int i = 0; i< BUFFER_SIZE; i++)begin
+        for(int i = 0; i < BUFFER_SIZE; i++)begin
             array[i] <= 0;
             ready_check [i] <= 0;
         end

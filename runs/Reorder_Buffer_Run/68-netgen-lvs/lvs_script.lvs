@@ -1,0 +1,14 @@
+set circuit1 [readnet spice /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/66-magic-spiceextraction/Reorder_buffer.spice]
+set circuit2 [readnet verilog /dev/null]
+puts "Reading SPICE netlist file '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'..."
+readnet spice /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice $circuit2
+puts "Reading SPICE netlist file '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'..."
+readnet spice /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice $circuit2
+puts "Reading SPICE netlist file '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'..."
+readnet spice /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice $circuit2
+puts "Reading SPICE netlist file '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'..."
+readnet spice /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice $circuit2
+puts "Reading SPICE netlist file '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'..."
+readnet spice /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice $circuit2
+readnet verilog /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/51-openroad-fillinsertion/Reorder_buffer.pnl.v $circuit2
+lvs "$circuit1 Reorder_buffer" "$circuit2 Reorder_buffer" /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/netgen/setup.tcl /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/68-netgen-lvs/reports/lvs.netgen.rpt -blackbox -json

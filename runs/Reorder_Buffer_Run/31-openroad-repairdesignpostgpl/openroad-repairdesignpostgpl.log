@@ -1,0 +1,88 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/27-openroad-globalplacement/Reorder_buffer.odb'…
+Reading design constraints file at '/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 5
+[INFO] Setting input delay to: 5
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 114 input buffers.
+[INFO RSZ-0028] Inserted 38 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      3020
+      100 |      83 |       0 |             0 |      2920
+      200 |     135 |       0 |             0 |      2820
+      300 |     234 |       0 |             0 |      2720
+      400 |     333 |       0 |             0 |      2620
+      500 |     441 |       8 |             2 |      2520
+      600 |     548 |      16 |             4 |      2420
+      700 |     616 |      16 |             4 |      2320
+      800 |     717 |      20 |             6 |      2220
+      900 |     817 |      20 |             6 |      2120
+     1000 |     917 |      20 |             6 |      2020
+     1100 |    1045 |      50 |            13 |      1920
+     1200 |    1145 |      50 |            13 |      1820
+     1300 |    1253 |      58 |            15 |      1720
+     1400 |    1376 |      84 |            22 |      1620
+     1500 |    1476 |      84 |            22 |      1520
+     1600 |    1600 |     114 |            30 |      1420
+     1700 |    1695 |     144 |            39 |      1320
+     1800 |    1836 |     191 |            51 |      1220
+     1900 |    1959 |     226 |            60 |      1120
+     2000 |    1992 |     249 |            66 |      1020
+     2100 |    2088 |     320 |            78 |       920
+     2200 |    2257 |     406 |            95 |       820
+     2300 |    2359 |     409 |            98 |       720
+     2400 |    2457 |     409 |            98 |       620
+     2500 |    2557 |     409 |            98 |       520
+     2600 |    2657 |     409 |            98 |       420
+     2700 |    2757 |     409 |            98 |       320
+     2800 |    2867 |     436 |           111 |       220
+     2900 |    3058 |     611 |           198 |       120
+     3000 |    3062 |     614 |           200 |        20
+    final |    3062 |     614 |           200 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 10 slew violations.
+[INFO RSZ-0035] Found 198 fanout violations.
+[INFO RSZ-0038] Inserted 614 buffers in 200 nets.
+[INFO RSZ-0039] Resized 3062 instances.
+Placement Analysis
+---------------------------------
+total displacement      14234.2 u
+average displacement        3.0 u
+max displacement           19.3 u
+original HPWL          123738.6 u
+legalized HPWL         138900.6 u
+delta HPWL                   12 %
+
+[INFO DPL-0020] Mirrored 941 instances
+[INFO DPL-0021] HPWL before          138900.6 u
+[INFO DPL-0022] HPWL after           137494.9 u
+[INFO DPL-0023] HPWL delta               -1.0 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               190     713.18
+  Tap cell                                970    1213.66
+  Timing Repair Buffer                    766    4910.96
+  Inverter                                  9      33.78
+  Sequential cell                         580   11614.89
+  Multi-Input combinational cell         2160   19245.96
+  Total                                  4675   37732.44
+Writing OpenROAD database to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/31-openroad-repairdesignpostgpl/Reorder_buffer.odb'…
+Writing netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/31-openroad-repairdesignpostgpl/Reorder_buffer.nl.v'…
+Writing powered netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/31-openroad-repairdesignpostgpl/Reorder_buffer.pnl.v'…
+Writing layout to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/31-openroad-repairdesignpostgpl/Reorder_buffer.def'…
+Writing timing constraints to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/31-openroad-repairdesignpostgpl/Reorder_buffer.sdc'…

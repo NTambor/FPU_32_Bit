@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/35-openroad-stamidpnr-1/or_metrics_out.json /nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/sta/corner.tcl

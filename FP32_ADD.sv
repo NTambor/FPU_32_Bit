@@ -1,4 +1,6 @@
-module FP32_Add(
+`timescale 1ns/1ns
+
+module FP32_ADD(
     input logic clk,
     input logic op,
     input logic signa,
@@ -63,7 +65,7 @@ wire zeroB;
 wire infA;
 wire infB;
 
-reg check;
+reg [63:0]check;
 
 assign zeroA = ZERO == {expa,mantisaA};
 assign zeroB = ZERO == {expa,mantisaA};
@@ -90,12 +92,11 @@ always @(posedge clk) begin
     if (inf2 !=1) begin
         loop_exp_adj = 8'hFF; 
         for (int i = 63; i >= 0; i--) begin
-            if (mantisaresult[i] == 1'b1) begin
-                loop_exp_adj = i;
-                break; // Found the highest bit set to 1
+
+            if ((mantisaresult>>i) == 1'b1) begin
+                loop_exp_adj = i; // Found the highest bit set to 1
             end
         end
-        check <= loop_exp_adj == 8'hFF;
         if (loop_exp_adj == 8'hFF) begin
             expadd   <= 0;
             expmiddled <= 0; 

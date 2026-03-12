@@ -1,0 +1,2143 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Liberty frontend: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+[INFO] Using SDC file '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv' to AST representation.
+Storing AST representation for module `$abstract\FP32_ADD'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+4. Executing AST frontend in derive mode using pre-parsed AST for module `\FP32_ADD'.
+Generating RTLIL representation for module `\FP32_ADD'.
+
+4.1. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+
+4.2. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+Removing unused module `$abstract\FP32_ADD'.
+Removed 1 unused modules.
+Renaming module FP32_ADD to FP32_ADD.
+
+5. Generating Graphviz representation of design.
+Writing dot description to `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/hierarchy.dot'.
+Dumping module FP32_ADD to page 1.
+
+6. Executing TRIBUF pass.
+
+7. Executing HIERARCHY pass (managing design hierarchy).
+
+7.1. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+
+7.2. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+Removed 0 unused modules.
+
+8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+9. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 71 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7 in module FP32_ADD.
+Removed a total of 0 dead cases.
+
+10. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 3 redundant assignments.
+Promoted 13 assignments to connections.
+
+11. Executing PROC_INIT pass (extract init attributes).
+
+12. Executing PROC_ARST pass (detect async resets in processes).
+
+13. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~75 debug messages>
+
+14. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+     1/81: $0\inf0[0:0]
+     2/81: $65\loop_exp_adj[7:0]
+     3/81: $64\loop_exp_adj[7:0]
+     4/81: $63\loop_exp_adj[7:0]
+     5/81: $62\loop_exp_adj[7:0]
+     6/81: $61\loop_exp_adj[7:0]
+     7/81: $60\loop_exp_adj[7:0]
+     8/81: $59\loop_exp_adj[7:0]
+     9/81: $58\loop_exp_adj[7:0]
+    10/81: $57\loop_exp_adj[7:0]
+    11/81: $56\loop_exp_adj[7:0]
+    12/81: $55\loop_exp_adj[7:0]
+    13/81: $54\loop_exp_adj[7:0]
+    14/81: $53\loop_exp_adj[7:0]
+    15/81: $52\loop_exp_adj[7:0]
+    16/81: $51\loop_exp_adj[7:0]
+    17/81: $50\loop_exp_adj[7:0]
+    18/81: $49\loop_exp_adj[7:0]
+    19/81: $48\loop_exp_adj[7:0]
+    20/81: $47\loop_exp_adj[7:0]
+    21/81: $46\loop_exp_adj[7:0]
+    22/81: $45\loop_exp_adj[7:0]
+    23/81: $44\loop_exp_adj[7:0]
+    24/81: $43\loop_exp_adj[7:0]
+    25/81: $42\loop_exp_adj[7:0]
+    26/81: $41\loop_exp_adj[7:0]
+    27/81: $40\loop_exp_adj[7:0]
+    28/81: $39\loop_exp_adj[7:0]
+    29/81: $38\loop_exp_adj[7:0]
+    30/81: $37\loop_exp_adj[7:0]
+    31/81: $36\loop_exp_adj[7:0]
+    32/81: $35\loop_exp_adj[7:0]
+    33/81: $34\loop_exp_adj[7:0]
+    34/81: $33\loop_exp_adj[7:0]
+    35/81: $32\loop_exp_adj[7:0]
+    36/81: $31\loop_exp_adj[7:0]
+    37/81: $30\loop_exp_adj[7:0]
+    38/81: $29\loop_exp_adj[7:0]
+    39/81: $28\loop_exp_adj[7:0]
+    40/81: $27\loop_exp_adj[7:0]
+    41/81: $26\loop_exp_adj[7:0]
+    42/81: $25\loop_exp_adj[7:0]
+    43/81: $24\loop_exp_adj[7:0]
+    44/81: $23\loop_exp_adj[7:0]
+    45/81: $22\loop_exp_adj[7:0]
+    46/81: $21\loop_exp_adj[7:0]
+    47/81: $20\loop_exp_adj[7:0]
+    48/81: $19\loop_exp_adj[7:0]
+    49/81: $18\loop_exp_adj[7:0]
+    50/81: $17\loop_exp_adj[7:0]
+    51/81: $16\loop_exp_adj[7:0]
+    52/81: $15\loop_exp_adj[7:0]
+    53/81: $14\loop_exp_adj[7:0]
+    54/81: $13\loop_exp_adj[7:0]
+    55/81: $12\loop_exp_adj[7:0]
+    56/81: $11\loop_exp_adj[7:0]
+    57/81: $10\loop_exp_adj[7:0]
+    58/81: $9\loop_exp_adj[7:0]
+    59/81: $8\loop_exp_adj[7:0]
+    60/81: $7\loop_exp_adj[7:0]
+    61/81: $6\loop_exp_adj[7:0]
+    62/81: $5\loop_exp_adj[7:0]
+    63/81: $4\loop_exp_adj[7:0]
+    64/81: $3\loop_exp_adj[7:0]
+    65/81: $2\loop_exp_adj[7:0]
+    66/81: $1$fordecl_block$1.i[31:0]$12
+    67/81: $1\loop_exp_adj[7:0]
+    68/81: $0\mantisa[22:0]
+    69/81: $0\exp[7:0]
+    70/81: $0\four_man[63:0]
+    71/81: $0\expadd[7:0]
+    72/81: $0\expmiddled[7:0]
+    73/81: $0\expmiddlec[7:0]
+    74/81: $0\mantisaresult[63:0]
+    75/81: $0\op0[0:0]
+    76/81: $0\signB0[0:0]
+    77/81: $0\signA0[0:0]
+    78/81: $0\mantisaB0[23:0]
+    79/81: $0\mantisaA0[23:0]
+    80/81: $0\expmiddlea[7:0]
+    81/81: $0\expmiddle[7:0]
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+16. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\FP32_ADD.\sign' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$638' with positive edge clock.
+Creating register for signal `\FP32_ADD.\exp' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$639' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisa' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$640' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddle' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$641' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddlea' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$642' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaA0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$643' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaB0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$644' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$645' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signB0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$646' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$647' with positive edge clock.
+Creating register for signal `\FP32_ADD.\op0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$648' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaAshift' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$649' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaBshift' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$650' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddleb' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$651' with positive edge clock.
+Creating register for signal `\FP32_ADD.\sub' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$652' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA1' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$653' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf1' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$654' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaresult' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$655' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddlec' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$656' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA2' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$657' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf2' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$658' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddled' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$659' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expadd' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$660' with positive edge clock.
+Creating register for signal `\FP32_ADD.\four_man' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$661' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA3' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$662' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf3' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$663' with positive edge clock.
+Creating register for signal `\FP32_ADD.\loop_exp_adj' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$664' with positive edge clock.
+Creating register for signal `\FP32_ADD.$fordecl_block$1.i' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+  created $dff cell `$procdff$665' with positive edge clock.
+
+17. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+18. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 75 empty switches in `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+Removing empty process `FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:76$7'.
+Cleaned up 75 empty switches.
+
+19. Executing CHECK pass (checking for obvious problems).
+Checking module FP32_ADD...
+Found and reported 0 problems.
+
+20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~142 debug messages>
+
+21. Executing FLATTEN pass (flatten design).
+
+22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 7 unused cells and 328 unused wires.
+<suppressed ~11 debug messages>
+
+24. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~1 debug messages>
+
+25. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+26. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$191.
+    dead port 1/2 on $mux $procmux$197.
+    dead port 1/2 on $mux $procmux$203.
+    dead port 1/2 on $mux $procmux$209.
+    dead port 1/2 on $mux $procmux$215.
+    dead port 1/2 on $mux $procmux$221.
+    dead port 1/2 on $mux $procmux$227.
+    dead port 1/2 on $mux $procmux$233.
+    dead port 1/2 on $mux $procmux$239.
+    dead port 1/2 on $mux $procmux$245.
+    dead port 1/2 on $mux $procmux$251.
+    dead port 1/2 on $mux $procmux$257.
+    dead port 1/2 on $mux $procmux$263.
+    dead port 1/2 on $mux $procmux$269.
+    dead port 1/2 on $mux $procmux$275.
+    dead port 1/2 on $mux $procmux$281.
+    dead port 1/2 on $mux $procmux$287.
+    dead port 1/2 on $mux $procmux$293.
+    dead port 1/2 on $mux $procmux$299.
+    dead port 1/2 on $mux $procmux$305.
+    dead port 1/2 on $mux $procmux$311.
+    dead port 1/2 on $mux $procmux$317.
+    dead port 1/2 on $mux $procmux$323.
+    dead port 1/2 on $mux $procmux$329.
+    dead port 1/2 on $mux $procmux$335.
+    dead port 1/2 on $mux $procmux$341.
+    dead port 1/2 on $mux $procmux$347.
+    dead port 1/2 on $mux $procmux$353.
+    dead port 1/2 on $mux $procmux$359.
+    dead port 1/2 on $mux $procmux$365.
+    dead port 1/2 on $mux $procmux$371.
+    dead port 1/2 on $mux $procmux$377.
+    dead port 1/2 on $mux $procmux$383.
+    dead port 1/2 on $mux $procmux$389.
+    dead port 1/2 on $mux $procmux$395.
+    dead port 1/2 on $mux $procmux$401.
+    dead port 1/2 on $mux $procmux$407.
+    dead port 1/2 on $mux $procmux$413.
+    dead port 1/2 on $mux $procmux$419.
+    dead port 1/2 on $mux $procmux$425.
+    dead port 1/2 on $mux $procmux$431.
+    dead port 1/2 on $mux $procmux$437.
+    dead port 1/2 on $mux $procmux$443.
+    dead port 1/2 on $mux $procmux$449.
+    dead port 1/2 on $mux $procmux$455.
+    dead port 1/2 on $mux $procmux$461.
+    dead port 1/2 on $mux $procmux$467.
+    dead port 1/2 on $mux $procmux$473.
+    dead port 1/2 on $mux $procmux$479.
+    dead port 1/2 on $mux $procmux$485.
+    dead port 1/2 on $mux $procmux$491.
+    dead port 1/2 on $mux $procmux$497.
+    dead port 1/2 on $mux $procmux$503.
+    dead port 1/2 on $mux $procmux$509.
+    dead port 1/2 on $mux $procmux$515.
+    dead port 1/2 on $mux $procmux$521.
+    dead port 1/2 on $mux $procmux$527.
+    dead port 1/2 on $mux $procmux$533.
+    dead port 1/2 on $mux $procmux$539.
+    dead port 1/2 on $mux $procmux$545.
+    dead port 1/2 on $mux $procmux$551.
+    dead port 1/2 on $mux $procmux$557.
+    dead port 1/2 on $mux $procmux$563.
+Removed 63 multiplexer ports.
+<suppressed ~16 debug messages>
+
+27. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+28. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+29. Executing OPT_DFF pass (perform DFF optimizations).
+Setting constant 0-bit at position 0 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 1 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 2 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 3 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 4 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 5 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 6 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 7 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 8 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 9 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 10 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 11 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 12 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 13 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 14 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 15 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 16 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 17 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 18 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 19 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 20 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 21 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 22 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 23 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 24 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 25 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 26 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 27 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 28 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 29 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 30 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 31 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 32 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 33 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 34 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 35 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 36 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 37 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 38 on $procdff$649 ($dff) from module FP32_ADD.
+Setting constant 0-bit at position 63 on $procdff$649 ($dff) from module FP32_ADD.
+
+30. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 0 unused cells and 68 unused wires.
+<suppressed ~1 debug messages>
+
+31. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+32. Rerunning OPT passes. (Maybe there is more to do…)
+
+33. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+34. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+35. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+36. Executing OPT_DFF pass (perform DFF optimizations).
+
+37. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+38. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+39. Executing FSM pass (extract and optimize FSM).
+
+39.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+39.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+39.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+39.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+39.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+39.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+39.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+39.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+40. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+41. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+42. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~18 debug messages>
+
+43. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+44. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+45. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$661 ($dff) from module FP32_ADD (D = $procmux$582_Y, Q = \four_man).
+Adding EN signal on $procdff$660 ($dff) from module FP32_ADD (D = $procmux$588_Y, Q = \expadd).
+Adding SRST signal on $auto$ff.cc:266:slice$668 ($dffe) from module FP32_ADD (D = $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142_Y [7:0], Q = \expadd, rval = 8'00000000).
+Adding EN signal on $procdff$659 ($dff) from module FP32_ADD (D = $procmux$594_Y, Q = \expmiddled).
+Adding SRST signal on $auto$ff.cc:266:slice$670 ($dffe) from module FP32_ADD (D = \expmiddlec, Q = \expmiddled, rval = 8'00000000).
+Adding EN signal on $procdff$656 ($dff) from module FP32_ADD (D = \expmiddleb, Q = \expmiddlec).
+Adding EN signal on $procdff$655 ($dff) from module FP32_ADD (D = $ternary$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$156_Y, Q = \mantisaresult).
+Adding EN signal on $procdff$648 ($dff) from module FP32_ADD (D = \op, Q = \op0).
+Adding EN signal on $procdff$646 ($dff) from module FP32_ADD (D = $procmux$605_Y, Q = \signB0).
+Adding EN signal on $procdff$645 ($dff) from module FP32_ADD (D = $0\signA0[0:0], Q = \signA0).
+Adding EN signal on $procdff$644 ($dff) from module FP32_ADD (D = $procmux$619_Y, Q = \mantisaB0).
+Adding EN signal on $procdff$643 ($dff) from module FP32_ADD (D = $procmux$624_Y, Q = \mantisaA0).
+Adding EN signal on $procdff$642 ($dff) from module FP32_ADD (D = $procmux$629_Y, Q = \expmiddlea).
+Adding EN signal on $procdff$641 ($dff) from module FP32_ADD (D = $procmux$634_Y, Q = \expmiddle).
+Adding SRST signal on $procdff$640 ($dff) from module FP32_ADD (D = \four_man [61:39], Q = \mantisa, rval = 23'00000000000000000000000).
+Adding SRST signal on $procdff$639 ($dff) from module FP32_ADD (D = $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:81$10_Y, Q = \exp, rval = 8'11111111).
+
+46. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 15 unused cells and 15 unused wires.
+<suppressed ~16 debug messages>
+
+47. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~1 debug messages>
+
+48. Rerunning OPT passes. (Maybe there is more to do…)
+
+49. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+50. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+51. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+52. Executing OPT_DFF pass (perform DFF optimizations).
+
+53. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+54. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+55. Executing WREDUCE pass (reducing word size of cells).
+Removed top 2 bits (of 64) from FF cell FP32_ADD.$auto$ff.cc:266:slice$667 ($dffe).
+Removed top 1 bits (of 2) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$16 ($eq).
+Removed top 2 bits (of 3) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$18 ($eq).
+Removed top 3 bits (of 4) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$20 ($eq).
+Removed top 4 bits (of 5) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$22 ($eq).
+Removed top 5 bits (of 6) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$24 ($eq).
+Removed top 6 bits (of 7) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$26 ($eq).
+Removed top 7 bits (of 8) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$28 ($eq).
+Removed top 8 bits (of 9) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$30 ($eq).
+Removed top 9 bits (of 10) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$32 ($eq).
+Removed top 10 bits (of 11) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$34 ($eq).
+Removed top 11 bits (of 12) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$36 ($eq).
+Removed top 12 bits (of 13) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$38 ($eq).
+Removed top 13 bits (of 14) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$40 ($eq).
+Removed top 14 bits (of 15) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$42 ($eq).
+Removed top 15 bits (of 16) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$44 ($eq).
+Removed top 16 bits (of 17) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$46 ($eq).
+Removed top 17 bits (of 18) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$48 ($eq).
+Removed top 18 bits (of 19) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$50 ($eq).
+Removed top 19 bits (of 20) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$52 ($eq).
+Removed top 20 bits (of 21) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$54 ($eq).
+Removed top 21 bits (of 22) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$56 ($eq).
+Removed top 22 bits (of 23) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$58 ($eq).
+Removed top 23 bits (of 24) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$60 ($eq).
+Removed top 24 bits (of 25) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$62 ($eq).
+Removed top 25 bits (of 26) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$64 ($eq).
+Removed top 26 bits (of 27) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$66 ($eq).
+Removed top 27 bits (of 28) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$68 ($eq).
+Removed top 28 bits (of 29) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$70 ($eq).
+Removed top 29 bits (of 30) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$72 ($eq).
+Removed top 30 bits (of 31) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$74 ($eq).
+Removed top 31 bits (of 32) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$76 ($eq).
+Removed top 32 bits (of 33) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$78 ($eq).
+Removed top 33 bits (of 34) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$80 ($eq).
+Removed top 34 bits (of 35) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$82 ($eq).
+Removed top 35 bits (of 36) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$84 ($eq).
+Removed top 36 bits (of 37) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$86 ($eq).
+Removed top 37 bits (of 38) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$88 ($eq).
+Removed top 38 bits (of 39) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$90 ($eq).
+Removed top 39 bits (of 40) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$92 ($eq).
+Removed top 40 bits (of 41) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$94 ($eq).
+Removed top 41 bits (of 42) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$96 ($eq).
+Removed top 42 bits (of 43) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$98 ($eq).
+Removed top 43 bits (of 44) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$100 ($eq).
+Removed top 44 bits (of 45) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$102 ($eq).
+Removed top 45 bits (of 46) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$104 ($eq).
+Removed top 46 bits (of 47) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$106 ($eq).
+Removed top 47 bits (of 48) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$108 ($eq).
+Removed top 48 bits (of 49) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$110 ($eq).
+Removed top 49 bits (of 50) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$112 ($eq).
+Removed top 50 bits (of 51) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$114 ($eq).
+Removed top 51 bits (of 52) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$116 ($eq).
+Removed top 52 bits (of 53) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$118 ($eq).
+Removed top 53 bits (of 54) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$120 ($eq).
+Removed top 54 bits (of 55) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$122 ($eq).
+Removed top 55 bits (of 56) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$124 ($eq).
+Removed top 56 bits (of 57) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$126 ($eq).
+Removed top 57 bits (of 58) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$128 ($eq).
+Removed top 58 bits (of 59) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$130 ($eq).
+Removed top 59 bits (of 60) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$132 ($eq).
+Removed top 60 bits (of 61) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$134 ($eq).
+Removed top 61 bits (of 62) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$136 ($eq).
+Removed top 62 bits (of 63) from port B of cell FP32_ADD.$eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:96$138 ($eq).
+Removed top 26 bits (of 32) from port B of cell FP32_ADD.$sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142 ($sub).
+Removed top 23 bits (of 32) from port Y of cell FP32_ADD.$sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142 ($sub).
+Removed top 26 bits (of 32) from port B of cell FP32_ADD.$ge$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:109$143 ($ge).
+Removed top 26 bits (of 32) from port A of cell FP32_ADD.$sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146 ($sub).
+Removed top 23 bits (of 32) from port Y of cell FP32_ADD.$sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146 ($sub).
+Removed top 1 bits (of 64) from port A of cell FP32_ADD.$add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$153 ($add).
+Removed top 31 bits (of 32) from port B of cell FP32_ADD.$add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$154 ($add).
+Removed top 1 bits (of 64) from port A of cell FP32_ADD.$add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$155 ($add).
+Removed top 1 bits (of 64) from port A of cell FP32_ADD.$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157 ($shr).
+Removed top 31 bits (of 32) from port Y of cell FP32_ADD.$xor$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:157$165 ($xor).
+Removed top 31 bits (of 32) from port A of cell FP32_ADD.$ne$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:157$166 ($ne).
+Removed top 31 bits (of 32) from port B of cell FP32_ADD.$ne$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:157$166 ($ne).
+Removed top 8 bits (of 32) from mux cell FP32_ADD.$ternary$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:164$173 ($mux).
+Removed top 8 bits (of 32) from mux cell FP32_ADD.$ternary$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:165$174 ($mux).
+Removed top 2 bits (of 64) from mux cell FP32_ADD.$procmux$582 ($mux).
+Removed top 2 bits (of 64) from port Y of cell FP32_ADD.$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:110$145 ($shr).
+Removed top 2 bits (of 64) from mux cell FP32_ADD.$procmux$579 ($mux).
+Removed top 2 bits (of 64) from port Y of cell FP32_ADD.$shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:113$149 ($shl).
+Removed top 2 bits (of 64) from port Y of cell FP32_ADD.$shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:115$150 ($shl).
+Removed top 2 bits (of 64) from wire FP32_ADD.$procmux$579_Y.
+Removed top 2 bits (of 64) from wire FP32_ADD.$procmux$582_Y.
+Removed top 2 bits (of 64) from wire FP32_ADD.$shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:113$149_Y.
+Removed top 2 bits (of 64) from wire FP32_ADD.$shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:115$150_Y.
+Removed top 2 bits (of 64) from wire FP32_ADD.$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:110$145_Y.
+Removed top 8 bits (of 32) from wire FP32_ADD.$ternary$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:164$173_Y.
+Removed top 12 bits (of 32) from wire FP32_ADD.$ternary$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:165$174_Y.
+Removed top 31 bits (of 32) from wire FP32_ADD.$xor$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:157$165_Y.
+Removed top 2 bits (of 64) from wire FP32_ADD.four_man.
+Removed top 1 bits (of 64) from wire FP32_ADD.mantisaAshift.
+
+56. Executing PEEPOPT pass (run peephole optimizers).
+
+57. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+58. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module FP32_ADD:
+  creating $macc model for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$153 ($add).
+  creating $macc model for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$154 ($add).
+  creating $macc model for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$155 ($add).
+  creating $macc model for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:81$10 ($add).
+  creating $macc model for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142 ($sub).
+  creating $macc model for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146 ($sub).
+  creating $macc model for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:160$172 ($sub).
+  creating $macc model for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:167$175 ($sub).
+  merging $macc model for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$153 into $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$154.
+  creating $alu model for $macc $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:160$172.
+  creating $alu model for $macc $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146.
+  creating $alu model for $macc $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142.
+  creating $alu model for $macc $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:81$10.
+  creating $alu model for $macc $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$155.
+  creating $alu model for $macc $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$154.
+  creating $alu model for $macc $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:167$175.
+  creating $alu model for $ge$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:109$143 ($ge): merged with $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146.
+  creating $alu model for $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$147 ($gt): new $alu
+  creating $alu model for $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$167 ($gt): merged with $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:167$175.
+  creating $alu model for $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$169 ($gt): new $alu
+  creating $alu model for $eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$168 ($eq): merged with $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:167$175.
+  creating $alu cell for $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$169: $auto$alumacc.cc:485:replace_alu$697
+  creating $alu cell for $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$147: $auto$alumacc.cc:485:replace_alu$702
+  creating $alu cell for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:167$175, $gt$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$167, $eq$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:159$168: $auto$alumacc.cc:485:replace_alu$713
+  creating $alu cell for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$154: $auto$alumacc.cc:485:replace_alu$720
+  creating $alu cell for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:125$155: $auto$alumacc.cc:485:replace_alu$723
+  creating $alu cell for $add$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:81$10: $auto$alumacc.cc:485:replace_alu$726
+  creating $alu cell for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:105$142: $auto$alumacc.cc:485:replace_alu$729
+  creating $alu cell for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146, $ge$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:109$143: $auto$alumacc.cc:485:replace_alu$732
+  creating $alu cell for $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:160$172: $auto$alumacc.cc:485:replace_alu$741
+  created 9 $alu and 0 $macc cells.
+
+59. Executing SHARE pass (SAT-based resource sharing).
+Found 3 cells in module FP32_ADD that may be considered for resource sharing.
+  Analyzing resource sharing options for $shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:110$145 ($shr):
+    Found 1 activation_patterns using ctrl signal $auto$rtlil.cc:2497:ReduceOr$740.
+    No candidates found.
+  Analyzing resource sharing options for $shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:115$150 ($shl):
+    Found 1 activation_patterns using ctrl signal { $auto$rtlil.cc:2493:Not$712 $auto$rtlil.cc:2497:ReduceOr$740 }.
+    No candidates found.
+  Analyzing resource sharing options for $shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:113$149 ($shl):
+    Found 1 activation_patterns using ctrl signal { $auto$rtlil.cc:2493:Not$712 $auto$rtlil.cc:2497:ReduceOr$740 }.
+    No candidates found.
+
+60. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~9 debug messages>
+
+61. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+62. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+63. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+64. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+65. Executing OPT_DFF pass (perform DFF optimizations).
+
+66. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 2 unused cells and 7 unused wires.
+<suppressed ~3 debug messages>
+
+67. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+68. Rerunning OPT passes. (Maybe there is more to do…)
+
+69. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+70. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+71. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+72. Executing OPT_DFF pass (perform DFF optimizations).
+
+73. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+74. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+75. Executing MEMORY pass.
+
+75.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+75.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+75.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+75.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+75.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+75.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+75.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+75.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+75.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+75.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+76. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+77. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~4 debug messages>
+
+78. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+79. Executing OPT_DFF pass (perform DFF optimizations).
+
+80. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 1 unused cells and 3 unused wires.
+<suppressed ~2 debug messages>
+
+81. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+82. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+83. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+84. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~12 debug messages>
+
+85. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$561:
+      Old ports: A=8'11111111, B=8'00111111, Y=$2\loop_exp_adj[7:0]
+      New ports: A=1'1, B=1'0, Y=$2\loop_exp_adj[7:0] [6]
+      New connections: { $2\loop_exp_adj[7:0] [7] $2\loop_exp_adj[7:0] [5:0] } = { $2\loop_exp_adj[7:0] [6] 6'111111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$555:
+      Old ports: A=$2\loop_exp_adj[7:0], B=8'00111110, Y=$3\loop_exp_adj[7:0]
+      New ports: A={ $2\loop_exp_adj[7:0] [6] 1'1 }, B=2'00, Y={ $3\loop_exp_adj[7:0] [6] $3\loop_exp_adj[7:0] [0] }
+      New connections: { $3\loop_exp_adj[7:0] [7] $3\loop_exp_adj[7:0] [5:1] } = { $3\loop_exp_adj[7:0] [6] 5'11111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$549:
+      Old ports: A=$3\loop_exp_adj[7:0], B=8'00111101, Y=$4\loop_exp_adj[7:0]
+      New ports: A={ $3\loop_exp_adj[7:0] [6] 1'1 $3\loop_exp_adj[7:0] [0] }, B=3'001, Y={ $4\loop_exp_adj[7:0] [6] $4\loop_exp_adj[7:0] [1:0] }
+      New connections: { $4\loop_exp_adj[7:0] [7] $4\loop_exp_adj[7:0] [5:2] } = { $4\loop_exp_adj[7:0] [6] 4'1111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$543:
+      Old ports: A=$4\loop_exp_adj[7:0], B=8'00111100, Y=$5\loop_exp_adj[7:0]
+      New ports: A={ $4\loop_exp_adj[7:0] [6] $4\loop_exp_adj[7:0] [1:0] }, B=3'000, Y={ $5\loop_exp_adj[7:0] [6] $5\loop_exp_adj[7:0] [1:0] }
+      New connections: { $5\loop_exp_adj[7:0] [7] $5\loop_exp_adj[7:0] [5:2] } = { $5\loop_exp_adj[7:0] [6] 4'1111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$537:
+      Old ports: A=$5\loop_exp_adj[7:0], B=8'00111011, Y=$6\loop_exp_adj[7:0]
+      New ports: A={ $5\loop_exp_adj[7:0] [6] 1'1 $5\loop_exp_adj[7:0] [1:0] }, B=4'0011, Y={ $6\loop_exp_adj[7:0] [6] $6\loop_exp_adj[7:0] [2:0] }
+      New connections: { $6\loop_exp_adj[7:0] [7] $6\loop_exp_adj[7:0] [5:3] } = { $6\loop_exp_adj[7:0] [6] 3'111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$531:
+      Old ports: A=$6\loop_exp_adj[7:0], B=8'00111010, Y=$7\loop_exp_adj[7:0]
+      New ports: A={ $6\loop_exp_adj[7:0] [6] $6\loop_exp_adj[7:0] [2:0] }, B=4'0010, Y={ $7\loop_exp_adj[7:0] [6] $7\loop_exp_adj[7:0] [2:0] }
+      New connections: { $7\loop_exp_adj[7:0] [7] $7\loop_exp_adj[7:0] [5:3] } = { $7\loop_exp_adj[7:0] [6] 3'111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$525:
+      Old ports: A=$7\loop_exp_adj[7:0], B=8'00111001, Y=$8\loop_exp_adj[7:0]
+      New ports: A={ $7\loop_exp_adj[7:0] [6] $7\loop_exp_adj[7:0] [2:0] }, B=4'0001, Y={ $8\loop_exp_adj[7:0] [6] $8\loop_exp_adj[7:0] [2:0] }
+      New connections: { $8\loop_exp_adj[7:0] [7] $8\loop_exp_adj[7:0] [5:3] } = { $8\loop_exp_adj[7:0] [6] 3'111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$519:
+      Old ports: A=$8\loop_exp_adj[7:0], B=8'00111000, Y=$9\loop_exp_adj[7:0]
+      New ports: A={ $8\loop_exp_adj[7:0] [6] $8\loop_exp_adj[7:0] [2:0] }, B=4'0000, Y={ $9\loop_exp_adj[7:0] [6] $9\loop_exp_adj[7:0] [2:0] }
+      New connections: { $9\loop_exp_adj[7:0] [7] $9\loop_exp_adj[7:0] [5:3] } = { $9\loop_exp_adj[7:0] [6] 3'111 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$513:
+      Old ports: A=$9\loop_exp_adj[7:0], B=8'00110111, Y=$10\loop_exp_adj[7:0]
+      New ports: A={ $9\loop_exp_adj[7:0] [6] 1'1 $9\loop_exp_adj[7:0] [2:0] }, B=5'00111, Y={ $10\loop_exp_adj[7:0] [6] $10\loop_exp_adj[7:0] [3:0] }
+      New connections: { $10\loop_exp_adj[7:0] [7] $10\loop_exp_adj[7:0] [5:4] } = { $10\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$507:
+      Old ports: A=$10\loop_exp_adj[7:0], B=8'00110110, Y=$11\loop_exp_adj[7:0]
+      New ports: A={ $10\loop_exp_adj[7:0] [6] $10\loop_exp_adj[7:0] [3:0] }, B=5'00110, Y={ $11\loop_exp_adj[7:0] [6] $11\loop_exp_adj[7:0] [3:0] }
+      New connections: { $11\loop_exp_adj[7:0] [7] $11\loop_exp_adj[7:0] [5:4] } = { $11\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$501:
+      Old ports: A=$11\loop_exp_adj[7:0], B=8'00110101, Y=$12\loop_exp_adj[7:0]
+      New ports: A={ $11\loop_exp_adj[7:0] [6] $11\loop_exp_adj[7:0] [3:0] }, B=5'00101, Y={ $12\loop_exp_adj[7:0] [6] $12\loop_exp_adj[7:0] [3:0] }
+      New connections: { $12\loop_exp_adj[7:0] [7] $12\loop_exp_adj[7:0] [5:4] } = { $12\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$495:
+      Old ports: A=$12\loop_exp_adj[7:0], B=8'00110100, Y=$13\loop_exp_adj[7:0]
+      New ports: A={ $12\loop_exp_adj[7:0] [6] $12\loop_exp_adj[7:0] [3:0] }, B=5'00100, Y={ $13\loop_exp_adj[7:0] [6] $13\loop_exp_adj[7:0] [3:0] }
+      New connections: { $13\loop_exp_adj[7:0] [7] $13\loop_exp_adj[7:0] [5:4] } = { $13\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$489:
+      Old ports: A=$13\loop_exp_adj[7:0], B=8'00110011, Y=$14\loop_exp_adj[7:0]
+      New ports: A={ $13\loop_exp_adj[7:0] [6] $13\loop_exp_adj[7:0] [3:0] }, B=5'00011, Y={ $14\loop_exp_adj[7:0] [6] $14\loop_exp_adj[7:0] [3:0] }
+      New connections: { $14\loop_exp_adj[7:0] [7] $14\loop_exp_adj[7:0] [5:4] } = { $14\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$483:
+      Old ports: A=$14\loop_exp_adj[7:0], B=8'00110010, Y=$15\loop_exp_adj[7:0]
+      New ports: A={ $14\loop_exp_adj[7:0] [6] $14\loop_exp_adj[7:0] [3:0] }, B=5'00010, Y={ $15\loop_exp_adj[7:0] [6] $15\loop_exp_adj[7:0] [3:0] }
+      New connections: { $15\loop_exp_adj[7:0] [7] $15\loop_exp_adj[7:0] [5:4] } = { $15\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$477:
+      Old ports: A=$15\loop_exp_adj[7:0], B=8'00110001, Y=$16\loop_exp_adj[7:0]
+      New ports: A={ $15\loop_exp_adj[7:0] [6] $15\loop_exp_adj[7:0] [3:0] }, B=5'00001, Y={ $16\loop_exp_adj[7:0] [6] $16\loop_exp_adj[7:0] [3:0] }
+      New connections: { $16\loop_exp_adj[7:0] [7] $16\loop_exp_adj[7:0] [5:4] } = { $16\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$471:
+      Old ports: A=$16\loop_exp_adj[7:0], B=8'00110000, Y=$17\loop_exp_adj[7:0]
+      New ports: A={ $16\loop_exp_adj[7:0] [6] $16\loop_exp_adj[7:0] [3:0] }, B=5'00000, Y={ $17\loop_exp_adj[7:0] [6] $17\loop_exp_adj[7:0] [3:0] }
+      New connections: { $17\loop_exp_adj[7:0] [7] $17\loop_exp_adj[7:0] [5:4] } = { $17\loop_exp_adj[7:0] [6] 2'11 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$465:
+      Old ports: A=$17\loop_exp_adj[7:0], B=8'00101111, Y=$18\loop_exp_adj[7:0]
+      New ports: A={ $17\loop_exp_adj[7:0] [6] 1'1 $17\loop_exp_adj[7:0] [3:0] }, B=6'001111, Y={ $18\loop_exp_adj[7:0] [6] $18\loop_exp_adj[7:0] [4:0] }
+      New connections: { $18\loop_exp_adj[7:0] [7] $18\loop_exp_adj[7:0] [5] } = { $18\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$459:
+      Old ports: A=$18\loop_exp_adj[7:0], B=8'00101110, Y=$19\loop_exp_adj[7:0]
+      New ports: A={ $18\loop_exp_adj[7:0] [6] $18\loop_exp_adj[7:0] [4:0] }, B=6'001110, Y={ $19\loop_exp_adj[7:0] [6] $19\loop_exp_adj[7:0] [4:0] }
+      New connections: { $19\loop_exp_adj[7:0] [7] $19\loop_exp_adj[7:0] [5] } = { $19\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$453:
+      Old ports: A=$19\loop_exp_adj[7:0], B=8'00101101, Y=$20\loop_exp_adj[7:0]
+      New ports: A={ $19\loop_exp_adj[7:0] [6] $19\loop_exp_adj[7:0] [4:0] }, B=6'001101, Y={ $20\loop_exp_adj[7:0] [6] $20\loop_exp_adj[7:0] [4:0] }
+      New connections: { $20\loop_exp_adj[7:0] [7] $20\loop_exp_adj[7:0] [5] } = { $20\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$447:
+      Old ports: A=$20\loop_exp_adj[7:0], B=8'00101100, Y=$21\loop_exp_adj[7:0]
+      New ports: A={ $20\loop_exp_adj[7:0] [6] $20\loop_exp_adj[7:0] [4:0] }, B=6'001100, Y={ $21\loop_exp_adj[7:0] [6] $21\loop_exp_adj[7:0] [4:0] }
+      New connections: { $21\loop_exp_adj[7:0] [7] $21\loop_exp_adj[7:0] [5] } = { $21\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$441:
+      Old ports: A=$21\loop_exp_adj[7:0], B=8'00101011, Y=$22\loop_exp_adj[7:0]
+      New ports: A={ $21\loop_exp_adj[7:0] [6] $21\loop_exp_adj[7:0] [4:0] }, B=6'001011, Y={ $22\loop_exp_adj[7:0] [6] $22\loop_exp_adj[7:0] [4:0] }
+      New connections: { $22\loop_exp_adj[7:0] [7] $22\loop_exp_adj[7:0] [5] } = { $22\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$435:
+      Old ports: A=$22\loop_exp_adj[7:0], B=8'00101010, Y=$23\loop_exp_adj[7:0]
+      New ports: A={ $22\loop_exp_adj[7:0] [6] $22\loop_exp_adj[7:0] [4:0] }, B=6'001010, Y={ $23\loop_exp_adj[7:0] [6] $23\loop_exp_adj[7:0] [4:0] }
+      New connections: { $23\loop_exp_adj[7:0] [7] $23\loop_exp_adj[7:0] [5] } = { $23\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$429:
+      Old ports: A=$23\loop_exp_adj[7:0], B=8'00101001, Y=$24\loop_exp_adj[7:0]
+      New ports: A={ $23\loop_exp_adj[7:0] [6] $23\loop_exp_adj[7:0] [4:0] }, B=6'001001, Y={ $24\loop_exp_adj[7:0] [6] $24\loop_exp_adj[7:0] [4:0] }
+      New connections: { $24\loop_exp_adj[7:0] [7] $24\loop_exp_adj[7:0] [5] } = { $24\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$423:
+      Old ports: A=$24\loop_exp_adj[7:0], B=8'00101000, Y=$25\loop_exp_adj[7:0]
+      New ports: A={ $24\loop_exp_adj[7:0] [6] $24\loop_exp_adj[7:0] [4:0] }, B=6'001000, Y={ $25\loop_exp_adj[7:0] [6] $25\loop_exp_adj[7:0] [4:0] }
+      New connections: { $25\loop_exp_adj[7:0] [7] $25\loop_exp_adj[7:0] [5] } = { $25\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$417:
+      Old ports: A=$25\loop_exp_adj[7:0], B=8'00100111, Y=$26\loop_exp_adj[7:0]
+      New ports: A={ $25\loop_exp_adj[7:0] [6] $25\loop_exp_adj[7:0] [4:0] }, B=6'000111, Y={ $26\loop_exp_adj[7:0] [6] $26\loop_exp_adj[7:0] [4:0] }
+      New connections: { $26\loop_exp_adj[7:0] [7] $26\loop_exp_adj[7:0] [5] } = { $26\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$411:
+      Old ports: A=$26\loop_exp_adj[7:0], B=8'00100110, Y=$27\loop_exp_adj[7:0]
+      New ports: A={ $26\loop_exp_adj[7:0] [6] $26\loop_exp_adj[7:0] [4:0] }, B=6'000110, Y={ $27\loop_exp_adj[7:0] [6] $27\loop_exp_adj[7:0] [4:0] }
+      New connections: { $27\loop_exp_adj[7:0] [7] $27\loop_exp_adj[7:0] [5] } = { $27\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$405:
+      Old ports: A=$27\loop_exp_adj[7:0], B=8'00100101, Y=$28\loop_exp_adj[7:0]
+      New ports: A={ $27\loop_exp_adj[7:0] [6] $27\loop_exp_adj[7:0] [4:0] }, B=6'000101, Y={ $28\loop_exp_adj[7:0] [6] $28\loop_exp_adj[7:0] [4:0] }
+      New connections: { $28\loop_exp_adj[7:0] [7] $28\loop_exp_adj[7:0] [5] } = { $28\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$399:
+      Old ports: A=$28\loop_exp_adj[7:0], B=8'00100100, Y=$29\loop_exp_adj[7:0]
+      New ports: A={ $28\loop_exp_adj[7:0] [6] $28\loop_exp_adj[7:0] [4:0] }, B=6'000100, Y={ $29\loop_exp_adj[7:0] [6] $29\loop_exp_adj[7:0] [4:0] }
+      New connections: { $29\loop_exp_adj[7:0] [7] $29\loop_exp_adj[7:0] [5] } = { $29\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$393:
+      Old ports: A=$29\loop_exp_adj[7:0], B=8'00100011, Y=$30\loop_exp_adj[7:0]
+      New ports: A={ $29\loop_exp_adj[7:0] [6] $29\loop_exp_adj[7:0] [4:0] }, B=6'000011, Y={ $30\loop_exp_adj[7:0] [6] $30\loop_exp_adj[7:0] [4:0] }
+      New connections: { $30\loop_exp_adj[7:0] [7] $30\loop_exp_adj[7:0] [5] } = { $30\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$387:
+      Old ports: A=$30\loop_exp_adj[7:0], B=8'00100010, Y=$31\loop_exp_adj[7:0]
+      New ports: A={ $30\loop_exp_adj[7:0] [6] $30\loop_exp_adj[7:0] [4:0] }, B=6'000010, Y={ $31\loop_exp_adj[7:0] [6] $31\loop_exp_adj[7:0] [4:0] }
+      New connections: { $31\loop_exp_adj[7:0] [7] $31\loop_exp_adj[7:0] [5] } = { $31\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$381:
+      Old ports: A=$31\loop_exp_adj[7:0], B=8'00100001, Y=$32\loop_exp_adj[7:0]
+      New ports: A={ $31\loop_exp_adj[7:0] [6] $31\loop_exp_adj[7:0] [4:0] }, B=6'000001, Y={ $32\loop_exp_adj[7:0] [6] $32\loop_exp_adj[7:0] [4:0] }
+      New connections: { $32\loop_exp_adj[7:0] [7] $32\loop_exp_adj[7:0] [5] } = { $32\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$375:
+      Old ports: A=$32\loop_exp_adj[7:0], B=8'00100000, Y=$33\loop_exp_adj[7:0]
+      New ports: A={ $32\loop_exp_adj[7:0] [6] $32\loop_exp_adj[7:0] [4:0] }, B=6'000000, Y={ $33\loop_exp_adj[7:0] [6] $33\loop_exp_adj[7:0] [4:0] }
+      New connections: { $33\loop_exp_adj[7:0] [7] $33\loop_exp_adj[7:0] [5] } = { $33\loop_exp_adj[7:0] [6] 1'1 }
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$369:
+      Old ports: A=$33\loop_exp_adj[7:0], B=8'00011111, Y=$34\loop_exp_adj[7:0]
+      New ports: A={ $33\loop_exp_adj[7:0] [6] 1'1 $33\loop_exp_adj[7:0] [4:0] }, B=7'0011111, Y=$34\loop_exp_adj[7:0] [6:0]
+      New connections: $34\loop_exp_adj[7:0] [7] = $34\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$363:
+      Old ports: A=$34\loop_exp_adj[7:0], B=8'00011110, Y=$35\loop_exp_adj[7:0]
+      New ports: A=$34\loop_exp_adj[7:0] [6:0], B=7'0011110, Y=$35\loop_exp_adj[7:0] [6:0]
+      New connections: $35\loop_exp_adj[7:0] [7] = $35\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$357:
+      Old ports: A=$35\loop_exp_adj[7:0], B=8'00011101, Y=$36\loop_exp_adj[7:0]
+      New ports: A=$35\loop_exp_adj[7:0] [6:0], B=7'0011101, Y=$36\loop_exp_adj[7:0] [6:0]
+      New connections: $36\loop_exp_adj[7:0] [7] = $36\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$351:
+      Old ports: A=$36\loop_exp_adj[7:0], B=8'00011100, Y=$37\loop_exp_adj[7:0]
+      New ports: A=$36\loop_exp_adj[7:0] [6:0], B=7'0011100, Y=$37\loop_exp_adj[7:0] [6:0]
+      New connections: $37\loop_exp_adj[7:0] [7] = $37\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$345:
+      Old ports: A=$37\loop_exp_adj[7:0], B=8'00011011, Y=$38\loop_exp_adj[7:0]
+      New ports: A=$37\loop_exp_adj[7:0] [6:0], B=7'0011011, Y=$38\loop_exp_adj[7:0] [6:0]
+      New connections: $38\loop_exp_adj[7:0] [7] = $38\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$339:
+      Old ports: A=$38\loop_exp_adj[7:0], B=8'00011010, Y=$39\loop_exp_adj[7:0]
+      New ports: A=$38\loop_exp_adj[7:0] [6:0], B=7'0011010, Y=$39\loop_exp_adj[7:0] [6:0]
+      New connections: $39\loop_exp_adj[7:0] [7] = $39\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$333:
+      Old ports: A=$39\loop_exp_adj[7:0], B=8'00011001, Y=$40\loop_exp_adj[7:0]
+      New ports: A=$39\loop_exp_adj[7:0] [6:0], B=7'0011001, Y=$40\loop_exp_adj[7:0] [6:0]
+      New connections: $40\loop_exp_adj[7:0] [7] = $40\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$327:
+      Old ports: A=$40\loop_exp_adj[7:0], B=8'00011000, Y=$41\loop_exp_adj[7:0]
+      New ports: A=$40\loop_exp_adj[7:0] [6:0], B=7'0011000, Y=$41\loop_exp_adj[7:0] [6:0]
+      New connections: $41\loop_exp_adj[7:0] [7] = $41\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$321:
+      Old ports: A=$41\loop_exp_adj[7:0], B=8'00010111, Y=$42\loop_exp_adj[7:0]
+      New ports: A=$41\loop_exp_adj[7:0] [6:0], B=7'0010111, Y=$42\loop_exp_adj[7:0] [6:0]
+      New connections: $42\loop_exp_adj[7:0] [7] = $42\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$315:
+      Old ports: A=$42\loop_exp_adj[7:0], B=8'00010110, Y=$43\loop_exp_adj[7:0]
+      New ports: A=$42\loop_exp_adj[7:0] [6:0], B=7'0010110, Y=$43\loop_exp_adj[7:0] [6:0]
+      New connections: $43\loop_exp_adj[7:0] [7] = $43\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$309:
+      Old ports: A=$43\loop_exp_adj[7:0], B=8'00010101, Y=$44\loop_exp_adj[7:0]
+      New ports: A=$43\loop_exp_adj[7:0] [6:0], B=7'0010101, Y=$44\loop_exp_adj[7:0] [6:0]
+      New connections: $44\loop_exp_adj[7:0] [7] = $44\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$303:
+      Old ports: A=$44\loop_exp_adj[7:0], B=8'00010100, Y=$45\loop_exp_adj[7:0]
+      New ports: A=$44\loop_exp_adj[7:0] [6:0], B=7'0010100, Y=$45\loop_exp_adj[7:0] [6:0]
+      New connections: $45\loop_exp_adj[7:0] [7] = $45\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$297:
+      Old ports: A=$45\loop_exp_adj[7:0], B=8'00010011, Y=$46\loop_exp_adj[7:0]
+      New ports: A=$45\loop_exp_adj[7:0] [6:0], B=7'0010011, Y=$46\loop_exp_adj[7:0] [6:0]
+      New connections: $46\loop_exp_adj[7:0] [7] = $46\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$291:
+      Old ports: A=$46\loop_exp_adj[7:0], B=8'00010010, Y=$47\loop_exp_adj[7:0]
+      New ports: A=$46\loop_exp_adj[7:0] [6:0], B=7'0010010, Y=$47\loop_exp_adj[7:0] [6:0]
+      New connections: $47\loop_exp_adj[7:0] [7] = $47\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$285:
+      Old ports: A=$47\loop_exp_adj[7:0], B=8'00010001, Y=$48\loop_exp_adj[7:0]
+      New ports: A=$47\loop_exp_adj[7:0] [6:0], B=7'0010001, Y=$48\loop_exp_adj[7:0] [6:0]
+      New connections: $48\loop_exp_adj[7:0] [7] = $48\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$279:
+      Old ports: A=$48\loop_exp_adj[7:0], B=8'00010000, Y=$49\loop_exp_adj[7:0]
+      New ports: A=$48\loop_exp_adj[7:0] [6:0], B=7'0010000, Y=$49\loop_exp_adj[7:0] [6:0]
+      New connections: $49\loop_exp_adj[7:0] [7] = $49\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$273:
+      Old ports: A=$49\loop_exp_adj[7:0], B=8'00001111, Y=$50\loop_exp_adj[7:0]
+      New ports: A=$49\loop_exp_adj[7:0] [6:0], B=7'0001111, Y=$50\loop_exp_adj[7:0] [6:0]
+      New connections: $50\loop_exp_adj[7:0] [7] = $50\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$267:
+      Old ports: A=$50\loop_exp_adj[7:0], B=8'00001110, Y=$51\loop_exp_adj[7:0]
+      New ports: A=$50\loop_exp_adj[7:0] [6:0], B=7'0001110, Y=$51\loop_exp_adj[7:0] [6:0]
+      New connections: $51\loop_exp_adj[7:0] [7] = $51\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$261:
+      Old ports: A=$51\loop_exp_adj[7:0], B=8'00001101, Y=$52\loop_exp_adj[7:0]
+      New ports: A=$51\loop_exp_adj[7:0] [6:0], B=7'0001101, Y=$52\loop_exp_adj[7:0] [6:0]
+      New connections: $52\loop_exp_adj[7:0] [7] = $52\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$255:
+      Old ports: A=$52\loop_exp_adj[7:0], B=8'00001100, Y=$53\loop_exp_adj[7:0]
+      New ports: A=$52\loop_exp_adj[7:0] [6:0], B=7'0001100, Y=$53\loop_exp_adj[7:0] [6:0]
+      New connections: $53\loop_exp_adj[7:0] [7] = $53\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$249:
+      Old ports: A=$53\loop_exp_adj[7:0], B=8'00001011, Y=$54\loop_exp_adj[7:0]
+      New ports: A=$53\loop_exp_adj[7:0] [6:0], B=7'0001011, Y=$54\loop_exp_adj[7:0] [6:0]
+      New connections: $54\loop_exp_adj[7:0] [7] = $54\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$243:
+      Old ports: A=$54\loop_exp_adj[7:0], B=8'00001010, Y=$55\loop_exp_adj[7:0]
+      New ports: A=$54\loop_exp_adj[7:0] [6:0], B=7'0001010, Y=$55\loop_exp_adj[7:0] [6:0]
+      New connections: $55\loop_exp_adj[7:0] [7] = $55\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$237:
+      Old ports: A=$55\loop_exp_adj[7:0], B=8'00001001, Y=$56\loop_exp_adj[7:0]
+      New ports: A=$55\loop_exp_adj[7:0] [6:0], B=7'0001001, Y=$56\loop_exp_adj[7:0] [6:0]
+      New connections: $56\loop_exp_adj[7:0] [7] = $56\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$231:
+      Old ports: A=$56\loop_exp_adj[7:0], B=8'00001000, Y=$57\loop_exp_adj[7:0]
+      New ports: A=$56\loop_exp_adj[7:0] [6:0], B=7'0001000, Y=$57\loop_exp_adj[7:0] [6:0]
+      New connections: $57\loop_exp_adj[7:0] [7] = $57\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$225:
+      Old ports: A=$57\loop_exp_adj[7:0], B=8'00000111, Y=$58\loop_exp_adj[7:0]
+      New ports: A=$57\loop_exp_adj[7:0] [6:0], B=7'0000111, Y=$58\loop_exp_adj[7:0] [6:0]
+      New connections: $58\loop_exp_adj[7:0] [7] = $58\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$219:
+      Old ports: A=$58\loop_exp_adj[7:0], B=8'00000110, Y=$59\loop_exp_adj[7:0]
+      New ports: A=$58\loop_exp_adj[7:0] [6:0], B=7'0000110, Y=$59\loop_exp_adj[7:0] [6:0]
+      New connections: $59\loop_exp_adj[7:0] [7] = $59\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$213:
+      Old ports: A=$59\loop_exp_adj[7:0], B=8'00000101, Y=$60\loop_exp_adj[7:0]
+      New ports: A=$59\loop_exp_adj[7:0] [6:0], B=7'0000101, Y=$60\loop_exp_adj[7:0] [6:0]
+      New connections: $60\loop_exp_adj[7:0] [7] = $60\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$207:
+      Old ports: A=$60\loop_exp_adj[7:0], B=8'00000100, Y=$61\loop_exp_adj[7:0]
+      New ports: A=$60\loop_exp_adj[7:0] [6:0], B=7'0000100, Y=$61\loop_exp_adj[7:0] [6:0]
+      New connections: $61\loop_exp_adj[7:0] [7] = $61\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$201:
+      Old ports: A=$61\loop_exp_adj[7:0], B=8'00000011, Y=$62\loop_exp_adj[7:0]
+      New ports: A=$61\loop_exp_adj[7:0] [6:0], B=7'0000011, Y=$62\loop_exp_adj[7:0] [6:0]
+      New connections: $62\loop_exp_adj[7:0] [7] = $62\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$195:
+      Old ports: A=$62\loop_exp_adj[7:0], B=8'00000010, Y=$63\loop_exp_adj[7:0]
+      New ports: A=$62\loop_exp_adj[7:0] [6:0], B=7'0000010, Y=$63\loop_exp_adj[7:0] [6:0]
+      New connections: $63\loop_exp_adj[7:0] [7] = $63\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$189:
+      Old ports: A=$63\loop_exp_adj[7:0], B=8'00000001, Y=$64\loop_exp_adj[7:0]
+      New ports: A=$63\loop_exp_adj[7:0] [6:0], B=7'0000001, Y=$64\loop_exp_adj[7:0] [6:0]
+      New connections: $64\loop_exp_adj[7:0] [7] = $64\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $procmux$183:
+      Old ports: A=$64\loop_exp_adj[7:0], B=8'00000000, Y=$65\loop_exp_adj[7:0]
+      New ports: A=$64\loop_exp_adj[7:0] [6:0], B=7'0000000, Y=$65\loop_exp_adj[7:0] [6:0]
+      New connections: $65\loop_exp_adj[7:0] [7] = $65\loop_exp_adj[7:0] [6]
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 64 changes.
+
+86. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+87. Executing OPT_SHARE pass.
+    Found cells that share an operand and can be merged by moving the $mux $procmux$579 in front of them:
+        $shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:115$150
+        $shl$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:113$149
+
+88. Executing OPT_DFF pass (perform DFF optimizations).
+
+89. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+90. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~3 debug messages>
+
+91. Rerunning OPT passes. (Maybe there is more to do…)
+
+92. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+93. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+    Consolidated identical input bits for $mux cell $auto$opt_share.cc:244:merge_operators$747:
+      Old ports: A={ $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [7:0] }, B={ 24'000000000000000000000000 \expmiddlec }, Y=$auto$rtlil.cc:2628:Mux$748
+      New ports: A={ $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [31] $sub$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:112$146_Y [7:0] }, B={ 1'0 \expmiddlec }, Y=$auto$rtlil.cc:2628:Mux$748 [8:0]
+      New connections: $auto$rtlil.cc:2628:Mux$748 [31:9] = { $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] $auto$rtlil.cc:2628:Mux$748 [8] }
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 1 changes.
+
+94. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+95. Executing OPT_SHARE pass.
+
+96. Executing OPT_DFF pass (perform DFF optimizations).
+
+97. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+98. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+99. Rerunning OPT passes. (Maybe there is more to do…)
+
+100. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~13 debug messages>
+
+101. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+102. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+103. Executing OPT_SHARE pass.
+
+104. Executing OPT_DFF pass (perform DFF optimizations).
+
+105. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+106. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+107. Executing TECHMAP pass (map to technology primitives).
+
+107.1. Executing Verilog-2005 frontend: /nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/9r0bh7sp051dpm8km8bqlb028anpd3v3-yosys/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+107.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$a6eb9f709da60bfcdcc2be095c8d87c74de2b7d7\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $dffe.
+Using template $paramod$9f6287aee284fbe22761e3274ffeab5b5a3751bd\_90_alu for cells of type $alu.
+Using template $paramod$a1bc51c02ce12ac21eb18988e83292af48ed7d72\_90_alu for cells of type $alu.
+Using template $paramod$constmap:a4aa07338bd4f26af14ceefce81ce75acecb9f7e$paramod$f1eeb7ad6dd2fbe4d6d46e0a4c94b650094ee9c2\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using template $paramod$constmap:a4aa07338bd4f26af14ceefce81ce75acecb9f7e$paramod$b4f0feeaf1a203bc0b9b0e9a06b2a846aec924c1\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shl.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$65216b304e0e600b68271885889e654586c4a1b6\_90_alu for cells of type $alu.
+Using template $paramod$constmap:e9acec28fc084ac9eac7cf8cf04d09d458e9350a$paramod$dc42ef54a339a83f6cb69fdc1cac06a4463de97b\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_and.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$ac8e2a1463cdda2665899d261d48fc61d9bbb9d0\_90_alu for cells of type $alu.
+Using template $paramod$91f82ead1edc61e0a1452110f15ef747116b421b\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using template $paramod$448756c9a9dfaa49080ce4b90c6cc182883e181f\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $sdffce.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001000 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001001 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000011001 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000001000000 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000100000 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000010111 for cells of type $lcu.
+No more expansions possible.
+<suppressed ~5056 debug messages>
+
+108. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~3397 debug messages>
+
+109. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+<suppressed ~4779 debug messages>
+Removed a total of 1593 cells.
+
+110. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $auto$ff.cc:266:slice$10841 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [33], Q = \mantisaBshift [1], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10840 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [32], Q = \mantisaBshift [0], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10857 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [17], Q = \mantisaBshift [17], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10856 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [16], Q = \mantisaBshift [16], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10855 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [15], Q = \mantisaBshift [15], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10854 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [14], Q = \mantisaBshift [14], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10853 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [13], Q = \mantisaBshift [13], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10852 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [12], Q = \mantisaBshift [12], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10851 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [11], Q = \mantisaBshift [11], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10850 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [10], Q = \mantisaBshift [10], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10849 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [9], Q = \mantisaBshift [9], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10848 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [8], Q = \mantisaBshift [8], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10847 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [39], Q = \mantisaBshift [7], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10846 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [38], Q = \mantisaBshift [6], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10845 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [37], Q = \mantisaBshift [5], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10844 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [36], Q = \mantisaBshift [4], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10843 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [35], Q = \mantisaBshift [3], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10842 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [34], Q = \mantisaBshift [2], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10864 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [24], Q = \mantisaBshift [24], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10863 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [23], Q = \mantisaBshift [23], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10862 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [22], Q = \mantisaBshift [22], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10861 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [21], Q = \mantisaBshift [21], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10860 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [20], Q = \mantisaBshift [20], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10859 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [19], Q = \mantisaBshift [19], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10858 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [18], Q = \mantisaBshift [18], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10873 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [33], Q = \mantisaBshift [33], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10888 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [48], Q = \mantisaBshift [48], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10887 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [47], Q = \mantisaBshift [47], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10886 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [46], Q = \mantisaBshift [46], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10885 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [45], Q = \mantisaBshift [45], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10884 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [44], Q = \mantisaBshift [44], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10883 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [43], Q = \mantisaBshift [43], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10882 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [42], Q = \mantisaBshift [42], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10881 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [41], Q = \mantisaBshift [41], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10880 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [40], Q = \mantisaBshift [40], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10879 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [39], Q = \mantisaBshift [39], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10878 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [38], Q = \mantisaBshift [38], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10877 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [37], Q = \mantisaBshift [37], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10876 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [36], Q = \mantisaBshift [36], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10875 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [35], Q = \mantisaBshift [35], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10874 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [34], Q = \mantisaBshift [34], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10872 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [32], Q = \mantisaBshift [32], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10871 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [31], Q = \mantisaBshift [31], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10870 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [30], Q = \mantisaBshift [30], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10869 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [29], Q = \mantisaBshift [29], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10868 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [28], Q = \mantisaBshift [28], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10867 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [27], Q = \mantisaBshift [27], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10866 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [26], Q = \mantisaBshift [26], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10865 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$16\buffer[63:0] [25], Q = \mantisaBshift [25], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10897 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [57], Q = \mantisaBshift [57], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10902 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [62], Q = \mantisaBshift [62], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10901 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [61], Q = \mantisaBshift [61], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10900 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [60], Q = \mantisaBshift [60], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10899 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [59], Q = \mantisaBshift [59], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10896 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [56], Q = \mantisaBshift [56], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10895 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [55], Q = \mantisaBshift [55], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10894 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [54], Q = \mantisaBshift [54], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10893 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [53], Q = \mantisaBshift [53], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10892 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [52], Q = \mantisaBshift [52], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10891 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [51], Q = \mantisaBshift [51], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10890 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [50], Q = \mantisaBshift [50], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10889 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [49], Q = \mantisaBshift [49], rval = 1'0).
+Adding SRST signal on $auto$ff.cc:266:slice$10898 ($_DFF_P_) from module FP32_ADD (D = $techmap$shr$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:137$157.$13\buffer[63:0] [58], Q = \mantisaBshift [58], rval = 1'0).
+Setting constant 0-bit at position 0 on $auto$ff.cc:266:slice$10903 ($_DFF_P_) from module FP32_ADD.
+
+111. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 778 unused cells and 811 unused wires.
+<suppressed ~781 debug messages>
+
+112. Rerunning OPT passes (Removed registers in this run.)
+
+113. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~4 debug messages>
+
+114. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+<suppressed ~135 debug messages>
+Removed a total of 45 cells.
+
+115. Executing OPT_DFF pass (perform DFF optimizations).
+
+116. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 0 unused cells and 46 unused wires.
+<suppressed ~1 debug messages>
+
+117. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+118. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+119. Executing OPT_DFF pass (perform DFF optimizations).
+
+120. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+121. Executing ABC pass (technology mapping using ABC).
+
+121.1. Extracting gate netlist of module `\FP32_ADD' to `<abc-temp-dir>/input.blif'..
+Extracted 3033 gates and 3311 wires to a netlist network with 276 inputs and 229 outputs.
+
+121.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_library <abc-temp-dir>/stdcells.genlib 
+ABC: Entered genlib library with 13 gates from file "<abc-temp-dir>/stdcells.genlib".
+ABC: + strash 
+ABC: + dretime 
+ABC: + map 
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+121.1.2. Re-integrating ABC results.
+ABC RESULTS:             ORNOT cells:      206
+ABC RESULTS:               AND cells:       33
+ABC RESULTS:                OR cells:      839
+ABC RESULTS:              XNOR cells:       48
+ABC RESULTS:              NAND cells:       42
+ABC RESULTS:               NOR cells:      125
+ABC RESULTS:               XOR cells:      169
+ABC RESULTS:            ANDNOT cells:      658
+ABC RESULTS:               NOT cells:      131
+ABC RESULTS:               MUX cells:      685
+ABC RESULTS:        internal signals:     2806
+ABC RESULTS:           input signals:      276
+ABC RESULTS:          output signals:      229
+Removing temp directory.
+
+122. Executing OPT pass (performing simple optimizations).
+
+122.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+<suppressed ~220 debug messages>
+
+122.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+<suppressed ~15 debug messages>
+Removed a total of 5 cells.
+
+122.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+122.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 2 unused cells and 1181 unused wires.
+<suppressed ~5 debug messages>
+
+122.5. Finished fast OPT passes.
+
+123. Executing HIERARCHY pass (managing design hierarchy).
+
+123.1. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+
+123.2. Analyzing design hierarchy..
+Top module:  \FP32_ADD
+Removed 0 unused modules.
+
+124. Executing CHECK pass (checking for obvious problems).
+Checking module FP32_ADD...
+Found and reported 0 problems.
+
+125. Printing statistics.
+
+=== FP32_ADD ===
+
+   Number of wires:               2951
+   Number of wire bits:           3427
+   Number of public wires:          34
+   Number of public wire bits:     458
+   Number of ports:                 11
+   Number of port bits:             98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3241
+     $_ANDNOT_                     658
+     $_AND_                         33
+     $_DFFE_PN_                     95
+     $_DFFE_PP_                     66
+     $_DFF_P_                       41
+     $_MUX_                        685
+     $_NAND_                        42
+     $_NOR_                        124
+     $_NOT_                        129
+     $_ORNOT_                      206
+     $_OR_                         837
+     $_SDFFCE_PN0N_                 16
+     $_SDFF_PP0_                    86
+     $_SDFF_PP1_                     8
+     $_XNOR_                        48
+     $_XOR_                        167
+
+126. Generating Graphviz representation of design.
+Writing dot description to `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/primitive_techmap.dot'.
+Dumping module FP32_ADD to page 1.
+
+127. Executing OPT pass (performing simple optimizations).
+
+127.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+127.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+127.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \FP32_ADD..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+127.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \FP32_ADD.
+Performed a total of 0 changes.
+
+127.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\FP32_ADD'.
+Removed a total of 0 cells.
+
+127.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+127.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+
+127.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FP32_ADD.
+
+127.9. Finished OPT passes. (There is nothing left to do.)
+
+128. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/tmp/e0f83034422946aabc0da694be2fd879.lib ",
+   "modules": {
+      "\\FP32_ADD": {
+         "num_wires":         2951,
+         "num_wire_bits":     3427,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 458,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3241,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 658,
+            "$_AND_": 33,
+            "$_DFFE_PN_": 95,
+            "$_DFFE_PP_": 66,
+            "$_DFF_P_": 41,
+            "$_MUX_": 685,
+            "$_NAND_": 42,
+            "$_NOR_": 124,
+            "$_NOT_": 129,
+            "$_ORNOT_": 206,
+            "$_OR_": 837,
+            "$_SDFFCE_PN0N_": 16,
+            "$_SDFF_PP0_": 86,
+            "$_SDFF_PP1_": 8,
+            "$_XNOR_": 48,
+            "$_XOR_": 167
+         }
+      }
+   },
+      "design": {
+         "num_wires":         2951,
+         "num_wire_bits":     3427,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 458,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3241,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 658,
+            "$_AND_": 33,
+            "$_DFFE_PN_": 95,
+            "$_DFFE_PP_": 66,
+            "$_DFF_P_": 41,
+            "$_MUX_": 685,
+            "$_NAND_": 42,
+            "$_NOR_": 124,
+            "$_NOT_": 129,
+            "$_ORNOT_": 206,
+            "$_OR_": 837,
+            "$_SDFFCE_PN0N_": 16,
+            "$_SDFF_PP0_": 86,
+            "$_SDFF_PP1_": 8,
+            "$_XNOR_": 48,
+            "$_XOR_": 167
+         }
+      }
+}
+
+129. Printing statistics.
+
+=== FP32_ADD ===
+
+   Number of wires:               2951
+   Number of wire bits:           3427
+   Number of public wires:          34
+   Number of public wire bits:     458
+   Number of ports:                 11
+   Number of port bits:             98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3241
+     $_ANDNOT_                     658
+     $_AND_                         33
+     $_DFFE_PN_                     95
+     $_DFFE_PP_                     66
+     $_DFF_P_                       41
+     $_MUX_                        685
+     $_NAND_                        42
+     $_NOR_                        124
+     $_NOT_                        129
+     $_ORNOT_                      206
+     $_OR_                         837
+     $_SDFFCE_PN0N_                 16
+     $_SDFF_PP0_                    86
+     $_SDFF_PP1_                     8
+     $_XNOR_                        48
+     $_XOR_                        167
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_DFF_P_ is unknown!
+   Area for cell type $_DFFE_PN_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_SDFF_PP0_ is unknown!
+   Area for cell type $_SDFF_PP1_ is unknown!
+   Area for cell type $_SDFFCE_PN0N_ is unknown!
+
+[INFO] Applying tri-state buffer mapping from '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v'…
+
+130. Executing TECHMAP pass (map to technology primitives).
+
+130.1. Executing Verilog-2005 frontend: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v
+Parsing Verilog input from `/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_TBUF_'.
+Successfully finished Verilog frontend.
+
+130.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+131. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+[INFO] Applying latch mapping from '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v'…
+
+132. Executing TECHMAP pass (map to technology primitives).
+
+132.1. Executing Verilog-2005 frontend: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v
+Parsing Verilog input from `/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Successfully finished Verilog frontend.
+
+132.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+133. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+134. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell sky130_fd_sc_hd__dfxtp_2 (noninv, pins=3, area=21.27) is a direct match for cell type $_DFF_P_.
+  cell sky130_fd_sc_hd__dfrtp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN0_.
+  cell sky130_fd_sc_hd__dfstp_2 (noninv, pins=4, area=26.28) is a direct match for cell type $_DFF_PN1_.
+  cell sky130_fd_sc_hd__dfbbn_2 (noninv, pins=6, area=35.03) is a direct match for cell type $_DFFSR_NNN_.
+  final dff cell mappings:
+    unmapped dff cell: $_DFF_N_
+    \sky130_fd_sc_hd__dfxtp_2 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    unmapped dff cell: $_DFF_NN0_
+    unmapped dff cell: $_DFF_NN1_
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \sky130_fd_sc_hd__dfrtp_2 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RESET_B( R));
+    \sky130_fd_sc_hd__dfstp_2 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SET_B( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    \sky130_fd_sc_hd__dfbbn_2 _DFFSR_NNN_ (.CLK_N( C), .D( D), .Q( Q), .Q_N(~Q), .RESET_B( R), .SET_B( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    unmapped dff cell: $_DFFSR_PNN_
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+134.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\FP32_ADD':
+  mapped 312 $_DFF_P_ cells to \sky130_fd_sc_hd__dfxtp_2 cells.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/tmp/e0f83034422946aabc0da694be2fd879.lib ",
+   "modules": {
+      "\\FP32_ADD": {
+         "num_wires":         3238,
+         "num_wire_bits":     3714,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 458,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3528,
+         "area":              6636.364800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 658,
+            "$_AND_": 33,
+            "$_MUX_": 972,
+            "$_NAND_": 42,
+            "$_NOR_": 124,
+            "$_NOT_": 129,
+            "$_ORNOT_": 206,
+            "$_OR_": 837,
+            "$_XNOR_": 48,
+            "$_XOR_": 167,
+            "sky130_fd_sc_hd__dfxtp_2": 312
+         }
+      }
+   },
+      "design": {
+         "num_wires":         3238,
+         "num_wire_bits":     3714,
+         "num_pub_wires":     34,
+         "num_pub_wire_bits": 458,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         3528,
+         "area":              6636.364800,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 658,
+            "$_AND_": 33,
+            "$_MUX_": 972,
+            "$_NAND_": 42,
+            "$_NOR_": 124,
+            "$_NOT_": 129,
+            "$_ORNOT_": 206,
+            "$_OR_": 837,
+            "$_XNOR_": 48,
+            "$_XOR_": 167,
+            "sky130_fd_sc_hd__dfxtp_2": 312
+         }
+      }
+}
+
+135. Printing statistics.
+
+=== FP32_ADD ===
+
+   Number of wires:               3238
+   Number of wire bits:           3714
+   Number of public wires:          34
+   Number of public wire bits:     458
+   Number of ports:                 11
+   Number of port bits:             98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               3528
+     $_ANDNOT_                     658
+     $_AND_                         33
+     $_MUX_                        972
+     $_NAND_                        42
+     $_NOR_                        124
+     $_NOT_                        129
+     $_ORNOT_                      206
+     $_OR_                         837
+     $_XNOR_                        48
+     $_XOR_                        167
+     sky130_fd_sc_hd__dfxtp_2      312
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\FP32_ADD': 6636.364800
+     of which used for sequential elements: 6636.364800 (100.00%)
+
+[INFO] Using generated ABC script '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/AREA_0.abc'…
+
+136. Executing ABC pass (technology mapping using ABC).
+
+136.1. Extracting gate netlist of module `\FP32_ADD' to `/tmp/yosys-abc-LLeq3u/input.blif'..
+Extracted 3216 gates and 3559 wires to a netlist network with 341 inputs and 273 outputs.
+
+136.1.1. Executing ABC.
+Running ABC command: "/nix/store/6l3aj1gi4lja8z5s4lan2k2cfz9mqkrz-yosys-abc/bin/abc" -s -f /tmp/yosys-abc-LLeq3u/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-LLeq3u/abc.script".
+ABC: 
+ABC: + read_blif /tmp/yosys-abc-LLeq3u/input.blif 
+ABC: + read_lib -w /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/tmp/e0f83034422946aabc0da694be2fd879.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.02 sec
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfrtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfsbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfstp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxbp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfxtp_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtn_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dlxtp_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "sky130_fd_sc_hd__ebufn_8".
+ABC: Library "sky130_fd_sc_hd__tt_025C_1v80" from "/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/tmp/e0f83034422946aabc0da694be2fd879.lib" has 175 cells (17 skipped: 14 seq; 3 tri-state; 0 no func; 0 dont_use).  Time =     0.03 sec
+ABC: Memory =    9.54 MB. Time =     0.03 sec
+ABC: Warning: Detected 2 multi-output gates (for example, "sky130_fd_sc_hd__fa_1").
+ABC: + read_constr -v /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "sky130_fd_sc_hd__inv_2/Y".
+ABC: Setting output load to be 33.442001.
+ABC: + source /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: Cannot find the default PI driving cell (sky130_fd_sc_hd__inv_2/Y) in the library.
+ABC: WireLoad = "none"  Gates =   1927 (  7.1 %)   Cap = 10.6 ff (  6.6 %)   Area =    17409.20 ( 72.0 %)   Delay = 10145.89 ps  (  1.9 %)               
+ABC: Path  0 --     140 : 0    5 pi                       A =   0.00  Df =   0.0   -0.0 ps  S =   0.0 ps  Cin =  0.0 ff  Cout =  15.2 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --    1650 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df = 719.5 -583.0 ps  S = 149.3 ps  Cin =  1.5 ff  Cout =  16.2 ff  Cmax = 310.4 ff  G = 1020  
+ABC: Path  2 --    1661 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =1353.8-1054.9 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path  3 --    1672 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =1987.3-1527.8 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path  4 --    1683 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =2620.7-2000.7 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path  5 --    1720 : 4    6 sky130_fd_sc_hd__or4_2   A =   8.76  Df =3265.2-2475.0 ps  S = 154.2 ps  Cin =  1.5 ff  Cout =  18.0 ff  Cmax = 310.4 ff  G = 1139  
+ABC: Path  6 --    1735 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =3974.0-3012.1 ps  S = 149.3 ps  Cin =  1.5 ff  Cout =  16.2 ff  Cmax = 310.4 ff  G = 1020  
+ABC: Path  7 --    1746 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =4608.3-3484.0 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path  8 --    1770 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =5241.7-3956.9 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path  9 --    1781 : 4    5 sky130_fd_sc_hd__or4_2   A =   8.76  Df =5875.2-4429.8 ps  S = 146.9 ps  Cin =  1.5 ff  Cout =  15.2 ff  Cmax = 310.4 ff  G =  957  
+ABC: Path 10 --    1792 : 4    7 sky130_fd_sc_hd__or4_2   A =   8.76  Df =6531.1-4904.4 ps  S = 161.8 ps  Cin =  1.5 ff  Cout =  21.3 ff  Cmax = 310.4 ff  G = 1340  
+ABC: Path 11 --    1841 : 5    2 sky130_fd_sc_hd__o32a_2  A =  11.26  Df =6963.6-5160.0 ps  S =  63.5 ps  Cin =  2.3 ff  Cout =   6.7 ff  Cmax = 300.3 ff  G =  273  
+ABC: Path 12 --    1850 : 3    2 sky130_fd_sc_hd__o21ai_2 A =   8.76  Df =7081.5-5228.2 ps  S = 101.1 ps  Cin =  4.5 ff  Cout =   4.4 ff  Cmax = 139.2 ff  G =   92  
+ABC: Path 13 --    1859 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7216.3-5158.3 ps  S =  38.1 ps  Cin =  2.4 ff  Cout =   4.4 ff  Cmax = 309.5 ff  G =  178  
+ABC: Path 14 --    1869 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7331.6-5068.2 ps  S =  38.1 ps  Cin =  2.4 ff  Cout =   4.4 ff  Cmax = 309.5 ff  G =  178  
+ABC: Path 15 --    1893 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7458.7-4980.4 ps  S =  51.9 ps  Cin =  2.4 ff  Cout =   7.5 ff  Cmax = 309.5 ff  G =  303  
+ABC: Path 16 --    1904 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7578.4-4891.9 ps  S =  39.3 ps  Cin =  2.4 ff  Cout =   4.4 ff  Cmax = 309.5 ff  G =  178  
+ABC: Path 17 --    1913 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7706.0-4804.5 ps  S =  51.9 ps  Cin =  2.4 ff  Cout =   7.5 ff  Cmax = 309.5 ff  G =  303  
+ABC: Path 18 --    1923 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7825.7-4716.0 ps  S =  38.1 ps  Cin =  2.4 ff  Cout =   4.4 ff  Cmax = 309.5 ff  G =  178  
+ABC: Path 19 --    1932 : 3    4 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =7968.2-4631.1 ps  S =  70.0 ps  Cin =  2.4 ff  Cout =  11.5 ff  Cmax = 309.5 ff  G =  468  
+ABC: Path 20 --    1979 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =8082.8-4561.8 ps  S =  34.1 ps  Cin =  2.4 ff  Cout =   3.0 ff  Cmax = 309.5 ff  G =  122  
+ABC: Path 21 --    2036 : 4    2 sky130_fd_sc_hd__or4bb_2 A =  12.51  Df =8618.8-4921.1 ps  S = 110.8 ps  Cin =  1.5 ff  Cout =   7.0 ff  Cmax = 312.2 ff  G =  455  
+ABC: Path 22 --    2080 : 4    2 sky130_fd_sc_hd__a211o_2 A =  10.01  Df =8933.7-5119.2 ps  S =  51.0 ps  Cin =  2.4 ff  Cout =   3.9 ff  Cmax = 325.0 ff  G =  161  
+ABC: Path 23 --    2090 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =9124.0-5197.9 ps  S =  40.2 ps  Cin =  2.4 ff  Cout =   4.9 ff  Cmax = 309.5 ff  G =  200  
+ABC: Path 24 --    2099 : 3    2 sky130_fd_sc_hd__a21o_2  A =   8.76  Df =9309.3-5270.3 ps  S =  39.9 ps  Cin =  2.4 ff  Cout =   4.8 ff  Cmax = 309.5 ff  G =  196  
+ABC: Path 25 --    2102 : 5    1 sky130_fd_sc_hd__a32o_2  A =  11.26  Df =9580.3-5357.1 ps  S =  74.9 ps  Cin =  2.3 ff  Cout =   8.5 ff  Cmax = 264.6 ff  G =  349  
+ABC: Path 26 --    2103 : 2    1 sky130_fd_sc_hd__xor2_2  A =  16.27  Df =9712.4-5370.3 ps  S =  82.5 ps  Cin =  8.6 ff  Cout =   2.0 ff  Cmax = 130.0 ff  G =   21  
+ABC: Path 27 --    2104 : 3    1 sky130_fd_sc_hd__mux2_1  A =  11.26  Df =10145.9-5483.9 ps  S = 301.4 ps  Cin =  2.3 ff  Cout =  33.4 ff  Cmax = 173.0 ff  G = 1465  
+ABC: Start-point = pi139 (\mantisaBshift [0]).  End-point = po173 ($auto$rtlil.cc:2739:MuxGate$17301).
+ABC: netlist                       : i/o =  341/  273  lat =    0  nd =  1927  edge =   5528  area =17411.08  delay =27.00  lev = 27
+ABC: + write_blif /tmp/yosys-abc-LLeq3u/output.blif 
+
+136.1.2. Re-integrating ABC results.
+ABC RESULTS:   sky130_fd_sc_hd__o21bai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__nor3b_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__nand4_2 cells:        2
+ABC RESULTS:   sky130_fd_sc_hd__o211ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__and4bb_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__nor4_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__and4b_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__o2111a_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__o311a_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__o2111ai_2 cells:        1
+ABC RESULTS:   sky130_fd_sc_hd__or4b_2 cells:       22
+ABC RESULTS:   sky130_fd_sc_hd__and4_2 cells:        9
+ABC RESULTS:   sky130_fd_sc_hd__or3_2 cells:       48
+ABC RESULTS:   sky130_fd_sc_hd__or4_2 cells:       87
+ABC RESULTS:   sky130_fd_sc_hd__o41a_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a2111o_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__nand3b_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or4bb_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__nand3_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__a31oi_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__xnor2_2 cells:       44
+ABC RESULTS:   sky130_fd_sc_hd__o221a_2 cells:       16
+ABC RESULTS:   sky130_fd_sc_hd__nand2b_2 cells:       31
+ABC RESULTS:   sky130_fd_sc_hd__a21bo_2 cells:        8
+ABC RESULTS:   sky130_fd_sc_hd__o21ba_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__a32o_2 cells:        5
+ABC RESULTS:   sky130_fd_sc_hd__xor2_2 cells:       19
+ABC RESULTS:   sky130_fd_sc_hd__o31a_2 cells:       12
+ABC RESULTS:   sky130_fd_sc_hd__a311o_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__o2bb2a_2 cells:       12
+ABC RESULTS:   sky130_fd_sc_hd__o22a_2 cells:       36
+ABC RESULTS:   sky130_fd_sc_hd__a221o_2 cells:       15
+ABC RESULTS:   sky130_fd_sc_hd__and2b_2 cells:       63
+ABC RESULTS:   sky130_fd_sc_hd__and3b_2 cells:       10
+ABC RESULTS:   sky130_fd_sc_hd__a22oi_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__or3b_2 cells:       14
+ABC RESULTS:   sky130_fd_sc_hd__a21boi_2 cells:        7
+ABC RESULTS:   sky130_fd_sc_hd__o21a_2 cells:       41
+ABC RESULTS:   sky130_fd_sc_hd__a31o_2 cells:       71
+ABC RESULTS:   sky130_fd_sc_hd__and3_2 cells:       42
+ABC RESULTS:   sky130_fd_sc_hd__mux4_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__mux2_1 cells:      368
+ABC RESULTS:   sky130_fd_sc_hd__a22o_2 cells:       72
+ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_2 cells:       45
+ABC RESULTS:   sky130_fd_sc_hd__o32a_2 cells:        4
+ABC RESULTS:   sky130_fd_sc_hd__inv_2 cells:      136
+ABC RESULTS:   sky130_fd_sc_hd__a21oi_2 cells:       68
+ABC RESULTS:   sky130_fd_sc_hd__a211oi_2 cells:        3
+ABC RESULTS:   sky130_fd_sc_hd__or2_2 cells:       94
+ABC RESULTS:   sky130_fd_sc_hd__o21ai_2 cells:       41
+ABC RESULTS:   sky130_fd_sc_hd__nand2_2 cells:      111
+ABC RESULTS:   sky130_fd_sc_hd__o211a_2 cells:       13
+ABC RESULTS:   sky130_fd_sc_hd__a21o_2 cells:       51
+ABC RESULTS:   sky130_fd_sc_hd__a211o_2 cells:       16
+ABC RESULTS:   sky130_fd_sc_hd__o31ai_2 cells:        6
+ABC RESULTS:   sky130_fd_sc_hd__nor2_2 cells:      126
+ABC RESULTS:   sky130_fd_sc_hd__and2_2 cells:       67
+ABC RESULTS:   sky130_fd_sc_hd__nor3_2 cells:       20
+ABC RESULTS:        internal signals:     2945
+ABC RESULTS:           input signals:      341
+ABC RESULTS:          output signals:      273
+Removing temp directory.
+
+137. Executing SETUNDEF pass (replace undef values with defined constants).
+
+138. Executing HILOMAP pass (mapping to constant drivers).
+
+139. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+140. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FP32_ADD..
+Removed 40 unused cells and 3717 unused wires.
+<suppressed ~121 debug messages>
+
+141. Executing INSBUF pass (insert buffer cells for connected wires).
+
+142. Executing CHECK pass (checking for obvious problems).
+Checking module FP32_ADD...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-09_23-53-45/tmp/e0f83034422946aabc0da694be2fd879.lib ",
+   "modules": {
+      "\\FP32_ADD": {
+         "num_wires":         2218,
+         "num_wire_bits":     2305,
+         "num_pub_wires":     291,
+         "num_pub_wire_bits": 378,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2239,
+         "area":              24045.561600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a2111o_2": 3,
+            "sky130_fd_sc_hd__a211o_2": 16,
+            "sky130_fd_sc_hd__a211oi_2": 3,
+            "sky130_fd_sc_hd__a21bo_2": 8,
+            "sky130_fd_sc_hd__a21boi_2": 7,
+            "sky130_fd_sc_hd__a21o_2": 51,
+            "sky130_fd_sc_hd__a21oi_2": 68,
+            "sky130_fd_sc_hd__a221o_2": 15,
+            "sky130_fd_sc_hd__a22o_2": 72,
+            "sky130_fd_sc_hd__a22oi_2": 6,
+            "sky130_fd_sc_hd__a2bb2o_2": 45,
+            "sky130_fd_sc_hd__a311o_2": 4,
+            "sky130_fd_sc_hd__a31o_2": 71,
+            "sky130_fd_sc_hd__a31oi_2": 3,
+            "sky130_fd_sc_hd__a32o_2": 5,
+            "sky130_fd_sc_hd__and2_2": 67,
+            "sky130_fd_sc_hd__and2b_2": 63,
+            "sky130_fd_sc_hd__and3_2": 42,
+            "sky130_fd_sc_hd__and3b_2": 10,
+            "sky130_fd_sc_hd__and4_2": 9,
+            "sky130_fd_sc_hd__and4b_2": 5,
+            "sky130_fd_sc_hd__and4bb_2": 5,
+            "sky130_fd_sc_hd__dfxtp_2": 312,
+            "sky130_fd_sc_hd__inv_2": 136,
+            "sky130_fd_sc_hd__mux2_1": 368,
+            "sky130_fd_sc_hd__mux4_2": 4,
+            "sky130_fd_sc_hd__nand2_2": 111,
+            "sky130_fd_sc_hd__nand2b_2": 31,
+            "sky130_fd_sc_hd__nand3_2": 5,
+            "sky130_fd_sc_hd__nand3b_2": 3,
+            "sky130_fd_sc_hd__nand4_2": 2,
+            "sky130_fd_sc_hd__nor2_2": 126,
+            "sky130_fd_sc_hd__nor3_2": 20,
+            "sky130_fd_sc_hd__nor3b_2": 2,
+            "sky130_fd_sc_hd__nor4_2": 8,
+            "sky130_fd_sc_hd__o2111a_2": 3,
+            "sky130_fd_sc_hd__o2111ai_2": 1,
+            "sky130_fd_sc_hd__o211a_2": 13,
+            "sky130_fd_sc_hd__o211ai_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 41,
+            "sky130_fd_sc_hd__o21ai_2": 41,
+            "sky130_fd_sc_hd__o21ba_2": 3,
+            "sky130_fd_sc_hd__o21bai_2": 1,
+            "sky130_fd_sc_hd__o221a_2": 16,
+            "sky130_fd_sc_hd__o22a_2": 36,
+            "sky130_fd_sc_hd__o2bb2a_2": 12,
+            "sky130_fd_sc_hd__o311a_2": 6,
+            "sky130_fd_sc_hd__o31a_2": 12,
+            "sky130_fd_sc_hd__o31ai_2": 6,
+            "sky130_fd_sc_hd__o32a_2": 4,
+            "sky130_fd_sc_hd__o41a_2": 5,
+            "sky130_fd_sc_hd__or2_2": 94,
+            "sky130_fd_sc_hd__or3_2": 48,
+            "sky130_fd_sc_hd__or3b_2": 14,
+            "sky130_fd_sc_hd__or4_2": 87,
+            "sky130_fd_sc_hd__or4b_2": 22,
+            "sky130_fd_sc_hd__or4bb_2": 4,
+            "sky130_fd_sc_hd__xnor2_2": 44,
+            "sky130_fd_sc_hd__xor2_2": 19
+         }
+      }
+   },
+      "design": {
+         "num_wires":         2218,
+         "num_wire_bits":     2305,
+         "num_pub_wires":     291,
+         "num_pub_wire_bits": 378,
+         "num_ports":         11,
+         "num_port_bits":     98,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         2239,
+         "area":              24045.561600,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a2111o_2": 3,
+            "sky130_fd_sc_hd__a211o_2": 16,
+            "sky130_fd_sc_hd__a211oi_2": 3,
+            "sky130_fd_sc_hd__a21bo_2": 8,
+            "sky130_fd_sc_hd__a21boi_2": 7,
+            "sky130_fd_sc_hd__a21o_2": 51,
+            "sky130_fd_sc_hd__a21oi_2": 68,
+            "sky130_fd_sc_hd__a221o_2": 15,
+            "sky130_fd_sc_hd__a22o_2": 72,
+            "sky130_fd_sc_hd__a22oi_2": 6,
+            "sky130_fd_sc_hd__a2bb2o_2": 45,
+            "sky130_fd_sc_hd__a311o_2": 4,
+            "sky130_fd_sc_hd__a31o_2": 71,
+            "sky130_fd_sc_hd__a31oi_2": 3,
+            "sky130_fd_sc_hd__a32o_2": 5,
+            "sky130_fd_sc_hd__and2_2": 67,
+            "sky130_fd_sc_hd__and2b_2": 63,
+            "sky130_fd_sc_hd__and3_2": 42,
+            "sky130_fd_sc_hd__and3b_2": 10,
+            "sky130_fd_sc_hd__and4_2": 9,
+            "sky130_fd_sc_hd__and4b_2": 5,
+            "sky130_fd_sc_hd__and4bb_2": 5,
+            "sky130_fd_sc_hd__dfxtp_2": 312,
+            "sky130_fd_sc_hd__inv_2": 136,
+            "sky130_fd_sc_hd__mux2_1": 368,
+            "sky130_fd_sc_hd__mux4_2": 4,
+            "sky130_fd_sc_hd__nand2_2": 111,
+            "sky130_fd_sc_hd__nand2b_2": 31,
+            "sky130_fd_sc_hd__nand3_2": 5,
+            "sky130_fd_sc_hd__nand3b_2": 3,
+            "sky130_fd_sc_hd__nand4_2": 2,
+            "sky130_fd_sc_hd__nor2_2": 126,
+            "sky130_fd_sc_hd__nor3_2": 20,
+            "sky130_fd_sc_hd__nor3b_2": 2,
+            "sky130_fd_sc_hd__nor4_2": 8,
+            "sky130_fd_sc_hd__o2111a_2": 3,
+            "sky130_fd_sc_hd__o2111ai_2": 1,
+            "sky130_fd_sc_hd__o211a_2": 13,
+            "sky130_fd_sc_hd__o211ai_2": 1,
+            "sky130_fd_sc_hd__o21a_2": 41,
+            "sky130_fd_sc_hd__o21ai_2": 41,
+            "sky130_fd_sc_hd__o21ba_2": 3,
+            "sky130_fd_sc_hd__o21bai_2": 1,
+            "sky130_fd_sc_hd__o221a_2": 16,
+            "sky130_fd_sc_hd__o22a_2": 36,
+            "sky130_fd_sc_hd__o2bb2a_2": 12,
+            "sky130_fd_sc_hd__o311a_2": 6,
+            "sky130_fd_sc_hd__o31a_2": 12,
+            "sky130_fd_sc_hd__o31ai_2": 6,
+            "sky130_fd_sc_hd__o32a_2": 4,
+            "sky130_fd_sc_hd__o41a_2": 5,
+            "sky130_fd_sc_hd__or2_2": 94,
+            "sky130_fd_sc_hd__or3_2": 48,
+            "sky130_fd_sc_hd__or3b_2": 14,
+            "sky130_fd_sc_hd__or4_2": 87,
+            "sky130_fd_sc_hd__or4b_2": 22,
+            "sky130_fd_sc_hd__or4bb_2": 4,
+            "sky130_fd_sc_hd__xnor2_2": 44,
+            "sky130_fd_sc_hd__xor2_2": 19
+         }
+      }
+}
+
+143. Printing statistics.
+
+=== FP32_ADD ===
+
+   Number of wires:               2218
+   Number of wire bits:           2305
+   Number of public wires:         291
+   Number of public wire bits:     378
+   Number of ports:                 11
+   Number of port bits:             98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               2239
+     sky130_fd_sc_hd__a2111o_2       3
+     sky130_fd_sc_hd__a211o_2       16
+     sky130_fd_sc_hd__a211oi_2       3
+     sky130_fd_sc_hd__a21bo_2        8
+     sky130_fd_sc_hd__a21boi_2       7
+     sky130_fd_sc_hd__a21o_2        51
+     sky130_fd_sc_hd__a21oi_2       68
+     sky130_fd_sc_hd__a221o_2       15
+     sky130_fd_sc_hd__a22o_2        72
+     sky130_fd_sc_hd__a22oi_2        6
+     sky130_fd_sc_hd__a2bb2o_2      45
+     sky130_fd_sc_hd__a311o_2        4
+     sky130_fd_sc_hd__a31o_2        71
+     sky130_fd_sc_hd__a31oi_2        3
+     sky130_fd_sc_hd__a32o_2         5
+     sky130_fd_sc_hd__and2_2        67
+     sky130_fd_sc_hd__and2b_2       63
+     sky130_fd_sc_hd__and3_2        42
+     sky130_fd_sc_hd__and3b_2       10
+     sky130_fd_sc_hd__and4_2         9
+     sky130_fd_sc_hd__and4b_2        5
+     sky130_fd_sc_hd__and4bb_2       5
+     sky130_fd_sc_hd__dfxtp_2      312
+     sky130_fd_sc_hd__inv_2        136
+     sky130_fd_sc_hd__mux2_1       368
+     sky130_fd_sc_hd__mux4_2         4
+     sky130_fd_sc_hd__nand2_2      111
+     sky130_fd_sc_hd__nand2b_2      31
+     sky130_fd_sc_hd__nand3_2        5
+     sky130_fd_sc_hd__nand3b_2       3
+     sky130_fd_sc_hd__nand4_2        2
+     sky130_fd_sc_hd__nor2_2       126
+     sky130_fd_sc_hd__nor3_2        20
+     sky130_fd_sc_hd__nor3b_2        2
+     sky130_fd_sc_hd__nor4_2         8
+     sky130_fd_sc_hd__o2111a_2       3
+     sky130_fd_sc_hd__o2111ai_2      1
+     sky130_fd_sc_hd__o211a_2       13
+     sky130_fd_sc_hd__o211ai_2       1
+     sky130_fd_sc_hd__o21a_2        41
+     sky130_fd_sc_hd__o21ai_2       41
+     sky130_fd_sc_hd__o21ba_2        3
+     sky130_fd_sc_hd__o21bai_2       1
+     sky130_fd_sc_hd__o221a_2       16
+     sky130_fd_sc_hd__o22a_2        36
+     sky130_fd_sc_hd__o2bb2a_2      12
+     sky130_fd_sc_hd__o311a_2        6
+     sky130_fd_sc_hd__o31a_2        12
+     sky130_fd_sc_hd__o31ai_2        6
+     sky130_fd_sc_hd__o32a_2         4
+     sky130_fd_sc_hd__o41a_2         5
+     sky130_fd_sc_hd__or2_2         94
+     sky130_fd_sc_hd__or3_2         48
+     sky130_fd_sc_hd__or3b_2        14
+     sky130_fd_sc_hd__or4_2         87
+     sky130_fd_sc_hd__or4b_2        22
+     sky130_fd_sc_hd__or4bb_2        4
+     sky130_fd_sc_hd__xnor2_2       44
+     sky130_fd_sc_hd__xor2_2        19
+
+   Chip area for module '\FP32_ADD': 24045.561600
+     of which used for sequential elements: 6636.364800 (27.60%)
+
+144. Executing Verilog backend.
+Dumping module `\FP32_ADD'.
+
+145. Executing JSON backend.

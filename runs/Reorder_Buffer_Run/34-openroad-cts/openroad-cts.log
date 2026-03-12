@@ -1,0 +1,131 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/33-openroad-detailedplacement/Reorder_buffer.odb'…
+Reading design constraints file at '/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 5
+[INFO] Setting input delay to: 5
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO] Configuring cts characterization…
+[INFO] Performing clock tree synthesis…
+[INFO] Looking for the following net(s): clk
+[INFO] Running Clock Tree Synthesis…
+[INFO CTS-0050] Root buffer is sky130_fd_sc_hd__clkbuf_16.
+[INFO CTS-0051] Sink buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0052] The following clock buffers will be used for CTS:
+                    sky130_fd_sc_hd__clkbuf_2
+                    sky130_fd_sc_hd__clkbuf_4
+                    sky130_fd_sc_hd__clkbuf_8
+[INFO CTS-0049] Characterization buffer is sky130_fd_sc_hd__clkbuf_8.
+[INFO CTS-0007] Net "clk" found for clock "clk".
+[INFO CTS-0010]  Clock net "clk" has 580 sinks.
+[INFO CTS-0008] TritonCTS found 1 clock nets.
+[INFO CTS-0097] Characterization used 3 buffer(s) types.
+[INFO CTS-0200] 0 placement blockages have been identified.
+[INFO CTS-0201] 0 placed hard macros will be treated like blockages.
+[INFO CTS-0027] Generating H-Tree topology for net clk.
+[INFO CTS-0028]  Total number of sinks: 580.
+[INFO CTS-0029]  Sinks will be clustered in groups of up to 25 and with maximum cluster diameter of 50.0 um.
+[INFO CTS-0030]  Number of static layers: 0.
+[INFO CTS-0020]  Wire segment unit: 13600  dbu (13 um).
+[INFO CTS-0204] A clustering solution was found from clustering size of 25 and clustering diameter of 50.
+[INFO CTS-0205] Better solution may be possible if either -sink_clustering_size, -sink_clustering_max_diameter, or both options are omitted to enable automatic clustering.
+[INFO CTS-0019]  Total number of sinks after clustering: 65.
+[INFO CTS-0024]  Normalized sink region: [(1.16875, 1.29559), (18.6589, 18.88)].
+[INFO CTS-0025]     Width:  17.4901.
+[INFO CTS-0026]     Height: 17.5844.
+ Level 1
+    Direction: Vertical
+    Sinks per sub-region: 33
+    Sub-region size: 17.4901 X 8.7922
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 2
+    Direction: Horizontal
+    Sinks per sub-region: 17
+    Sub-region size: 8.7451 X 8.7922
+[INFO CTS-0034]     Segment length (rounded): 4.
+ Level 3
+    Direction: Vertical
+    Sinks per sub-region: 9
+    Sub-region size: 8.7451 X 4.3961
+[INFO CTS-0034]     Segment length (rounded): 2.
+[INFO CTS-0032]  Stop criterion found. Max number of sinks is 15.
+[INFO CTS-0035]  Number of sinks covered: 65.
+[INFO CTS-0018]     Created 73 clock buffers.
+[INFO CTS-0012]     Minimum number of buffers in the clock path: 2.
+[INFO CTS-0013]     Maximum number of buffers in the clock path: 3.
+[INFO CTS-0015]     Created 73 clock nets.
+[INFO CTS-0016]     Fanout distribution for the current clock = 2:1, 4:3, 5:7, 6:3, 7:11, 8:2, 9:10, 10:16, 11:8, 12:5, 13:2, 14:1, 15:2, 16:1..
+[INFO CTS-0017]     Max level of the clock tree: 3.
+[INFO CTS-0098] Clock net "clk"
+[INFO CTS-0099]  Sinks 637
+[INFO CTS-0100]  Leaf buffers 64
+[INFO CTS-0101]  Average sink wire length 431.67 um
+[INFO CTS-0102]  Path depth 2 - 3
+[INFO CTS-0207]  Leaf load cells 57
+[INFO] Repairing long wires on clock nets…
+[INFO RSZ-0058] Using max wire length 6335um.
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               190     713.18
+  Tap cell                                970    1213.66
+  Clock buffer                             94    1351.30
+  Timing Repair Buffer                    766    4910.96
+  Inverter                                  9      33.78
+  Clock inverter                           36     366.60
+  Sequential cell                         580   11614.89
+  Multi-Input combinational cell         2160   19245.96
+  Total                                  4805   39450.34
+Writing OpenROAD database to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.odb'…
+Writing netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.nl.v'…
+Writing powered netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.pnl.v'…
+Writing layout to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.def'…
+Writing timing constraints to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.sdc'…
+[INFO] Legalizing…
+Placement Analysis
+---------------------------------
+total displacement       1338.1 u
+average displacement        0.3 u
+max displacement           16.5 u
+original HPWL          142093.8 u
+legalized HPWL         144340.4 u
+delta HPWL                    2 %
+
+[INFO DPL-0020] Mirrored 996 instances
+[INFO DPL-0021] HPWL before          144340.4 u
+[INFO DPL-0022] HPWL after           142733.7 u
+[INFO DPL-0023] HPWL delta               -1.1 %
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               190     713.18
+  Tap cell                                970    1213.66
+  Clock buffer                             94    1351.30
+  Timing Repair Buffer                    766    4910.96
+  Inverter                                  9      33.78
+  Clock inverter                           36     366.60
+  Sequential cell                         580   11614.89
+  Multi-Input combinational cell         2160   19245.96
+  Total                                  4805   39450.34
+Writing OpenROAD database to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.odb'…
+Writing netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.nl.v'…
+Writing powered netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.pnl.v'…
+Writing layout to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.def'…
+Writing timing constraints to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-10_00-07-47/34-openroad-cts/Reorder_buffer.sdc'…
+%OL_CREATE_REPORT cts.rpt
+[INFO CTS-0003] Total number of Clock Roots: 1.
+[INFO CTS-0004] Total number of Buffers Inserted: 73.
+[INFO CTS-0005] Total number of Clock Subnets: 73.
+[INFO CTS-0006] Total number of Sinks: 580.
+%OL_END_REPORT
