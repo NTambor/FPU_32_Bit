@@ -4,8 +4,8 @@
 /* FP32 Divitor Design
 *TODO: make a TODO list
 */
-module FP32_Div #(
-) (input logic clk,
+module FP32_Div(
+    input logic clk,
     input logic signa,
     input logic signb,
     input logic [7:0] expa,
@@ -58,8 +58,6 @@ reg zero3;
 localparam INF =31'b1111111100000000000000000000000,
     ZERO = 31'b0000000000000000000000000000000;
 
-
-
 //step one compare expa and expb and allign
 
 
@@ -75,7 +73,7 @@ wire infB;
 reg check;
 
 assign zeroA = ZERO == {expa,mantisaA};
-assign zeroB = ZERO == {expa,mantisaA};
+assign zeroB = ZERO == {expb,mantisaB};
 
 assign infA = INF == {expa,mantisaA};
 assign infB = INF == {expb,mantisaB};
@@ -86,7 +84,7 @@ always @(posedge clk) begin
     case({inf3,zero3,undefined3})
         3'b000: begin
             exp <= expmiddled + expadd;
-            mantisa <= four_man[61:39]; // Extracting 24 bits 
+            mantisa <= four_man[39:17]; // Extracting 24 bits 
         end
         3'b001: begin // undefined
             exp     <= 8'hFF;
@@ -114,9 +112,9 @@ always @(posedge clk) begin
     if ((inf2|zero2|undefined2) != 1) begin
         loop_exp_adj = 8'hFF; 
         for (int i = 63; i >= 0; i--) begin
-            if (mantisaresult[i] == 1'b1) begin
+            if (mantisaresult>>i == 1'b1) begin
                 loop_exp_adj = i;
-                break; // Found the highest bit set to 1
+                // Found the highest bit set to 1
             end
         end
         check <= loop_exp_adj == 8'hFF;
@@ -125,15 +123,15 @@ always @(posedge clk) begin
             expmiddled <= 0; 
         end
         else begin
-            expadd   <= loop_exp_adj-62;
+            expadd   <= loop_exp_adj-40;
             expmiddled <= expmiddlec;
         end
         // Shift so the leading 1 is at bit 62
-        if (loop_exp_adj >= 62) begin
-            four_man <= mantisaresult >> (loop_exp_adj - 62);
+        if (loop_exp_adj >= 40) begin
+            four_man <= mantisaresult >> (loop_exp_adj - 40);
         end else begin
-            if (expmiddlec > 62- loop_exp_adj) begin
-                four_man <= mantisaresult << (62 - loop_exp_adj);
+            if (expmiddlec > 40- loop_exp_adj) begin
+                four_man <= mantisaresult << (40 - loop_exp_adj);
             end else begin
                 four_man <= mantisaresult << (expmiddlec); 
             end
@@ -160,8 +158,8 @@ always @(posedge clk) begin
     // We use the results from Stage 1 (calculated in the previous clock)
     //if (inf0 !=1) begin
     if ((inf0|zero0|undefined0) !=1) begin
-        mantisaAshift <= {1'b0, mantisaA0, 39'b0};
-        mantisaBshift <= {1'b0, mantisaB0, 39'b0};
+        mantisaAshift <= {mantisaA0, 40'b0};
+        mantisaBshift <= {24'b0, mantisaB0};
         expmiddleb <= expmiddlea;
     end
     //end
@@ -172,7 +170,7 @@ always @(posedge clk) begin
 
     // --- STAGE 1: Compare and Align ---
     undefined0 <= (infA & infB)| zeroB;
-    zero0 <= (zeroA & ~zeroB) | (~infA & infB) | (expA < expb);
+    zero0 <= (zeroA & ~zeroB) | (~infA & infB);
     inf0 <= infA & ~infB;
     expmiddlea <= expa - expb + 127; // Biasing the exponent for division
     signA0 <= signa^signb;
@@ -182,4 +180,3 @@ always @(posedge clk) begin
 
 end
 endmodule
-
