@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_13-10-44/tmp/0fa0178cf672423cbec9a83746231b1c.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_13-10-44/tmp/0fa0178cf672423cbec9a83746231b1c.bb.v"

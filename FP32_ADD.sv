@@ -1,4 +1,5 @@
-module FP32_Add(
+`timescale 1ns / 1ns
+module FP32_ADD(
     input logic clk,
     input logic op,
     input logic signa,
@@ -19,7 +20,7 @@ reg [23:0] mantisaB0;
 reg signA0;
 reg signB0;
 reg inf0;
-reg op0;
+
 
 // second clk cycle shift the mantisa
 reg [63:0] mantisaAshift;
@@ -172,7 +173,6 @@ always @(posedge clk) begin
             mantisaA0  <= (zeroB) ? 0 :{1'b1, mantisaB};
             mantisaB0  <= (zeroA) ? 0 :{1'b1, mantisaA};
         end
-        op0 <= op;
     end
 end
 

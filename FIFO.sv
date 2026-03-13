@@ -1,8 +1,8 @@
 //TODO design a FIFO of sorts to keep track of instructions
 
 `timescale 1ns/1ns
-module FIFO #(
-    FIFO_SIZE = 16
+module Fifo #(
+    FIFO_SIZE = 4
 )(
     input logic reset,
     input logic clk,

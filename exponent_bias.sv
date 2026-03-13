@@ -1,4 +1,4 @@
-
+`timescale 1ns / 1ns
 module exponent_bias (
     input [7:0] exponent_a,
     input [7:0] exponent_b,

@@ -1,4 +1,4 @@
-
+`timescale 1ns/1ns
 module partial_product_generator #(parameter N = 24,
                                   parameter M = 24,
                                   parameter W = N + M)(

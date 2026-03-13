@@ -163,32 +163,33 @@ module FPU_32_controller #(
         .exp(add_exp),
         .mantisa(add_mantisa)
     );
-        
+    
+    reg null0;
     FIFO #(.FIFO_SIZE(ADDER_FIFO_SIZE)) adder_buffer(
         .reset(reset),
         .clk(clk),
         .op(adderFifoOp),
         .value(adder_nextop),
         .out(addopp),
-        .success()
+        .success(null0)
     );
-
+    reg null1;
     FIFO #(.FIFO_SIZE(DIV_FIFO_SIZE)) div_buffer(
         .reset(reset),
         .clk(clk),
         .op(div_FifoOp),
         .value(div_nextop),
         .out(div_buffout),
-        .success()
+        .success(null1)
     );
-
+    reg null2;
     FIFO #(.FIFO_SIZE(MULT_FIFO_SIZE)) mult_buffer(
         .reset(reset),
         .clk(clk),
         .op(mult_FifoOp),
         .value(mult_nextop),
         .out(mult_buffout),
-        .success()
+        .success(null2)
     );
 
 

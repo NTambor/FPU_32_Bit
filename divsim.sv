@@ -19,6 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+{
+"DESIGN_NAME": "FPU_32_Contoller",
+"VERILOG_FILES": ["dir::FPU_32_controller.sv","dir::FP32_Div.sv", 
+            "dir::carry_ripple_adder.sv", "dir::carry_save_adder.sv", "dir::exponent_bias.sv",
+        "dir::FIFO.sv", "dir::FP32_Add.sv", "dir::FP32_Mult.sv", "dir::partial_product_generator.sv", "dir::partial_products_csa_tree.sv",
+        "dir::Reorder_buffer.sv"],
+"CLOCK_PERIOD": 100,
+"CLOCK_PORT": "clk"
+}
 
 
 module FP32_Div_tb;

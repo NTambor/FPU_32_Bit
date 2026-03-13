@@ -1,6 +1,9 @@
 {
-"DESIGN_NAME": "FP32_Div",
-"VERILOG_FILES": ["dir::FP32_Div.sv"],
-"CLOCK_PERIOD": 50,
+"DESIGN_NAME": "FPU_32_controller",
+"VERILOG_FILES": ["dir::FPU_32_controller.sv","dir::FP32_Div.sv", 
+            "dir::carry_ripple_adder.sv", "dir::carry_save_adder.sv", "dir::exponent_bias.sv",
+        "dir::Fifo.sv", "dir::FP32_ADD.sv", "dir::FP32_Mult.sv", "dir::partial_product_generator.sv", "dir::partial_products_csa_tree.sv",
+        "dir::Reorder_buffer.sv"],
+"CLOCK_PERIOD": 1000,
 "CLOCK_PORT": "clk"
 }

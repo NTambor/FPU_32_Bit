@@ -1,5 +1,5 @@
 
-
+`timescale 1ns/1ns
 module partial_products_csa_tree #(parameter W = 48,
                                    parameter M = 24)(
     input [M-1:0] [W-1:0] partial_products,

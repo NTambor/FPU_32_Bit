@@ -1,4 +1,4 @@
-
+`timescale 1ns / 1ns
 module carry_save_adder #(parameter n = 48)(
     input [n-1:0] A,
     input [n-1:0] B,
