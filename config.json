@@ -1,6 +1,6 @@
 {
-"DESIGN_NAME": "Reorder_buffer",
-"VERILOG_FILES": ["dir::Reorder_buffer.sv"],
-"CLOCK_PERIOD": 25,
+"DESIGN_NAME": "FP32_Div",
+"VERILOG_FILES": ["dir::FP32_Div.sv"],
+"CLOCK_PERIOD": 50,
 "CLOCK_PORT": "clk"
 }

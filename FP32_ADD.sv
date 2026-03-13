@@ -1,6 +1,4 @@
-`timescale 1ns/1ns
-
-module FP32_ADD(
+module FP32_Add(
     input logic clk,
     input logic op,
     input logic signa,
@@ -65,7 +63,7 @@ wire zeroB;
 wire infA;
 wire infB;
 
-reg [63:0]check;
+reg check;
 
 assign zeroA = ZERO == {expa,mantisaA};
 assign zeroB = ZERO == {expa,mantisaA};
@@ -92,11 +90,13 @@ always @(posedge clk) begin
     if (inf2 !=1) begin
         loop_exp_adj = 8'hFF; 
         for (int i = 63; i >= 0; i--) begin
-
-            if ((mantisaresult>>i) == 1'b1) begin
-                loop_exp_adj = i; // Found the highest bit set to 1
+            
+            if((mantisaresult >>i) == 1'b1) begin
+                loop_exp_adj = i;
+                //break; // Found the highest bit set to 1
             end
         end
+        check <= loop_exp_adj == 8'hFF;
         if (loop_exp_adj == 8'hFF) begin
             expadd   <= 0;
             expmiddled <= 0; 
@@ -122,7 +122,7 @@ always @(posedge clk) begin
         
     // --- STAGE 3: Addition ---
     if (inf1 != 1) begin
-        mantisaresult <= (sub) ? mantisaAshift + ~mantisaBshift +1 : mantisaAshift + mantisaBshift;
+        mantisaresult <= (sub1) ? mantisaAshift + ~mantisaBshift +1 : mantisaAshift + mantisaBshift;
         expmiddlec <= expmiddleb;   
         expmiddleb <= expmiddlea;
     end
@@ -132,16 +132,17 @@ always @(posedge clk) begin
     
     // --- STAGE 2: Shift the smaller mantissa ---
     // We use the results from Stage 1 (calculated in the previous clock)
-    //if (inf0 !=1) begin
+    if (inf0 !=1) begin
         mantisaAshift <= {1'b0, mantisaA0, 39'b0};
         mantisaBshift <= {1'b0, mantisaB0, 39'b0} >> expmiddle;
         expmiddleb <= expmiddlea;
-        sub <= signA0 ^ signB0 ^ op0;  
-    //end
+        sub1 <= sub;  
+    end
     signA1 <= signA0;
     inf1 <= inf0;
     
     // --- STAGE 1: Compare and Align ---
+    sub <= signa ^ signb ^ op; 
     if (infA && infB) begin
         inf0 <= ~(signa ^ signb ^ op);
     end
@@ -152,7 +153,7 @@ always @(posedge clk) begin
         signA0 <= signa;
     end
     if (infB)begin
-        signA0 <= signb;
+        signA0 <= signb ^ op;
     end
     if ((infA ^ infB) != 1)begin
         
@@ -166,7 +167,7 @@ always @(posedge clk) begin
         end else begin
             expmiddle  <= expb - expa;
             expmiddlea <= expb;
-            signA0 <= signb;
+            signA0 <= signb ^ op;
             signB0 <= signa;
             mantisaA0  <= (zeroB) ? 0 :{1'b1, mantisaB};
             mantisaB0  <= (zeroA) ? 0 :{1'b1, mantisaA};
@@ -174,4 +175,5 @@ always @(posedge clk) begin
         op0 <= op;
     end
 end
+
 endmodule

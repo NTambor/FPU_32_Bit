@@ -1,0 +1,105 @@
+Reading OpenROAD database at '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/20-openroad-generatepdn/FP32_Div.odb'…
+Reading library file at '/home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/ggca3knjd8cr3mvwr221rbqfs4vr36zy-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 10
+[INFO] Setting input delay to: 10
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
++ global_placement -density 0.619053 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 539.120 544.000 ) um
+[INFO GPL-0006] NumInstances:             19423
+[INFO GPL-0007] NumPlaceInstances:        14972
+[INFO GPL-0008] NumFixedInstances:         4451
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                  15037
+[INFO GPL-0011] NumPins:                  54723
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 545.040 555.760 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 539.120 544.000 ) um
+[INFO GPL-0016] CoreArea:            284472.832 um^2
+[INFO GPL-0017] NonPlaceInstsArea:     6550.032 um^2
+[INFO GPL-0018] PlaceInstsArea:      142577.994 um^2
+[INFO GPL-0019] Util:                    51.301 %
+[INFO GPL-0020] StdInstsArea:        142577.994 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[INFO GPL-0031] FillerInit:NumGCells:     18121
+[INFO GPL-0032] FillerInit:NumGNets:      15037
+[INFO GPL-0033] FillerInit:NumGPins:      54723
+[INFO GPL-0023] TargetDensity:            0.619
+[INFO GPL-0024] AvrgPlaceInstArea:        9.523 um^2
+[INFO GPL-0025] IdealBinArea:            15.383 um^2
+[INFO GPL-0026] IdealBinCnt:              18492
+[INFO GPL-0027] TotalBinArea:        284472.832 um^2
+[INFO GPL-0028] BinCnt:       128    128
+[INFO GPL-0029] BinSize: (  4.169  4.165 )
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter:    1 overflow: 0.999 HPWL: 33806750
+[NesterovSolve] Iter:   10 overflow: 0.999 HPWL: 24231816
+[NesterovSolve] Iter:   20 overflow: 0.999 HPWL: 24023698
+[NesterovSolve] Iter:   30 overflow: 0.999 HPWL: 23931550
+[NesterovSolve] Iter:   40 overflow: 0.998 HPWL: 23895007
+[NesterovSolve] Iter:   50 overflow: 0.998 HPWL: 23884406
+[NesterovSolve] Iter:   60 overflow: 0.998 HPWL: 23882749
+[NesterovSolve] Iter:   70 overflow: 0.998 HPWL: 23880992
+[NesterovSolve] Iter:   80 overflow: 0.998 HPWL: 23890352
+[NesterovSolve] Iter:   90 overflow: 0.998 HPWL: 23929940
+[NesterovSolve] Iter:  100 overflow: 0.998 HPWL: 24061485
+[NesterovSolve] Iter:  110 overflow: 0.998 HPWL: 24474956
+[NesterovSolve] Iter:  120 overflow: 0.997 HPWL: 25466112
+[NesterovSolve] Iter:  130 overflow: 0.995 HPWL: 27458732
+[NesterovSolve] Iter:  140 overflow: 0.993 HPWL: 30944282
+[NesterovSolve] Iter:  150 overflow: 0.991 HPWL: 36044378
+[NesterovSolve] Iter:  160 overflow: 0.987 HPWL: 42482812
+[NesterovSolve] Iter:  170 overflow: 0.982 HPWL: 49745966
+[NesterovSolve] Iter:  180 overflow: 0.975 HPWL: 58186501
+[NesterovSolve] Iter:  190 overflow: 0.965 HPWL: 68630671
+[NesterovSolve] Iter:  200 overflow: 0.950 HPWL: 81700707
+[NesterovSolve] Iter:  210 overflow: 0.929 HPWL: 97314499
+[NesterovSolve] Iter:  220 overflow: 0.903 HPWL: 114493216
+[NesterovSolve] Iter:  230 overflow: 0.869 HPWL: 131822126
+[NesterovSolve] Iter:  240 overflow: 0.835 HPWL: 147970050
+[NesterovSolve] Iter:  250 overflow: 0.800 HPWL: 163963141
+[NesterovSolve] Iter:  260 overflow: 0.763 HPWL: 179817289
+[NesterovSolve] Iter:  270 overflow: 0.723 HPWL: 195927408
+[NesterovSolve] Iter:  280 overflow: 0.682 HPWL: 212739081
+[NesterovSolve] Iter:  290 overflow: 0.645 HPWL: 228990126
+[NesterovSolve] Iter:  300 overflow: 0.605 HPWL: 242492254
+[NesterovSolve] Iter:  310 overflow: 0.560 HPWL: 253312365
+[NesterovSolve] Iter:  320 overflow: 0.523 HPWL: 261254279
+[NesterovSolve] Iter:  330 overflow: 0.487 HPWL: 268892075
+[NesterovSolve] Iter:  340 overflow: 0.455 HPWL: 272980019
+[NesterovSolve] Iter:  350 overflow: 0.423 HPWL: 273755328
+[NesterovSolve] Iter:  360 overflow: 0.389 HPWL: 276984657
+[NesterovSolve] Iter:  370 overflow: 0.356 HPWL: 278081390
+[NesterovSolve] Iter:  380 overflow: 0.328 HPWL: 279184371
+[NesterovSolve] Iter:  390 overflow: 0.299 HPWL: 280159994
+[NesterovSolve] Iter:  400 overflow: 0.271 HPWL: 281253927
+[NesterovSolve] Iter:  410 overflow: 0.243 HPWL: 282573527
+[NesterovSolve] Iter:  420 overflow: 0.215 HPWL: 284022263
+[NesterovSolve] Iter:  430 overflow: 0.188 HPWL: 285467063
+[NesterovSolve] Iter:  440 overflow: 0.164 HPWL: 286916212
+[NesterovSolve] Iter:  450 overflow: 0.141 HPWL: 288344913
+[NesterovSolve] Iter:  460 overflow: 0.119 HPWL: 289762519
+[NesterovSolve] Iter:  470 overflow: 0.102 HPWL: 290692934
+[NesterovSolve] Finished with Overflow: 0.099116
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               392    1471.41
+  Tap cell                               4059    5078.62
+  Buffer                                   46     172.67
+  Inverter                                656    2462.36
+  Sequential cell                         271    5764.28
+  Multi-Input combinational cell        13999  134178.69
+  Total                                 19423  149128.03
+Writing OpenROAD database to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/23-openroad-globalplacementskipio/FP32_Div.odb'…
+Writing netlist to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/23-openroad-globalplacementskipio/FP32_Div.nl.v'…
+Writing powered netlist to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/23-openroad-globalplacementskipio/FP32_Div.pnl.v'…
+Writing layout to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/23-openroad-globalplacementskipio/FP32_Div.def'…
+Writing timing constraints to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/23-openroad-globalplacementskipio/FP32_Div.sdc'…

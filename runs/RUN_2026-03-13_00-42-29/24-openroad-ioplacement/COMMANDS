@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/24-openroad-ioplacement/or_metrics_out.json /nix/store/ggca3knjd8cr3mvwr221rbqfs4vr36zy-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/openroad/ioplacer.tcl

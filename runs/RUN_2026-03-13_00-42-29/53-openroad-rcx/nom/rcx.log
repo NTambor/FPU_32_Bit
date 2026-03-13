@@ -1,0 +1,41 @@
+Reading technology LEF file at '/home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef'…
+[INFO ODB-0227] LEF file: /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 4 library cells
+Reading cell LEF file at '/home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/52-odb-cellfrequencytables/FP32_Div.def
+[INFO ODB-0128] Design: FP32_Div
+[INFO ODB-0130]     Created 99 pins.
+[INFO ODB-0131]     Created 41113 components and 213780 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 156334 connections.
+[INFO ODB-0133]     Created 16308 nets and 57408 connections.
+[INFO ODB-0134] Finished DEF file: /mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/52-odb-cellfrequencytables/FP32_Div.def
+Using RCX ruleset '/home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
+[INFO RCX-0435] Reading extraction model file /home/nikotambo/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre ...
+[INFO RCX-0436] RC segment generation FP32_Div (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 68591 rc segments
+[INFO RCX-0439] Coupling Cap extraction FP32_Div ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 50% of 120221 wires extracted
+[INFO RCX-0442] 100% of 120221 wires extracted
+[INFO RCX-0045] Extract 16308 nets, 84897 rsegs, 84897 caps, 149464 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                             20697  148065.76
+  Tap cell                               4059    5078.62
+  Antenna cell                             76     190.18
+  Standard cell                         16281  131138.27
+  Total                                 41113  284472.83
+Writing extracted parasitics to '/mnt/c/Users/nikot/ee531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_00-42-29/53-openroad-rcx/nom/FP32_Div.nom.spef'…
+[INFO RCX-0443] 16308 nets finished

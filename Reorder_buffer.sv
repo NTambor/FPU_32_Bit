@@ -2,7 +2,7 @@
 
 `timescale 1ns/1ns
 module Reorder_buffer #(
-    BUFFER_SIZE = 16
+BUFFER_SIZE = 16
 )(
     input logic reset,
     input logic clk,
@@ -27,12 +27,17 @@ reg [$clog2(BUFFER_SIZE-1):0] tail;
 reg full;
 reg empty;
 
+wire index1 = $clog2(BUFFER_SIZE)-1;
+wire index2 = (($clog2(BUFFER_SIZE)-1)*2);
+wire index3 = (($clog2(BUFFER_SIZE)-1)*3);
 wire [$clog2(BUFFER_SIZE)-1:0] next_head = (head == BUFFER_SIZE-1) ? 0 : head + 1;
 wire [$clog2(BUFFER_SIZE)-1:0] next_tail = (tail == BUFFER_SIZE-1) ? 0 : tail + 1;
+assign data_location = tail;
+
 
 always @(posedge clk) begin
     if(reset) begin
-        for(int i = 0; i < BUFFER_SIZE; i++)begin
+        for(int i = 0; i< BUFFER_SIZE; i++)begin
             array[i] <= 0;
             ready_check [i] <= 0;
         end
@@ -43,9 +48,7 @@ always @(posedge clk) begin
         success <= 1'b1;
     end
     else begin
-        done <= 0;
-        data_location <=tail;
-        if (control == 2'b01)begin //pop
+        if (control == 2'b10)begin //pop
             if (enable_write[0])begin
                 array[write_location0][31:0] <= value0;
                 ready_check[write_location0] <= 1;
@@ -59,7 +62,7 @@ always @(posedge clk) begin
                 ready_check[write_location2] <= 1;
             end
         end
-        else if (control == 2'b10 && (full != 1'b1))begin //push
+        else if (control == 2'b01 && (full != 1'b1))begin //push
             ready_check[tail] <= 0;
             array[tail][35:32] <= value;
             tail <= next_tail;
@@ -94,13 +97,13 @@ always @(posedge clk) begin
             end
         end
         else begin
-            success <= 1'b0;
+            //success <= 1'b0;
         end
         if (ready_check[head] && (empty != 1'b1))begin
-            out <= array[head];
+            done <= 1;
+            out <= array[head][31:0];
             ready_check[head] <= 0;
             head <= next_head;
-            done <= 1;
             if (full == 1'b1)begin
                 full <= 1'b0;
                 success <= 1'b1;
@@ -108,6 +111,9 @@ always @(posedge clk) begin
             if (tail == (next_head))begin
                 empty <=1'b1;
             end
+        end
+        else begin
+            done <= 0;
         end
 
     end

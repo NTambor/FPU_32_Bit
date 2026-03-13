@@ -7,12 +7,12 @@ module FIFO #(
     input logic reset,
     input logic clk,
     input logic [1:0]op,
-    input logic [15:0] value,
-    output logic [15:0]out,
+    input logic [39:0] value,
+    output logic [39:0]out,
     output logic success
 );
 
-reg [15:0] array [FIFO_SIZE-1:0];
+reg [39:0] array [FIFO_SIZE-1:0];
 reg [$clog2(FIFO_SIZE-1):0] head;
 reg [$clog2(FIFO_SIZE-1):0] tail;
 reg full;
@@ -68,3 +68,4 @@ always @(posedge clk) begin
     end
 end 
 endmodule
+

@@ -87,20 +87,20 @@ always @(posedge clk) begin
             mantisa <= four_man[39:17]; // Extracting 24 bits 
         end
         3'b001: begin // undefined
-            exp     <= 8'hFF;
-            mantisa <= 23'b00000000000000000111111; // Extracting 24 bits
+            exp     <= 8'hff;
+            mantisa <= 23'b11111111111111111111111; // Extracting 24 bits
         end
         3'b010: begin // zero
             exp     <= 8'h00;
             mantisa <= 23'b00000000000000000000000; // Extracting 24 bits
         end
         3'b100: begin //inf 
-            exp     <= 8'hFF;
+            exp     <= 8'hff;
             mantisa <= 23'b00000000000000000000000; // Extracting 24 bits
         end
         default: begin // if to default results undefined
-            exp     <= 8'hFF;
-            mantisa <= 23'b00000000000000000111111; // Extracting 24 bits
+            exp     <= 8'hff;
+            mantisa <= 23'b11111111111111111111111; // Extracting 24 bits
         end
     endcase
     sign <= signA3;
