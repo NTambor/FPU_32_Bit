@@ -24,17 +24,17 @@ module FPU_32_controller #(
     output logic [31:0] final_out
     );
 
-    //Adder Buffer
+   //Adder Buffer
     logic [39:0] addopp;
     logic [1:0] adderFifoOp;
     logic [39:0] adder_nextop;
 
-    //Mult Buffer
+   //Mult Buffer
     logic [39:0] mult_nextop;
     logic [1:0] mult_FifoOp;
     logic [39:0] mult_buffout;
 
-    //Div Buffer
+   //Div Buffer
     logic [1:0] div_FifoOp;
     logic [39:0]div_nextop;
     logic [39:0] div_buffout;
@@ -52,7 +52,7 @@ module FPU_32_controller #(
     logic success;
 
 
-    //adder Inputs
+   //adder Inputs
     logic add_signA;
     logic add_signB;
     logic [7:0] add_expA;
@@ -61,12 +61,12 @@ module FPU_32_controller #(
     logic [22:0] add_mantisaB;
     logic sub;
 
-    //adder Outputs
+   //adder Outputs
     logic add_sign;
     logic [7:0] add_exp;
     logic [22:0] add_mantisa;
     
-    //multiplier inputs
+   //multiplier inputs
     logic mult_signA;
     logic mult_signB;
     logic [7:0] mult_expA;
@@ -74,12 +74,12 @@ module FPU_32_controller #(
     logic [22:0] mult_mantisaA;
     logic [22:0] mult_mantisaB;
 
-    //multiplier Outputs
+   //multiplier Outputs
     logic mult_sign;
     logic [7:0] mult_exp;
     logic [22:0] mult_mantisa; 
 
-    //divider inputs
+   //divider inputs
     logic div_signA;
     logic div_signB;
     logic [7:0] div_expA;
@@ -87,14 +87,14 @@ module FPU_32_controller #(
     logic [22:0] div_mantisaA;
     logic [22:0] div_mantisaB;
 
-    //divider Outputs
+   //divider Outputs
     logic div_sign;
     logic [7:0] div_exp;
     logic [22:0] div_mantisa; 
     
     logic last_nop;
 
-
+   
     localparam  NOP = 4'b0000,
             ADD = 4'b0001,
             SUB = 4'b0010,
@@ -105,7 +105,7 @@ module FPU_32_controller #(
             SUBMULT = 4'b0110,
             SUBDIV = 4'b1010,
             DONE = 4'b1111;
-
+   //
     Reorder_buffer  #(BUFFER_SIZE) reorder_buf_instance(
         .reset(reset),
         .clk(clk),
@@ -163,10 +163,6 @@ module FPU_32_controller #(
         .exp(add_exp),
         .mantisa(add_mantisa)
     );
-
-    
-    
-    
         
     FIFO #(.FIFO_SIZE(ADDER_FIFO_SIZE)) adder_buffer(
         .reset(reset),
@@ -195,9 +191,6 @@ module FPU_32_controller #(
         .success()
     );
 
-    
-
-    
 
     always @(posedge clk) begin
         if(reset)begin
