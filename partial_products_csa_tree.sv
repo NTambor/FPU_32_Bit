@@ -1,13 +1,15 @@
+
+
 module partial_products_csa_tree #(parameter W = 48,
                                    parameter M = 24)(
-    input [W-1:0] partial_products [M-1:0],
+    input [M-1:0] [W-1:0] partial_products,
     output logic [W-1:0] final_sum,
     output logic final_carry_out
 );
     // 24 partial products 
     // 8 CSA for 24 partial products. Meanign 8 Sums and 8 Co
-    logic [W-1:0] sum1 [7:0];
-    logic [W-1:0] c1 [7:0];
+    logic [7:0] [W-1:0] sum1;
+    logic [7:0] [W-1:0] c1;
 
     genvar i;
     generate
@@ -22,7 +24,7 @@ module partial_products_csa_tree #(parameter W = 48,
 
     // 16 partial products left. Use 5 CSA with one left over
     // We want to combine sum1 and and c1 
-    logic [W-1:0] stage2_inputs [15:0];
+    logic [15:0] [W-1:0] stage2_inputs;
     genvar j;
     generate
         for (j = 0; j < 8; j = j +1) begin
@@ -32,8 +34,8 @@ module partial_products_csa_tree #(parameter W = 48,
     endgenerate
 
     // Using 5 CSA for 15 partial products. One left over
-    logic [W-1:0] sum2 [4:0];
-    logic [W-1:0] c2 [4:0];
+    logic [4:0] [W-1:0] sum2;
+    logic [4:0] [W-1:0] c2;
 
     genvar k;
     generate
@@ -48,7 +50,7 @@ module partial_products_csa_tree #(parameter W = 48,
 
     // 11 partial products left. Use 3 CSAs with 2 left over 
     // We want to combine sum2 and c2 together 
-    logic [W-1:0] stage3_inputs [10:0];
+    logic [10:0] [W-1:0] stage3_inputs;
     genvar l;
     generate
         for (l = 0; l < 5; l = l + 1) begin
@@ -59,8 +61,8 @@ module partial_products_csa_tree #(parameter W = 48,
     assign stage3_inputs[10] = stage2_inputs[15];
 
     // Use 3 CSAs. Two left over
-    logic [W-1:0] sum3 [2:0];
-    logic [W-1:0] c3 [2:0];
+    logic [2:0] [W-1:0] sum3;
+    logic [2:0] [W-1:0] c3;
 
     genvar m;
     generate
@@ -77,7 +79,7 @@ module partial_products_csa_tree #(parameter W = 48,
 
     // combine sum3 and c3
 
-    logic [W-1:0] stage4_inputs [7:0];
+    logic [7:0] [W-1:0] stage4_inputs;
 
     genvar n;
     generate
@@ -89,8 +91,8 @@ module partial_products_csa_tree #(parameter W = 48,
     assign stage4_inputs[6] = stage3_inputs[9];
     assign stage4_inputs[7] = stage3_inputs[10];
 
-    logic [W-1:0] sum4 [1:0];
-    logic [W-1:0] c4 [1:0];
+    logic [1:0] [W-1:0] sum4;
+    logic [1:0] [W-1:0] c4;
 
     genvar o;
     generate
@@ -106,7 +108,7 @@ module partial_products_csa_tree #(parameter W = 48,
     // 6 partial products left. We can use 2 CSAs
     // We need to combine sum4 and c4
 
-    logic [W-1:0] stage5_inputs [5:0];
+    logic [5:0] [W-1:0] stage5_inputs;
 
     genvar p;
     generate
@@ -118,8 +120,8 @@ module partial_products_csa_tree #(parameter W = 48,
     assign stage5_inputs[4] = stage4_inputs[6];
     assign stage5_inputs[5] = stage4_inputs[7];
 
-    logic [W-1:0] sum5 [1:0];
-    logic [W-1:0] c5 [1:0];
+    logic [1:0] [W-1:0] sum5;
+    logic [1:0] [W-1:0] c5;
 
     genvar q;
     generate
@@ -134,7 +136,7 @@ module partial_products_csa_tree #(parameter W = 48,
 
     // 4 partials left. 1 CSA used. With 1 left over
     
-    logic [W-1:0] stage6_inputs [3:0];
+    logic [3:0] [W-1:0] stage6_inputs;
 
     genvar r;
     generate
