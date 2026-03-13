@@ -1,4 +1,5 @@
-module carry_ripple_adder #(parameter n = 46) (
+
+module carry_ripple_adder #(parameter n = 48) (
     input [n-1:0] a,
     input [n-1:0] b,
     input cin,
