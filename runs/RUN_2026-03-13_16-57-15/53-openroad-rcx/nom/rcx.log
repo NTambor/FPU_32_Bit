@@ -1,0 +1,41 @@
+Reading technology LEF file at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef'…
+[INFO ODB-0227] LEF file: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+Reading cell LEF file at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 4 library cells
+[INFO ODB-0127] Reading DEF file: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/52-odb-cellfrequencytables/FPU_32_controller.def
+[INFO ODB-0128] Design: FPU_32_controller
+[INFO ODB-0130]     Created 138 pins.
+[INFO ODB-0131]     Created 71641 components and 371005 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 271934 connections.
+[INFO ODB-0133]     Created 28701 nets and 98826 connections.
+[INFO ODB-0134] Finished DEF file: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/52-odb-cellfrequencytables/FPU_32_controller.def
+Using RCX ruleset '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
+[INFO RCX-0435] Reading extraction model file /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre ...
+[INFO RCX-0436] RC segment generation FPU_32_controller (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 117235 rc segments
+[INFO RCX-0439] Coupling Cap extraction FPU_32_controller ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 50% of 221465 wires extracted
+[INFO RCX-0442] 100% of 221465 wires extracted
+[INFO RCX-0045] Extract 28701 nets, 145933 rsegs, 145933 caps, 279873 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                             35053  254552.89
+  Tap cell                               7315    9152.53
+  Antenna cell                            429    1073.53
+  Standard cell                         28844  252497.16
+  Total                                 71641  517276.11
+Writing extracted parasitics to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/53-openroad-rcx/nom/FPU_32_controller.nom.spef'…
+[INFO RCX-0443] 28701 nets finished

@@ -1,0 +1,7 @@
+
+25. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\carry_ripple_adder.\sum' from process `\carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+No latch inferred for signal `\carry_ripple_adder.\co' from process `\carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+No latch inferred for signal `\carry_save_adder.\SUM' from process `\carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+No latch inferred for signal `\carry_save_adder.\Co' from process `\carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+No latch inferred for signal `\exponent_bias.\exponent_sum' from process `\exponent_bias.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858'.

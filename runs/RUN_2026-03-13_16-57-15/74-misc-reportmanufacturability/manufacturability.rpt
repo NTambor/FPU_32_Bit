@@ -1,0 +1,12 @@
+* Antenna
+Failed 𐄂
+Pin violations: 77
+Net violations: 64
+Check the report directory of OpenROAD.CheckAntennas.
+
+* LVS
+Passed ✅
+
+* DRC
+Passed ✅
+

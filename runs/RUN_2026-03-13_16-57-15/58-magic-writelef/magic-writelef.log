@@ -1,0 +1,1361 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> gds read /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: sky130_fd_sc_hd
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__probe_p_8".
+Reading "sky130_fd_sc_hd__probec_p_8".
+Reading "sky130_fd_sc_hd__sdfbbn_1".
+Reading "sky130_fd_sc_hd__sdfsbp_2".
+Reading "sky130_fd_sc_hd__sdfsbp_1".
+Reading "sky130_fd_sc_hd__sdfrtp_4".
+Reading "sky130_fd_sc_hd__sdfrtp_2".
+Reading "sky130_fd_sc_hd__sdfrtp_1".
+Reading "sky130_fd_sc_hd__sdfrtn_1".
+Reading "sky130_fd_sc_hd__sdfrbp_2".
+Reading "sky130_fd_sc_hd__sdfrbp_1".
+Reading "sky130_fd_sc_hd__sdfbbp_1".
+Reading "sky130_fd_sc_hd__sdfbbn_2".
+Reading "sky130_fd_sc_hd__sdfstp_1".
+Reading "sky130_fd_sc_hd__sdfstp_2".
+Reading "sky130_fd_sc_hd__sdfstp_4".
+Reading "sky130_fd_sc_hd__sdfxbp_1".
+Reading "sky130_fd_sc_hd__sdfxbp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_1".
+Reading "sky130_fd_sc_hd__sdfxtp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_4".
+Reading "sky130_fd_sc_hd__sdlclkp_1".
+Reading "sky130_fd_sc_hd__sdlclkp_2".
+Reading "sky130_fd_sc_hd__sdlclkp_4".
+Reading "sky130_fd_sc_hd__sedfxbp_1".
+Reading "sky130_fd_sc_hd__sedfxbp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_1".
+Reading "sky130_fd_sc_hd__sedfxtp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_4".
+Reading "sky130_fd_sc_hd__tap_1".
+Reading "sky130_fd_sc_hd__tap_2".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xnor3_4".
+Reading "sky130_fd_sc_hd__xnor3_2".
+Reading "sky130_fd_sc_hd__xnor3_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd2_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__xor3_1".
+Reading "sky130_fd_sc_hd__xor3_2".
+Reading "sky130_fd_sc_hd__xor3_4".
+Reading "sky130_fd_sc_hd__o41a_4".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o41ai_2".
+Reading "sky130_fd_sc_hd__o41ai_4".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__o221a_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o221ai_4".
+Reading "sky130_fd_sc_hd__o2111a_4".
+Reading "sky130_fd_sc_hd__o2111a_2".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__o311ai_4".
+Reading "sky130_fd_sc_hd__o311ai_2".
+Reading "sky130_fd_sc_hd__o311ai_1".
+Reading "sky130_fd_sc_hd__o311ai_0".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__o2111ai_2".
+Reading "sky130_fd_sc_hd__o2111ai_4".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or2b_2".
+Reading "sky130_fd_sc_hd__or2b_4".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4bb_2".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4_4".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__nor4b_4".
+Reading "sky130_fd_sc_hd__nor4bb_1".
+Reading "sky130_fd_sc_hd__nor4bb_2".
+Reading "sky130_fd_sc_hd__nor4bb_4".
+Moving label "k" from mvpsubdiff to ndiff in cell sky130_fd_sc_hd__nor4bb_4.
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_4".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_2".
+Reading "sky130_fd_sc_hd__o2bb2ai_4".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21ba_4".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__o31ai_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o32ai_1".
+Reading "sky130_fd_sc_hd__o32ai_2".
+Reading "sky130_fd_sc_hd__o32ai_4".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__o41a_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__macro_sparecell".
+Reading "sky130_fd_sc_hd__maj3_1".
+Reading "sky130_fd_sc_hd__maj3_2".
+Reading "sky130_fd_sc_hd__maj3_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__mux2i_2".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__mux2i_4".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__mux4_4".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nand4b_4".
+Reading "sky130_fd_sc_hd__nand4bb_1".
+Reading "sky130_fd_sc_hd__nand4bb_2".
+Reading "sky130_fd_sc_hd__nand4bb_4".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__einvp_1".
+Reading "sky130_fd_sc_hd__einvp_2".
+Reading "sky130_fd_sc_hd__einvp_4".
+Reading "sky130_fd_sc_hd__einvp_8".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fa_2".
+Reading "sky130_fd_sc_hd__fa_4".
+Reading "sky130_fd_sc_hd__fah_1".
+Reading "sky130_fd_sc_hd__fahcin_1".
+Reading "sky130_fd_sc_hd__fahcon_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__ha_2".
+Reading "sky130_fd_sc_hd__ha_4".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_bleeder_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_3".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_6".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0n_1".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_12".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_inputisolatch_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1n_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0p_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_4".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_2".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_8".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_16".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrckapwr_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfsbp_1".
+Reading "sky130_fd_sc_hd__dfsbp_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__dfstp_2".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__dlclkp_1".
+Reading "sky130_fd_sc_hd__dlclkp_2".
+Reading "sky130_fd_sc_hd__dlclkp_4".
+Reading "sky130_fd_sc_hd__dlrbn_1".
+Reading "sky130_fd_sc_hd__dlrbp_1".
+Reading "sky130_fd_sc_hd__dlrtn_1".
+Reading "sky130_fd_sc_hd__dlrtn_2".
+Reading "sky130_fd_sc_hd__dlrbn_2".
+Reading "sky130_fd_sc_hd__dlrbp_2".
+Reading "sky130_fd_sc_hd__dlrtn_4".
+Reading "sky130_fd_sc_hd__dlrtp_1".
+Reading "sky130_fd_sc_hd__dlrtp_2".
+Reading "sky130_fd_sc_hd__dlrtp_4".
+Reading "sky130_fd_sc_hd__dlxbn_1".
+Reading "sky130_fd_sc_hd__dlxbn_2".
+Reading "sky130_fd_sc_hd__dlxbp_1".
+Reading "sky130_fd_sc_hd__dlxtn_1".
+Reading "sky130_fd_sc_hd__dlxtn_2".
+Reading "sky130_fd_sc_hd__dlxtn_4".
+Reading "sky130_fd_sc_hd__dlxtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd1_1".
+Reading "sky130_fd_sc_hd__dlygate4sd2_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s4s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s6s_1".
+Reading "sky130_fd_sc_hd__ebufn_1".
+Reading "sky130_fd_sc_hd__ebufn_2".
+Reading "sky130_fd_sc_hd__ebufn_4".
+Reading "sky130_fd_sc_hd__einvn_0".
+Reading "sky130_fd_sc_hd__einvn_1".
+Reading "sky130_fd_sc_hd__einvn_2".
+Reading "sky130_fd_sc_hd__einvn_4".
+Reading "sky130_fd_sc_hd__ebufn_8".
+Reading "sky130_fd_sc_hd__edfxbp_1".
+Reading "sky130_fd_sc_hd__edfxtp_1".
+Reading "sky130_fd_sc_hd__einvn_8".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__buf_16".
+Reading "sky130_fd_sc_hd__bufbuf_8".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__bufinv_8".
+Reading "sky130_fd_sc_hd__bufbuf_16".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__dfbbn_1".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__clkinvlp_2".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__dfbbn_2".
+Reading "sky130_fd_sc_hd__dfbbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_2".
+Reading "sky130_fd_sc_hd__dfrtn_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a32oi_2".
+Reading "sky130_fd_sc_hd__a32oi_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__a41o_4".
+Reading "sky130_fd_sc_hd__a41oi_1".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__a41oi_4".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a211oi_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a211oi_4".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a221oi_4".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__a311oi_1".
+Reading "sky130_fd_sc_hd__a311oi_2".
+Reading "sky130_fd_sc_hd__a311oi_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a2111oi_0".
+Reading "sky130_fd_sc_hd__a2111oi_1".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "sky130_fd_sc_hd__a2111oi_2".
+Reading "sky130_fd_sc_hd__a2111oi_4".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3b_2".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_ef_sc_hd__fill_4".
+Reading "sky130_ef_sc_hd__fill_8".
+Reading "sky130_ef_sc_hd__fill_12".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_2".
+Reading "sky130_fd_sc_hd__a2bb2oi_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__a21boi_0".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__a31oi_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__a32o_4".
+Cell (REFRESHLAYOUT?) couldn't be read
+No such file or directory
+Creating new cell
+> def read /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/52-odb-cellfrequencytables/FPU_32_controller.def -noblockage -labels
+Reading DEF data from file /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/52-odb-cellfrequencytables/FPU_32_controller.def.
+This action cannot be undone.
+  Processed 4 vias total.
+  Processed 71641 subcell instances total.
+  Processed 138 pins total.
+  Processed 2 special nets total.
+  Processed 28701 nets total.
+DEF read: Processed 533947 lines.
+Moving label "_00027_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_00066_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00070_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_00812_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00828_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00834_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00837_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_00887_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00888_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_00889_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00890_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00917_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00923_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00924_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_00925_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00934_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00936_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00938_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00942_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00948_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00958_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00965_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_00996_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_01010_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01017_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01018_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_01021_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01032_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_01050_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01059_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01067_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01085_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01097_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01109_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01110_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01111_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01113_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01116_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01123_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01125_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01128_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01129_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01134_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01143_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01144_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01152_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01156_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01163_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01168_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01171_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01173_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01181_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01189_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01192_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01198_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01217_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01228_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_01230_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01231_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01232_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01233_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01241_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01243_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01246_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01249_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01252_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01255_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01265_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01275_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01276_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01280_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01287_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01305_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01319_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01324_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01343_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01352_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01358_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01359_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01367_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01377_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01381_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01383_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01386_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01401_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01403_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01405_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01431_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01457_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01471_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01497_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01499_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01502_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01504_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01511_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01515_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01516_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01517_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01522_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01523_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01524_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_01529_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01533_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01534_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01539_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01561_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01568_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01579_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01583_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01586_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01603_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01650_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01686_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01688_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01694_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01698_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01699_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01705_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01706_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01714_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01716_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01717_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01720_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_01727_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01739_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01751_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01752_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01764_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01765_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01767_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01771_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01773_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01780_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01786_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01788_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01791_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01792_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01837_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01839_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01845_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01870_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01931_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01955_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_01997_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02000_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02001_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02010_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02025_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02036_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02039_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02041_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02042_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02094_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02095_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02106_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_02111_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02135_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02165_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02173_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_02179_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02192_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02195_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02197_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02212_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02213_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02217_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02259_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02260_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02261_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_02263_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02282_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02287_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02290_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02293_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02310_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02326_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02335_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02336_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02340_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02351_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02356_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02359_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02380_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02382_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02386_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02387_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02400_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02413_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02418_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02424_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02428_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02438_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02470_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02471_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02483_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02484_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02488_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02493_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_02503_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02511_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02512_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02521_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_02524_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02525_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02527_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02529_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02530_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02536_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_02560_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_02642_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_02673_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_02674_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_02749_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_02758_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_02913_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03062_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03075_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03191_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03215_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03243_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03261_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03302_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03306_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_03376_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03389_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03414_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03417_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03420_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_03426_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03430_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03440_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03478_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03494_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03541_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03543_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03559_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03700_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03753_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03757_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_03775_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_03784_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_03817_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_03885_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04024_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04148_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04151_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_04259_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04284_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04311_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_04324_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_04365_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_04567_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_04602_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04605_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04706_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_04708_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04714_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_04810_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_04987_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05072_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_05083_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05125_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05222_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05281_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_05308_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05433_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05613_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05649_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_05722_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05808_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_05819_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_05843_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_05859_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_05898_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06016_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06025_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_06087_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_06233_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_06246_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_06281_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06292_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_06293_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06314_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_06403_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_06409_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06489_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06502_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_06713_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06719_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_06739_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_06955_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07137_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_07146_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07152_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07160_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_07172_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07178_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_07256_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07293_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07332_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07358_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07377_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07389_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07422_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07452_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_07455_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07513_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07533_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07564_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_07634_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07639_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07684_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07710_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07737_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07759_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_07771_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07888_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07939_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_07940_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_07967_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_08017_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_08029_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_08086_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_08096_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_08185_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_08191_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_08340_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_08422_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_08440_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_08808_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_08813_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_08959_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_09072_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09126_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09151_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09190_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09210_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_09216_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_09235_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09332_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09340_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_09385_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09506_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09508_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09512_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09644_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09685_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09723_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09747_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_09771_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_09822_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_09852_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09909_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09920_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_09969_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_10032_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10062_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_10064_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_10133_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_10144_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_10215_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_10305_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10327_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10336_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_10338_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_10341_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10344_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_10366_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10402_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10555_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10582_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_10897_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10900_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_10941_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_10945_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_10959_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11056_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_11081_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11098_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11177_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11265_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_11283_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11305_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11344_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_11374_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11391_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11426_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11429_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11466_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_11577_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_11610_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11641_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11644_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11655_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11670_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_11672_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11678_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11781_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11834_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_11850_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11872_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11874_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11891_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11926_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_11942_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_11992_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12084_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12105_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12142_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12165_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12175_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12210_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12239_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12263_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12281_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_12377_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12424_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12452_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12458_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12476_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12486_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12495_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_12510_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12521_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12582_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12633_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12634_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12703_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12819_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_12822_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_12855_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_12940_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_12983_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_13015_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13039_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13048_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13056_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13101_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13158_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13286_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_13329_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13351_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13383_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_13450_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13517_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13535_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13538_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13558_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13569_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13591_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13639_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_13697_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13719_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_13780_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13796_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13800_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13917_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_13961_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14061_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14128_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14153_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14156_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_14196_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_14270_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_14292_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_14326_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14361_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14472_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_14489_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_14497_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14514_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14521_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14579_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14672_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14702_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14722_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_14764_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_14954_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15026_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15029_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15081_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15097_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15181_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15184_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15235_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15259_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15260_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_15265_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15299_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15351_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15377_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_15430_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_15475_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15554_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15559_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15578_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15617_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15621_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15672_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15673_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_15723_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15724_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15738_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_15742_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15744_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_15823_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_15848_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_15911_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_16086_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16105_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16114_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16136_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_16184_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_16210_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_16212_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16220_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16223_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16251_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_16254_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16265_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16289_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16383_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_16386_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16453_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16475_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16497_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16567_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16596_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16626_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16750_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16752_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16787_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16789_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16805_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16826_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16868_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_16870_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_16899_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_16917_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_16954_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_16990_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17038_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17078_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17090_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17098_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17175_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17200_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17314_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17339_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17385_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17387_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_17489_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_17525_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17576_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17631_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17646_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17656_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17659_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_17774_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_17829_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_17832_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_17994_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18047_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18068_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18107_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18133_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18149_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18154_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18161_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18167_" from metal3 to via3 in cell FPU_32_controller.
+Moving label "_18192_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18197_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18270_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18352_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18381_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18388_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18391_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18405_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18423_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_18576_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18619_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18640_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18691_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18696_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18720_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_18772_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_18806_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18846_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18880_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_18936_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_18967_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19302_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19321_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19405_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19442_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_19484_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19503_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19526_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19572_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_19577_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19600_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19623_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19632_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19647_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_19655_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19837_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_19843_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19872_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19886_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_19888_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19903_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19935_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19937_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_19973_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_19975_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20035_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_20048_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20079_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20198_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20207_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20219_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20240_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20255_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20285_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20342_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20449_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_20559_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_20563_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20609_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20713_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_20765_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20783_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20830_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_20918_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_20947_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_20977_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21044_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_21057_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21063_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_21076_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21179_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21189_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21220_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_21224_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_21266_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_21277_" from metal2 to via1 in cell FPU_32_controller.
+Moving label "_21372_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21466_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21486_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_21587_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_21673_" from metal1 to viali in cell FPU_32_controller.
+Moving label "_21728_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21741_" from metal1 to via1 in cell FPU_32_controller.
+Moving label "_21744_" from metal2 to via2 in cell FPU_32_controller.
+Moving label "_21786_" from metal1 to viali in cell FPU_32_controller.
+Moving label "add_expA\[7\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "add_exp\[3\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "add_exp\[5\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "add_mantisa\[1\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_buffer.array\[0\]\[37\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.array\[2\]\[17\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.array\[2\]\[20\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.array\[2\]\[37\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.array\[3\]\[18\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.head\[0\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_buffer.out\[26\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "adder_buffer.value\[31\]" from metal3 to via3 in cell FPU_32_controller.
+Moving label "adder_instance.four_man\[48\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.four_man\[54\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaAshift\[58\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaBshift\[13\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaBshift\[15\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaresult\[13\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaresult\[16\]" from metal3 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaresult\[19\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "adder_instance.mantisaresult\[9\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "c[2]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "clknet_2_1_0_clk" from metal2 to via2 in cell FPU_32_controller.
+Moving label "clknet_2_2_0_clk" from metal2 to via2 in cell FPU_32_controller.
+Moving label "clknet_5_13__leaf_clk" from metal2 to via1 in cell FPU_32_controller.
+Moving label "clknet_leaf_19_clk" from metal2 to via1 in cell FPU_32_controller.
+Moving label "clknet_leaf_211_clk" from metal2 to via2 in cell FPU_32_controller.
+Moving label "clknet_leaf_23_clk" from metal1 to via1 in cell FPU_32_controller.
+Moving label "clknet_leaf_25_clk" from metal1 to viali in cell FPU_32_controller.
+Moving label "div_expB\[0\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "div_mantisaB\[19\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaAshift\[44\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaBshift\[12\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaBshift\[21\]" from metal3 to via3 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaBshift\[7\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaBshift\[8\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "divider_instance.mantisaresult\[1\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "final_out[1]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "mult_mantisaB\[18\]" from metal1 to viali in cell FPU_32_controller.
+Moving label "mult_mantisaB\[19\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "mult_mantisa\[13\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "mult_mantisa\[20\]" from metal3 to via2 in cell FPU_32_controller.
+Moving label "mult_mantisa\[3\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "mult_mantisa\[4\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "multiplier_instance.EB.exponent_a\[5\]" from metal1 to viali in cell FPU_32_controller.
+Moving label "multiplier_instance.PPG.B\[19\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "multiplier_instance.PPG.genblk1\[7\].masked\[5\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "multiplier_instance.TT.genblk1\[2\].CSA1.C\[18\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "multiplier_instance.TT.genblk1\[2\].CSA1.C\[30\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "multiplier_instance.TT.genblk1\[4\].CSA1.A\[34\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "multiplier_instance.TT.genblk1\[7\].CSA1.B\[24\]" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1003" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1006" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1007" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1014" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1040" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1085" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1097" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1099" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1101" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1102" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1105" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1113" from metal1 to viali in cell FPU_32_controller.
+Moving label "net1117" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1137" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1177" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1189" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1193" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1195" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1196" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1197" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1238" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1242" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1251" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1252" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net1275" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1283" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net1301" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1317" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1319" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1334" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1355" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net139" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1402" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1431" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1471" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net1510" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1523" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1535" from metal1 to viali in cell FPU_32_controller.
+Moving label "net157" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1575" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1580" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1683" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net173" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1755" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1759" from metal1 to viali in cell FPU_32_controller.
+Moving label "net1769" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1792" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net18" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net1854" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net1861" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net1873" from metal1 to viali in cell FPU_32_controller.
+Moving label "net192" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net2013" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net2027" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net212" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net2126" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net2378" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net24" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net2423" from metal1 to viali in cell FPU_32_controller.
+Moving label "net2797" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net2814" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net291" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net294" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net3121" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net3132" from metal1 to viali in cell FPU_32_controller.
+Moving label "net3148" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net3172" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net3192" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net3199" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net3203" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net3226" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net330" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net339" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net389" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net393" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net399" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net4" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net41" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net445" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net447" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net448" from metal1 to viali in cell FPU_32_controller.
+Moving label "net473" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net482" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net51" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net551" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net570" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net572" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net605" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net623" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net631" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net637" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net641" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net643" from metal1 to viali in cell FPU_32_controller.
+Moving label "net644" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net645" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net664" from metal3 to via3 in cell FPU_32_controller.
+Moving label "net668" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net677" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net679" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net685" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net689" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net693" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net695" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net748" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net756" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net808" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net814" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net822" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net836" from metal1 to viali in cell FPU_32_controller.
+Moving label "net839" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net848" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net851" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net865" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net870" from metal2 to via1 in cell FPU_32_controller.
+Moving label "net889" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net890" from metal1 to via1 in cell FPU_32_controller.
+Moving label "net894" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net919" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net946" from metal2 to via2 in cell FPU_32_controller.
+Moving label "net992" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[12\]\[31\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[13\]\[1\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[13\]\[26\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[1\]\[10\]" from metal1 to viali in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[1\]\[22\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[4\]\[15\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[4\]\[4\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[5\]\[11\]" from metal1 to viali in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[5\]\[1\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[5\]\[28\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[5\]\[4\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[9\]\[1\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[9\]\[24\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.array\[9\]\[8\]" from metal1 to via1 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value0\[2\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value0\[30\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value0\[9\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value1\[17\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value1\[18\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value1\[29\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value2\[0\]" from metal2 to via2 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value2\[21\]" from metal3 to via3 in cell FPU_32_controller.
+Moving label "reorder_buf_instance.value2\[6\]" from metal2 to via2 in cell FPU_32_controller.
+[INFO] Ignoring 'VPWR VGND'
+[INFO] Writing abstract LEF…
+[INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
+Generating LEF output /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/58-magic-writelef/FPU_32_controller.lef for cell FPU_32_controller:
+Diagnostic:  Write LEF header for cell FPU_32_controller
+Diagnostic:  Writing LEF output for cell FPU_32_controller
+Diagnostic:  Scale value is 0.005000
+[INFO] LEF Write Complete.

@@ -1,0 +1,40 @@
+135. Printing statistics.
+
+=== FP32_Div ===
+
+   Number of wires:              19566
+   Number of wire bits:          20155
+   Number of public wires:          37
+   Number of public wire bits:     393
+   Number of ports:                 10
+   Number of port bits:             97
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              19902
+     $_ANDNOT_                    6855
+     $_AND_                        106
+     $_MUX_                       2914
+     $_NAND_                       139
+     $_NOR_                       1398
+     $_NOT_                        835
+     $_ORNOT_                     1168
+     $_OR_                        2716
+     $_XNOR_                       301
+     $_XOR_                       3199
+     sky130_fd_sc_hd__dfxtp_2      271
+
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+
+   Chip area for module '\FP32_Div': 5764.278400
+     of which used for sequential elements: 5764.278400 (100.00%)
+

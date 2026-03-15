@@ -1,0 +1,1689 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.46 (git sha1 e97731b9dda91fa5fa53ed87df7c34163ba59a41, clang++ 17.0.6 -fPIC -O3)
+Loaded SDC plugin
+
+1. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/tmp/76c5ff8cec1645d3b74e844bbffc134a.bb.v
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/tmp/76c5ff8cec1645d3b74e844bbffc134a.bb.v' to AST representation.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_12'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_ef_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2111oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a211oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21bo_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21boi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a21oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a221oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a222oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a22oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a2bb2oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a311oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a31oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a32oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41o_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__a41oi_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__and4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__buf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__bufinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkbuf_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s15_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s18_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s25_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkdlybuf4s50_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__clkinvlp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__conb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__decap_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__diode_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd1_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlygate4sd3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s2s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s4s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__dlymetal6s6s_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ebufn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__edfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvn_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__einvp_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fa_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fah_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcin_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fahcon_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__fill_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__ha_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__inv_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_bleeder_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkbufkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_clkinvkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_12'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_3'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_6'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_decapkapwr_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso0p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1n_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputiso1p_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_inputisolatch_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrc_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_isobufsrckapwr_16'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__macro_sparecell'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__maj3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux2i_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__mux4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nand4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__nor4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2111ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o211ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21ba_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o21bai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o221ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o22ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o2bb2ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o311ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o31ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o32ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41a_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__o41ai_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_0'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or2b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or3b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4b_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__or4bb_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probe_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__probec_p_8'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbn_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfbbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtn_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfrtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfsbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfstp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sdlclkp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxbp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__sedfxtp_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tap_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__tapvpwrvgnd_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xnor3_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor2_4'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_1'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_2'.
+Generating RTLIL representation for module `\sky130_fd_sc_hd__xor3_4'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv' to AST representation.
+Storing AST representation for module `$abstract\FPU_32_controller'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv' to AST representation.
+Storing AST representation for module `$abstract\FP32_Div'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv' to AST representation.
+Storing AST representation for module `$abstract\carry_ripple_adder'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv' to AST representation.
+Storing AST representation for module `$abstract\carry_save_adder'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv' to AST representation.
+Storing AST representation for module `$abstract\exponent_bias'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv' to AST representation.
+Storing AST representation for module `$abstract\FIFO'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv' to AST representation.
+Storing AST representation for module `$abstract\FP32_ADD'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv' to AST representation.
+Storing AST representation for module `$abstract\FP32_Mult'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/partial_product_generator.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/partial_product_generator.sv' to AST representation.
+Storing AST representation for module `$abstract\partial_product_generator'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/partial_products_csa_tree.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/partial_products_csa_tree.sv' to AST representation.
+Storing AST representation for module `$abstract\partial_products_csa_tree'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv
+Parsing SystemVerilog input from `/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv' to AST representation.
+Storing AST representation for module `$abstract\Reorder_buffer'.
+Successfully finished Verilog frontend.
+
+13. Executing HIERARCHY pass (managing design hierarchy).
+
+14. Executing AST frontend in derive mode using pre-parsed AST for module `\FPU_32_controller'.
+Generating RTLIL representation for module `\FPU_32_controller'.
+
+14.1. Analyzing design hierarchy..
+Top module:  \FPU_32_controller
+Parameter \FIFO_SIZE = 3
+
+14.2. Executing AST frontend in derive mode using pre-parsed AST for module `\FIFO'.
+Parameter \FIFO_SIZE = 3
+Generating RTLIL representation for module `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011'.
+Parameter \FIFO_SIZE = 4
+
+14.3. Executing AST frontend in derive mode using pre-parsed AST for module `\FIFO'.
+Parameter \FIFO_SIZE = 4
+Generating RTLIL representation for module `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100'.
+Parameter \FIFO_SIZE = 4
+Found cached RTLIL representation for module `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100'.
+
+14.4. Executing AST frontend in derive mode using pre-parsed AST for module `\FP32_ADD'.
+Generating RTLIL representation for module `\FP32_ADD'.
+
+14.5. Executing AST frontend in derive mode using pre-parsed AST for module `\FP32_Div'.
+Generating RTLIL representation for module `\FP32_Div'.
+
+14.6. Executing AST frontend in derive mode using pre-parsed AST for module `\FP32_Mult'.
+Generating RTLIL representation for module `\FP32_Mult'.
+Parameter 1 (\BUFFER_SIZE) = 16
+
+14.7. Executing AST frontend in derive mode using pre-parsed AST for module `\Reorder_buffer'.
+Parameter 1 (\BUFFER_SIZE) = 16
+Generating RTLIL representation for module `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000'.
+
+14.8. Analyzing design hierarchy..
+Top module:  \FPU_32_controller
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100
+Used module:     \FP32_ADD
+Used module:     \FP32_Div
+Used module:     \FP32_Mult
+Used module:     $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000
+
+14.9. Executing AST frontend in derive mode using pre-parsed AST for module `\exponent_bias'.
+Generating RTLIL representation for module `\exponent_bias'.
+
+14.10. Executing AST frontend in derive mode using pre-parsed AST for module `\partial_products_csa_tree'.
+Generating RTLIL representation for module `\partial_products_csa_tree'.
+
+14.11. Executing AST frontend in derive mode using pre-parsed AST for module `\partial_product_generator'.
+Generating RTLIL representation for module `\partial_product_generator'.
+
+14.12. Analyzing design hierarchy..
+Top module:  \FPU_32_controller
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100
+Used module:     \FP32_ADD
+Used module:     \FP32_Div
+Used module:     \FP32_Mult
+Used module:         \exponent_bias
+Used module:         \partial_products_csa_tree
+Used module:         \partial_product_generator
+Used module:     $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000
+
+14.13. Executing AST frontend in derive mode using pre-parsed AST for module `\carry_save_adder'.
+Generating RTLIL representation for module `\carry_save_adder'.
+
+14.14. Executing AST frontend in derive mode using pre-parsed AST for module `\carry_ripple_adder'.
+Generating RTLIL representation for module `\carry_ripple_adder'.
+
+14.15. Analyzing design hierarchy..
+Top module:  \FPU_32_controller
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100
+Used module:     \FP32_ADD
+Used module:     \FP32_Div
+Used module:     \FP32_Mult
+Used module:         \exponent_bias
+Used module:         \partial_products_csa_tree
+Used module:             \carry_save_adder
+Used module:             \carry_ripple_adder
+Used module:         \partial_product_generator
+Used module:     $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000
+
+14.16. Analyzing design hierarchy..
+Top module:  \FPU_32_controller
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011
+Used module:     $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100
+Used module:     \FP32_ADD
+Used module:     \FP32_Div
+Used module:     \FP32_Mult
+Used module:         \exponent_bias
+Used module:         \partial_products_csa_tree
+Used module:             \carry_save_adder
+Used module:             \carry_ripple_adder
+Used module:         \partial_product_generator
+Used module:     $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000
+Removing unused module `$abstract\Reorder_buffer'.
+Removing unused module `$abstract\partial_products_csa_tree'.
+Removing unused module `$abstract\partial_product_generator'.
+Removing unused module `$abstract\FP32_Mult'.
+Removing unused module `$abstract\FP32_ADD'.
+Removing unused module `$abstract\FIFO'.
+Removing unused module `$abstract\exponent_bias'.
+Removing unused module `$abstract\carry_save_adder'.
+Removing unused module `$abstract\carry_ripple_adder'.
+Removing unused module `$abstract\FP32_Div'.
+Removing unused module `$abstract\FPU_32_controller'.
+Removed 11 unused modules.
+Renaming module FPU_32_controller to FPU_32_controller.
+
+15. Executing PROC pass (convert processes to netlists).
+
+15.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+15.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 2 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9 in module FPU_32_controller.
+Marked 2 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858 in module exponent_bias.
+Marked 11 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582 in module $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.
+Marked 4 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511 in module FP32_Mult.
+Marked 69 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340 in module FP32_Div.
+Marked 71 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161 in module FP32_ADD.
+Marked 4 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104 in module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.
+Marked 4 switch rules as full_case in process $proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41 in module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.
+Removed a total of 0 dead cases.
+
+15.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 57 redundant assignments.
+Promoted 131 assignments to connections.
+
+15.4. Executing PROC_INIT pass (extract init attributes).
+
+15.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \reset in `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+
+15.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~191 debug messages>
+
+15.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+     1/39: $0\enable_write[2:0] [2]
+     2/39: $0\enable_write[2:0] [1]
+     3/39: $0\enable_write[2:0] [0]
+     4/39: $0\control[1:0] [0]
+     5/39: $0\div_mantisaA[22:0]
+     6/39: $0\div_expB[7:0]
+     7/39: $0\div_expA[7:0]
+     8/39: $0\div_signB[0:0]
+     9/39: $0\div_signA[0:0]
+    10/39: $0\mult_mantisaB[22:0]
+    11/39: $0\mult_mantisaA[22:0]
+    12/39: $0\mult_expB[7:0]
+    13/39: $0\mult_expA[7:0]
+    14/39: $0\mult_signB[0:0]
+    15/39: $0\mult_signA[0:0]
+    16/39: $0\sub[0:0]
+    17/39: $0\add_mantisaB[22:0]
+    18/39: $0\add_mantisaA[22:0]
+    19/39: $0\add_expB[7:0]
+    20/39: $0\add_expA[7:0]
+    21/39: $0\add_signB[0:0]
+    22/39: $0\add_signA[0:0]
+    23/39: $0\div_nextop[39:0]
+    24/39: $0\mult_nextop[39:0]
+    25/39: $0\adder_nextop[39:0]
+    26/39: $0\control[1:0] [1]
+    27/39: $0\value[3:0]
+    28/39: $0\div_mantisaB[22:0]
+    29/39: $0\stall[0:0]
+    30/39: $0\last_nop[0:0]
+    31/39: $0\write_location2[3:0]
+    32/39: $0\write_location1[3:0]
+    33/39: $0\write_location0[3:0]
+    34/39: $0\value2[31:0]
+    35/39: $0\value1[31:0]
+    36/39: $0\value0[31:0]
+    37/39: $0\div_FifoOp[1:0]
+    38/39: $0\mult_FifoOp[1:0]
+    39/39: $0\adderFifoOp[1:0]
+Creating decoders for process `\carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+Creating decoders for process `\carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+Creating decoders for process `\exponent_bias.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858'.
+     1/2: $2\exponent_sum[8:0]
+     2/2: $1\exponent_sum[8:0]
+Creating decoders for process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+     1/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_EN[0:0]$854
+     2/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_ADDR[4:0]$853
+     3/193: $2$mem2bits$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:104$574[35:0]$852
+     4/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN[0:0]$847
+     5/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR[3:0]$846
+     6/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN[35:0]$845
+     7/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA[35:0]$844
+     8/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR[3:0]$843
+     9/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN[0:0]$842
+    10/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR[3:0]$841
+    11/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN[35:0]$840
+    12/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA[35:0]$839
+    13/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR[3:0]$838
+    14/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN[0:0]$837
+    15/193: $5$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR[3:0]$836
+    16/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN[35:0]$835
+    17/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA[35:0]$834
+    18/193: $5$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR[3:0]$833
+    19/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_EN[35:0]$832
+    20/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_DATA[35:0]$831
+    21/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_ADDR[4:0]$830
+    22/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN[0:0]$829
+    23/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR[3:0]$828
+    24/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN[35:0]$827
+    25/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA[35:0]$826
+    26/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR[3:0]$825
+    27/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN[0:0]$824
+    28/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR[3:0]$823
+    29/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN[35:0]$822
+    30/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA[35:0]$821
+    31/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR[3:0]$820
+    32/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN[0:0]$819
+    33/193: $4$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR[3:0]$818
+    34/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN[35:0]$817
+    35/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA[35:0]$816
+    36/193: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR[3:0]$815
+    37/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_EN[35:0]$792
+    38/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_DATA[35:0]$791
+    39/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_ADDR[4:0]$790
+    40/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_EN[0:0]$789
+    41/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_ADDR[4:0]$788
+    42/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_EN[35:0]$810
+    43/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_DATA[35:0]$809
+    44/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_ADDR[4:0]$808
+    45/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN[0:0]$807
+    46/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR[3:0]$806
+    47/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN[35:0]$805
+    48/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA[35:0]$804
+    49/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR[3:0]$803
+    50/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN[0:0]$802
+    51/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR[3:0]$801
+    52/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN[35:0]$800
+    53/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA[35:0]$799
+    54/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR[3:0]$798
+    55/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN[0:0]$797
+    56/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR[3:0]$796
+    57/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN[35:0]$795
+    58/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA[35:0]$794
+    59/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR[3:0]$793
+    60/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_EN[0:0]$784
+    61/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_ADDR[3:0]$783
+    62/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_EN[35:0]$782
+    63/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_DATA[35:0]$781
+    64/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_ADDR[3:0]$780
+    65/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_EN[0:0]$779
+    66/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_ADDR[3:0]$778
+    67/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_EN[35:0]$777
+    68/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_DATA[35:0]$776
+    69/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_ADDR[3:0]$775
+    70/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_EN[0:0]$774
+    71/193: $3$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_ADDR[3:0]$773
+    72/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_EN[35:0]$772
+    73/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_DATA[35:0]$771
+    74/193: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_ADDR[3:0]$770
+    75/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_EN[0:0]$746
+    76/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_ADDR[3:0]$745
+    77/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_EN[35:0]$744
+    78/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_DATA[35:0]$743
+    79/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_ADDR[3:0]$742
+    80/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_EN[0:0]$741
+    81/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_ADDR[3:0]$740
+    82/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_EN[35:0]$739
+    83/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_DATA[35:0]$738
+    84/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_ADDR[3:0]$737
+    85/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_EN[0:0]$736
+    86/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_ADDR[3:0]$735
+    87/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_EN[35:0]$734
+    88/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_DATA[35:0]$733
+    89/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_ADDR[3:0]$732
+    90/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_EN[35:0]$769
+    91/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_DATA[35:0]$768
+    92/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_ADDR[4:0]$767
+    93/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN[0:0]$766
+    94/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR[3:0]$765
+    95/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN[35:0]$764
+    96/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA[35:0]$763
+    97/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR[3:0]$762
+    98/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN[0:0]$761
+    99/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR[3:0]$760
+   100/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN[35:0]$759
+   101/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA[35:0]$758
+   102/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR[3:0]$757
+   103/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN[0:0]$756
+   104/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR[3:0]$755
+   105/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN[35:0]$754
+   106/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA[35:0]$753
+   107/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR[3:0]$752
+   108/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_EN[35:0]$751
+   109/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_DATA[35:0]$750
+   110/193: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_ADDR[4:0]$749
+   111/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_EN[0:0]$748
+   112/193: $2$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_ADDR[4:0]$747
+   113/193: $1$fordecl_block$7.i[31:0]$657
+   114/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$558_EN[0:0]$689
+   115/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$557_EN[35:0]$688
+   116/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$556_EN[0:0]$687
+   117/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$555_EN[35:0]$686
+   118/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$554_EN[0:0]$685
+   119/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$553_EN[35:0]$684
+   120/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$552_EN[0:0]$683
+   121/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$551_EN[35:0]$682
+   122/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$550_EN[0:0]$681
+   123/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$549_EN[35:0]$680
+   124/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$548_EN[0:0]$679
+   125/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$547_EN[35:0]$678
+   126/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$546_EN[0:0]$677
+   127/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$545_EN[35:0]$676
+   128/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$544_EN[0:0]$675
+   129/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$543_EN[35:0]$674
+   130/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$542_EN[0:0]$673
+   131/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$541_EN[35:0]$672
+   132/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$540_EN[0:0]$671
+   133/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$539_EN[35:0]$670
+   134/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$538_EN[0:0]$669
+   135/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$537_EN[35:0]$668
+   136/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$536_EN[0:0]$667
+   137/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$535_EN[35:0]$666
+   138/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$534_EN[0:0]$665
+   139/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$533_EN[35:0]$664
+   140/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$532_EN[0:0]$663
+   141/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$531_EN[35:0]$662
+   142/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$530_EN[0:0]$661
+   143/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$529_EN[35:0]$660
+   144/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$528_EN[0:0]$659
+   145/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$527_EN[35:0]$658
+   146/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_EN[0:0]$730
+   147/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_ADDR[4:0]$729
+   148/193: $1$mem2bits$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:104$574[35:0]$728
+   149/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_EN[35:0]$727
+   150/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_DATA[35:0]$726
+   151/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_ADDR[4:0]$725
+   152/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN[0:0]$724
+   153/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR[3:0]$723
+   154/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN[35:0]$722
+   155/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA[35:0]$721
+   156/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR[3:0]$720
+   157/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN[0:0]$719
+   158/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR[3:0]$718
+   159/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN[35:0]$717
+   160/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA[35:0]$716
+   161/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR[3:0]$715
+   162/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN[0:0]$714
+   163/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR[3:0]$713
+   164/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN[35:0]$712
+   165/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA[35:0]$711
+   166/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR[3:0]$710
+   167/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_EN[35:0]$709
+   168/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_DATA[35:0]$708
+   169/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_ADDR[4:0]$707
+   170/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_EN[0:0]$706
+   171/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_ADDR[4:0]$705
+   172/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_EN[0:0]$704
+   173/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_ADDR[3:0]$703
+   174/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_EN[35:0]$702
+   175/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_DATA[35:0]$701
+   176/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_ADDR[3:0]$700
+   177/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_EN[0:0]$699
+   178/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_ADDR[3:0]$698
+   179/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_EN[35:0]$697
+   180/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_DATA[35:0]$696
+   181/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_ADDR[3:0]$695
+   182/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_EN[0:0]$694
+   183/193: $1$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_ADDR[3:0]$693
+   184/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_EN[35:0]$692
+   185/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_DATA[35:0]$691
+   186/193: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_ADDR[3:0]$690
+   187/193: $0\empty[0:0]
+   188/193: $0\full[0:0]
+   189/193: $0\tail[4:0]
+   190/193: $0\head[4:0]
+   191/193: $0\out[31:0]
+   192/193: $0\success[0:0]
+   193/193: $0\done[0:0]
+Creating decoders for process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+     1/24: $0\s4_product[31:0]
+     2/24: $0\s1_mant_b[23:0]
+     3/24: $0\s1_mant_a[23:0]
+     4/24: $0\s3_co[0:0]
+     5/24: $0\s3_sum[47:0]
+     6/24: $0\s3_nan[0:0]
+     7/24: $0\s3_inf[0:0]
+     8/24: $0\s3_zero[0:0]
+     9/24: $0\s3_exp_b[7:0]
+    10/24: $0\s3_exp_a[7:0]
+    11/24: $0\s3_sign[0:0]
+    12/24: $0\s2_partials[1151:0]
+    13/24: $0\s2_nan[0:0]
+    14/24: $0\s2_inf[0:0]
+    15/24: $0\s2_zero[0:0]
+    16/24: $0\s2_exp_b[7:0]
+    17/24: $0\s2_exp_a[7:0]
+    18/24: $0\s2_sign[0:0]
+    19/24: $0\s1_nan[0:0]
+    20/24: $0\s1_inf[0:0]
+    21/24: $0\s1_zero[0:0]
+    22/24: $0\s1_exp_b[7:0]
+    23/24: $0\s1_exp_a[7:0]
+    24/24: $0\s1_sign[0:0]
+Creating decoders for process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+     1/77: $65\loop_exp_adj[7:0]
+     2/77: $64\loop_exp_adj[7:0]
+     3/77: $63\loop_exp_adj[7:0]
+     4/77: $62\loop_exp_adj[7:0]
+     5/77: $61\loop_exp_adj[7:0]
+     6/77: $60\loop_exp_adj[7:0]
+     7/77: $59\loop_exp_adj[7:0]
+     8/77: $58\loop_exp_adj[7:0]
+     9/77: $57\loop_exp_adj[7:0]
+    10/77: $56\loop_exp_adj[7:0]
+    11/77: $55\loop_exp_adj[7:0]
+    12/77: $54\loop_exp_adj[7:0]
+    13/77: $53\loop_exp_adj[7:0]
+    14/77: $52\loop_exp_adj[7:0]
+    15/77: $51\loop_exp_adj[7:0]
+    16/77: $50\loop_exp_adj[7:0]
+    17/77: $49\loop_exp_adj[7:0]
+    18/77: $48\loop_exp_adj[7:0]
+    19/77: $47\loop_exp_adj[7:0]
+    20/77: $46\loop_exp_adj[7:0]
+    21/77: $45\loop_exp_adj[7:0]
+    22/77: $44\loop_exp_adj[7:0]
+    23/77: $43\loop_exp_adj[7:0]
+    24/77: $42\loop_exp_adj[7:0]
+    25/77: $41\loop_exp_adj[7:0]
+    26/77: $40\loop_exp_adj[7:0]
+    27/77: $39\loop_exp_adj[7:0]
+    28/77: $38\loop_exp_adj[7:0]
+    29/77: $37\loop_exp_adj[7:0]
+    30/77: $36\loop_exp_adj[7:0]
+    31/77: $35\loop_exp_adj[7:0]
+    32/77: $34\loop_exp_adj[7:0]
+    33/77: $33\loop_exp_adj[7:0]
+    34/77: $32\loop_exp_adj[7:0]
+    35/77: $31\loop_exp_adj[7:0]
+    36/77: $30\loop_exp_adj[7:0]
+    37/77: $29\loop_exp_adj[7:0]
+    38/77: $28\loop_exp_adj[7:0]
+    39/77: $27\loop_exp_adj[7:0]
+    40/77: $26\loop_exp_adj[7:0]
+    41/77: $25\loop_exp_adj[7:0]
+    42/77: $24\loop_exp_adj[7:0]
+    43/77: $23\loop_exp_adj[7:0]
+    44/77: $22\loop_exp_adj[7:0]
+    45/77: $21\loop_exp_adj[7:0]
+    46/77: $20\loop_exp_adj[7:0]
+    47/77: $19\loop_exp_adj[7:0]
+    48/77: $18\loop_exp_adj[7:0]
+    49/77: $17\loop_exp_adj[7:0]
+    50/77: $16\loop_exp_adj[7:0]
+    51/77: $15\loop_exp_adj[7:0]
+    52/77: $14\loop_exp_adj[7:0]
+    53/77: $13\loop_exp_adj[7:0]
+    54/77: $12\loop_exp_adj[7:0]
+    55/77: $11\loop_exp_adj[7:0]
+    56/77: $10\loop_exp_adj[7:0]
+    57/77: $9\loop_exp_adj[7:0]
+    58/77: $8\loop_exp_adj[7:0]
+    59/77: $7\loop_exp_adj[7:0]
+    60/77: $6\loop_exp_adj[7:0]
+    61/77: $5\loop_exp_adj[7:0]
+    62/77: $4\loop_exp_adj[7:0]
+    63/77: $3\loop_exp_adj[7:0]
+    64/77: $2\loop_exp_adj[7:0]
+    65/77: $1$fordecl_block$1.i[31:0]$346
+    66/77: $1\loop_exp_adj[7:0]
+    67/77: $0\mantisa[22:0]
+    68/77: $0\exp[7:0]
+    69/77: $0\check[0:0]
+    70/77: $0\four_man[63:0]
+    71/77: $0\expadd[7:0]
+    72/77: $0\expmiddled[7:0]
+    73/77: $0\expmiddlec[7:0]
+    74/77: $0\mantisaresult[63:0]
+    75/77: $0\expmiddleb[7:0]
+    76/77: $0\mantisaBshift[63:0]
+    77/77: $0\mantisaAshift[63:0]
+Creating decoders for process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+     1/85: $0\inf0[0:0]
+     2/85: $65\loop_exp_adj[7:0]
+     3/85: $64\loop_exp_adj[7:0]
+     4/85: $63\loop_exp_adj[7:0]
+     5/85: $62\loop_exp_adj[7:0]
+     6/85: $61\loop_exp_adj[7:0]
+     7/85: $60\loop_exp_adj[7:0]
+     8/85: $59\loop_exp_adj[7:0]
+     9/85: $58\loop_exp_adj[7:0]
+    10/85: $57\loop_exp_adj[7:0]
+    11/85: $56\loop_exp_adj[7:0]
+    12/85: $55\loop_exp_adj[7:0]
+    13/85: $54\loop_exp_adj[7:0]
+    14/85: $53\loop_exp_adj[7:0]
+    15/85: $52\loop_exp_adj[7:0]
+    16/85: $51\loop_exp_adj[7:0]
+    17/85: $50\loop_exp_adj[7:0]
+    18/85: $49\loop_exp_adj[7:0]
+    19/85: $48\loop_exp_adj[7:0]
+    20/85: $47\loop_exp_adj[7:0]
+    21/85: $46\loop_exp_adj[7:0]
+    22/85: $45\loop_exp_adj[7:0]
+    23/85: $44\loop_exp_adj[7:0]
+    24/85: $43\loop_exp_adj[7:0]
+    25/85: $42\loop_exp_adj[7:0]
+    26/85: $41\loop_exp_adj[7:0]
+    27/85: $40\loop_exp_adj[7:0]
+    28/85: $39\loop_exp_adj[7:0]
+    29/85: $38\loop_exp_adj[7:0]
+    30/85: $37\loop_exp_adj[7:0]
+    31/85: $36\loop_exp_adj[7:0]
+    32/85: $35\loop_exp_adj[7:0]
+    33/85: $34\loop_exp_adj[7:0]
+    34/85: $33\loop_exp_adj[7:0]
+    35/85: $32\loop_exp_adj[7:0]
+    36/85: $31\loop_exp_adj[7:0]
+    37/85: $30\loop_exp_adj[7:0]
+    38/85: $29\loop_exp_adj[7:0]
+    39/85: $28\loop_exp_adj[7:0]
+    40/85: $27\loop_exp_adj[7:0]
+    41/85: $26\loop_exp_adj[7:0]
+    42/85: $25\loop_exp_adj[7:0]
+    43/85: $24\loop_exp_adj[7:0]
+    44/85: $23\loop_exp_adj[7:0]
+    45/85: $22\loop_exp_adj[7:0]
+    46/85: $21\loop_exp_adj[7:0]
+    47/85: $20\loop_exp_adj[7:0]
+    48/85: $19\loop_exp_adj[7:0]
+    49/85: $18\loop_exp_adj[7:0]
+    50/85: $17\loop_exp_adj[7:0]
+    51/85: $16\loop_exp_adj[7:0]
+    52/85: $15\loop_exp_adj[7:0]
+    53/85: $14\loop_exp_adj[7:0]
+    54/85: $13\loop_exp_adj[7:0]
+    55/85: $12\loop_exp_adj[7:0]
+    56/85: $11\loop_exp_adj[7:0]
+    57/85: $10\loop_exp_adj[7:0]
+    58/85: $9\loop_exp_adj[7:0]
+    59/85: $8\loop_exp_adj[7:0]
+    60/85: $7\loop_exp_adj[7:0]
+    61/85: $6\loop_exp_adj[7:0]
+    62/85: $5\loop_exp_adj[7:0]
+    63/85: $4\loop_exp_adj[7:0]
+    64/85: $3\loop_exp_adj[7:0]
+    65/85: $2\loop_exp_adj[7:0]
+    66/85: $1$fordecl_block$5.i[31:0]$166
+    67/85: $1\loop_exp_adj[7:0]
+    68/85: $0\mantisa[22:0]
+    69/85: $0\exp[7:0]
+    70/85: $0\check[0:0]
+    71/85: $0\four_man[63:0]
+    72/85: $0\expadd[7:0]
+    73/85: $0\expmiddled[7:0]
+    74/85: $0\expmiddlec[7:0]
+    75/85: $0\mantisaresult[63:0]
+    76/85: $0\sub1[0:0]
+    77/85: $0\expmiddleb[7:0]
+    78/85: $0\mantisaBshift[63:0]
+    79/85: $0\mantisaAshift[63:0]
+    80/85: $0\signB0[0:0]
+    81/85: $0\signA0[0:0]
+    82/85: $0\mantisaB0[23:0]
+    83/85: $0\mantisaA0[23:0]
+    84/85: $0\expmiddlea[7:0]
+    85/85: $0\expmiddle[7:0]
+Creating decoders for process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+     1/32: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_EN[39:0]$155
+     2/32: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_DATA[39:0]$154
+     3/32: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_ADDR[2:0]$153
+     4/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_EN[39:0]$145
+     5/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_DATA[39:0]$144
+     6/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_ADDR[2:0]$143
+     7/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_EN[39:0]$148
+     8/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_DATA[39:0]$147
+     9/32: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_ADDR[2:0]$146
+    10/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_EN[39:0]$135
+    11/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_DATA[39:0]$134
+    12/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_ADDR[2:0]$133
+    13/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_EN[39:0]$132
+    14/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_DATA[39:0]$131
+    15/32: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_ADDR[2:0]$130
+    16/32: $0\success[0:0]
+    17/32: $1$fordecl_block$3.i[31:0]$116
+    18/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$95_EN[39:0]$120
+    19/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$94_EN[39:0]$119
+    20/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$93_EN[39:0]$118
+    21/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$92_EN[39:0]$117
+    22/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_EN[39:0]$126
+    23/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_DATA[39:0]$125
+    24/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_ADDR[2:0]$124
+    25/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_EN[39:0]$123
+    26/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_DATA[39:0]$122
+    27/32: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_ADDR[2:0]$121
+    28/32: $0\empty[0:0]
+    29/32: $0\full[0:0]
+    30/32: $0\tail[2:0]
+    31/32: $0\head[2:0]
+    32/32: $0\out[39:0]
+Creating decoders for process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+     1/31: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_EN[39:0]$90
+     2/31: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_DATA[39:0]$89
+     3/31: $4$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_ADDR[1:0]$88
+     4/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_EN[39:0]$80
+     5/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_DATA[39:0]$79
+     6/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_ADDR[1:0]$78
+     7/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_EN[39:0]$83
+     8/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_DATA[39:0]$82
+     9/31: $3$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_ADDR[1:0]$81
+    10/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_EN[39:0]$70
+    11/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_DATA[39:0]$69
+    12/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_ADDR[1:0]$68
+    13/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_EN[39:0]$67
+    14/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_DATA[39:0]$66
+    15/31: $2$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_ADDR[1:0]$65
+    16/31: $0\success[0:0]
+    17/31: $1$fordecl_block$3.i[31:0]$52
+    18/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$32_EN[39:0]$55
+    19/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$31_EN[39:0]$54
+    20/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$30_EN[39:0]$53
+    21/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_EN[39:0]$61
+    22/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_DATA[39:0]$60
+    23/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_ADDR[1:0]$59
+    24/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_EN[39:0]$58
+    25/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_DATA[39:0]$57
+    26/31: $1$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_ADDR[1:0]$56
+    27/31: $0\empty[0:0]
+    28/31: $0\full[0:0]
+    29/31: $0\tail[1:0]
+    30/31: $0\head[1:0]
+    31/31: $0\out[39:0]
+
+15.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\carry_ripple_adder.\sum' from process `\carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+No latch inferred for signal `\carry_ripple_adder.\co' from process `\carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+No latch inferred for signal `\carry_save_adder.\SUM' from process `\carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+No latch inferred for signal `\carry_save_adder.\Co' from process `\carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+No latch inferred for signal `\exponent_bias.\exponent_sum' from process `\exponent_bias.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858'.
+
+15.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\FPU_32_controller.\stall' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4131' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\adderFifoOp' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4132' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\adder_nextop' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4133' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_nextop' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4134' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_FifoOp' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4135' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_FifoOp' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4136' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_nextop' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4137' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\control' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4138' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\value' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4139' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\value0' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4140' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\value1' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4141' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\value2' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4142' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\enable_write' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4143' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\write_location0' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4144' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\write_location1' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4145' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\write_location2' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4146' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_signA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4147' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_signB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4148' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_expA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4149' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_expB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4150' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_mantisaA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4151' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\add_mantisaB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4152' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\sub' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4153' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_signA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4154' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_signB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4155' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_expA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4156' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_expB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4157' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_mantisaA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4158' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\mult_mantisaB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4159' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_signA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4160' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_signB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4161' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_expA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4162' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_expB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4163' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_mantisaA' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4164' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\div_mantisaB' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4165' with positive edge clock.
+Creating register for signal `\FPU_32_controller.\last_nop' using process `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+  created $dff cell `$procdff$4166' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\done' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4167' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\success' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4168' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\out' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4169' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\head' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4170' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\tail' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4171' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\full' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4172' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.\empty' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4173' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$fordecl_block$7.i' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4174' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$527_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4175' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$528_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4176' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$529_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4177' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$530_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4178' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$531_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4179' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$532_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4180' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$533_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4181' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$534_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4182' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$535_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4183' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$536_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4184' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$537_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4185' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$538_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4186' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$539_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4187' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$540_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4188' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$541_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4189' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$542_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4190' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$543_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4191' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$544_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4192' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$545_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4193' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$546_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4194' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$547_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4195' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$548_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4196' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$549_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4197' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$550_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4198' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$551_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4199' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$552_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4200' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$553_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4201' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$554_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4202' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$555_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4203' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$556_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4204' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:41$557_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4205' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:42$558_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4206' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4207' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4208' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:53$559_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4209' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4210' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:54$560_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4211' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4212' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4213' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:57$561_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4214' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4215' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:58$562_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4216' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4217' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4218' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:61$563_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4219' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4220' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:62$564_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4221' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4222' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:66$565_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4223' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4224' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4225' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:67$566_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4226' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4227' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4228' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:81$567_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4229' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4230' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:82$568_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4231' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4232' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4233' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:85$569_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4234' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4235' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:86$570_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4236' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4237' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4238' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:89$571_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4239' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4240' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:90$572_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4241' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4242' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_DATA' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4243' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:92$573_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4244' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$mem2bits$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:104$574' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4245' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_ADDR' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4246' with positive edge clock.
+Creating register for signal `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$memwr$\ready_check$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:105$575_EN' using process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+  created $dff cell `$procdff$4247' with positive edge clock.
+Creating register for signal `\FP32_Mult.\s1_sign' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4250' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_exp_a' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4253' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_exp_b' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4256' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_mant_a' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4259' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_mant_b' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4262' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_zero' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4265' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_inf' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4268' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s1_nan' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4271' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_sign' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4274' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_exp_a' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4277' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_exp_b' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4280' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_zero' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4283' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_partials' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4286' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_inf' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4289' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s2_nan' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4292' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_sign' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4295' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_exp_a' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4298' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_exp_b' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4301' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_zero' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4304' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_sum' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4307' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_co' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4310' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_inf' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4313' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s3_nan' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4316' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Mult.\s4_product' using process `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+  created $adff cell `$procdff$4319' with positive edge clock and positive level reset.
+Creating register for signal `\FP32_Div.\sign' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4320' with positive edge clock.
+Creating register for signal `\FP32_Div.\exp' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4321' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisa' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4322' with positive edge clock.
+Creating register for signal `\FP32_Div.\expmiddlea' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4323' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisaA0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4324' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisaB0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4325' with positive edge clock.
+Creating register for signal `\FP32_Div.\signA0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4326' with positive edge clock.
+Creating register for signal `\FP32_Div.\inf0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4327' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisaAshift' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4328' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisaBshift' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4329' with positive edge clock.
+Creating register for signal `\FP32_Div.\expmiddleb' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4330' with positive edge clock.
+Creating register for signal `\FP32_Div.\signA1' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4331' with positive edge clock.
+Creating register for signal `\FP32_Div.\inf1' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4332' with positive edge clock.
+Creating register for signal `\FP32_Div.\mantisaresult' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4333' with positive edge clock.
+Creating register for signal `\FP32_Div.\expmiddlec' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4334' with positive edge clock.
+Creating register for signal `\FP32_Div.\signA2' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4335' with positive edge clock.
+Creating register for signal `\FP32_Div.\inf2' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4336' with positive edge clock.
+Creating register for signal `\FP32_Div.\expmiddled' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4337' with positive edge clock.
+Creating register for signal `\FP32_Div.\expadd' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4338' with positive edge clock.
+Creating register for signal `\FP32_Div.\four_man' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4339' with positive edge clock.
+Creating register for signal `\FP32_Div.\signA3' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4340' with positive edge clock.
+Creating register for signal `\FP32_Div.\inf3' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4341' with positive edge clock.
+Creating register for signal `\FP32_Div.\loop_exp_adj' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4342' with positive edge clock.
+Creating register for signal `\FP32_Div.\check' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4343' with positive edge clock.
+Creating register for signal `\FP32_Div.\undefined0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4344' with positive edge clock.
+Creating register for signal `\FP32_Div.\zero0' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4345' with positive edge clock.
+Creating register for signal `\FP32_Div.\undefined1' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4346' with positive edge clock.
+Creating register for signal `\FP32_Div.\zero1' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4347' with positive edge clock.
+Creating register for signal `\FP32_Div.\undefined2' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4348' with positive edge clock.
+Creating register for signal `\FP32_Div.\zero2' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4349' with positive edge clock.
+Creating register for signal `\FP32_Div.\undefined3' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4350' with positive edge clock.
+Creating register for signal `\FP32_Div.\zero3' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4351' with positive edge clock.
+Creating register for signal `\FP32_Div.$fordecl_block$1.i' using process `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+  created $dff cell `$procdff$4352' with positive edge clock.
+Creating register for signal `\FP32_ADD.\sub' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4353' with positive edge clock.
+Creating register for signal `\FP32_ADD.\sign' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4354' with positive edge clock.
+Creating register for signal `\FP32_ADD.\exp' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4355' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisa' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4356' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddle' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4357' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddlea' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4358' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaA0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4359' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaB0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4360' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4361' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signB0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4362' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf0' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4363' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaAshift' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4364' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaBshift' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4365' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddleb' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4366' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA1' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4367' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf1' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4368' with positive edge clock.
+Creating register for signal `\FP32_ADD.\sub1' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4369' with positive edge clock.
+Creating register for signal `\FP32_ADD.\mantisaresult' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4370' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddlec' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4371' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA2' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4372' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf2' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4373' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expmiddled' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4374' with positive edge clock.
+Creating register for signal `\FP32_ADD.\expadd' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4375' with positive edge clock.
+Creating register for signal `\FP32_ADD.\four_man' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4376' with positive edge clock.
+Creating register for signal `\FP32_ADD.\signA3' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4377' with positive edge clock.
+Creating register for signal `\FP32_ADD.\inf3' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4378' with positive edge clock.
+Creating register for signal `\FP32_ADD.\loop_exp_adj' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4379' with positive edge clock.
+Creating register for signal `\FP32_ADD.\check' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4380' with positive edge clock.
+Creating register for signal `\FP32_ADD.$fordecl_block$5.i' using process `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+  created $dff cell `$procdff$4381' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\success' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4382' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\out' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4383' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\head' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4384' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\tail' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4385' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\full' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4386' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.\empty' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4387' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$fordecl_block$3.i' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4388' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$92_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4389' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$93_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4390' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$94_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4391' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$95_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4392' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_ADDR' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4393' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_DATA' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4394' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$96_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4395' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_ADDR' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4396' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_DATA' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4397' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$97_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+  created $dff cell `$procdff$4398' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\success' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4399' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\out' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4400' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\head' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4401' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\tail' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4402' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\full' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4403' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.\empty' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4404' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$fordecl_block$3.i' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4405' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$30_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4406' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$31_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4407' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:27$32_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4408' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_ADDR' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4409' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_DATA' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4410' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:48$33_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4411' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_ADDR' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4412' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_DATA' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4413' with positive edge clock.
+Creating register for signal `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$memwr$\array$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:61$34_EN' using process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+  created $dff cell `$procdff$4414' with positive edge clock.
+
+15.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+15.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 7 empty switches in `\FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+Removing empty process `FPU_32_controller.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:196$9'.
+Removing empty process `carry_ripple_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_ripple_adder.sv:0$946'.
+Removing empty process `carry_save_adder.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/carry_save_adder.sv:0$914'.
+Found and cleaned up 2 empty switches in `\exponent_bias.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858'.
+Removing empty process `exponent_bias.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/exponent_bias.sv:0$858'.
+Found and cleaned up 16 empty switches in `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+Removing empty process `$paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/Reorder_buffer.sv:38$582'.
+Found and cleaned up 3 empty switches in `\FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+Removing empty process `FP32_Mult.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Mult.sv:117$511'.
+Found and cleaned up 71 empty switches in `\FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+Removing empty process `FP32_Div.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_Div.sv:81$340'.
+Found and cleaned up 76 empty switches in `\FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+Removing empty process `FP32_ADD.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FP32_ADD.sv:75$161'.
+Found and cleaned up 8 empty switches in `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+Removing empty process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$104'.
+Found and cleaned up 8 empty switches in `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+Removing empty process `$paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.$proc$/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FIFO.sv:24$41'.
+Cleaned up 191 empty switches.
+
+15.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module FPU_32_controller.
+<suppressed ~1 debug messages>
+Optimizing module carry_ripple_adder.
+Optimizing module carry_save_adder.
+Optimizing module partial_product_generator.
+Optimizing module partial_products_csa_tree.
+<suppressed ~22 debug messages>
+Optimizing module exponent_bias.
+<suppressed ~3 debug messages>
+Optimizing module $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.
+<suppressed ~4 debug messages>
+Optimizing module FP32_Mult.
+<suppressed ~31 debug messages>
+Optimizing module FP32_Div.
+<suppressed ~68 debug messages>
+Optimizing module FP32_ADD.
+<suppressed ~149 debug messages>
+Optimizing module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.
+<suppressed ~4 debug messages>
+Optimizing module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.
+<suppressed ~4 debug messages>
+
+16. Executing FLATTEN pass (flatten design).
+Deleting now unused module carry_ripple_adder.
+Deleting now unused module carry_save_adder.
+Deleting now unused module partial_product_generator.
+Deleting now unused module partial_products_csa_tree.
+Deleting now unused module exponent_bias.
+Deleting now unused module $paramod\Reorder_buffer\BUFFER_SIZE=s32'00000000000000000000000000010000.
+Deleting now unused module FP32_Mult.
+Deleting now unused module FP32_Div.
+Deleting now unused module FP32_ADD.
+Deleting now unused module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000100.
+Deleting now unused module $paramod\FIFO\FIFO_SIZE=s32'00000000000000000000000000000011.
+<suppressed ~33 debug messages>
+
+17. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \FPU_32_controller..
+Removed 183 unused cells and 2359 unused wires.
+<suppressed ~368 debug messages>

@@ -1,0 +1,104 @@
+Reading OpenROAD database at '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/20-openroad-generatepdn/FPU_32_controller.odb'…
+Reading library file at '/home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200
+[INFO] Setting input delay to: 200
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
++ global_placement -density 0.619888 -skip_io -pad_right 0 -pad_left 0 -init_wirelength_coef 0.25
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  5.520 10.880 ) ( 725.880 728.960 ) um
+[INFO GPL-0006] NumInstances:             32750
+[INFO GPL-0007] NumPlaceInstances:        24907
+[INFO GPL-0008] NumFixedInstances:         7843
+[INFO GPL-0009] NumDummyInstances:            0
+[INFO GPL-0010] NumNets:                  25009
+[INFO GPL-0011] NumPins:                  90768
+[INFO GPL-0012] DieBBox:  (  0.000  0.000 ) ( 731.835 742.555 ) um
+[INFO GPL-0013] CoreBBox: (  5.520 10.880 ) ( 725.880 728.960 ) um
+[INFO GPL-0016] CoreArea:            517276.109 um^2
+[INFO GPL-0017] NonPlaceInstsArea:    11134.429 um^2
+[INFO GPL-0018] PlaceInstsArea:      259772.893 um^2
+[INFO GPL-0019] Util:                    51.324 %
+[INFO GPL-0020] StdInstsArea:        259772.893 um^2
+[INFO GPL-0021] MacroInstsArea:           0.000 um^2
+[INFO GPL-0031] FillerInit:NumGCells:     30289
+[INFO GPL-0032] FillerInit:NumGNets:      25009
+[INFO GPL-0033] FillerInit:NumGPins:      90768
+[INFO GPL-0023] TargetDensity:            0.620
+[INFO GPL-0024] AvrgPlaceInstArea:       10.430 um^2
+[INFO GPL-0025] IdealBinArea:            16.825 um^2
+[INFO GPL-0026] IdealBinCnt:              30744
+[INFO GPL-0027] TotalBinArea:        517276.109 um^2
+[INFO GPL-0028] BinCnt:       128    128
+[INFO GPL-0029] BinSize: (  5.628  5.610 )
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter:    1 overflow: 0.999 HPWL: 64281446
+[NesterovSolve] Iter:   10 overflow: 0.999 HPWL: 40153271
+[NesterovSolve] Iter:   20 overflow: 0.999 HPWL: 38925281
+[NesterovSolve] Iter:   30 overflow: 0.999 HPWL: 38542161
+[NesterovSolve] Iter:   40 overflow: 0.999 HPWL: 38266240
+[NesterovSolve] Iter:   50 overflow: 0.999 HPWL: 38039606
+[NesterovSolve] Iter:   60 overflow: 0.998 HPWL: 37864414
+[NesterovSolve] Iter:   70 overflow: 0.998 HPWL: 37734170
+[NesterovSolve] Iter:   80 overflow: 0.998 HPWL: 37642749
+[NesterovSolve] Iter:   90 overflow: 0.998 HPWL: 37609069
+[NesterovSolve] Iter:  100 overflow: 0.998 HPWL: 37698085
+[NesterovSolve] Iter:  110 overflow: 0.997 HPWL: 38174833
+[NesterovSolve] Iter:  120 overflow: 0.997 HPWL: 39651051
+[NesterovSolve] Iter:  130 overflow: 0.996 HPWL: 42997162
+[NesterovSolve] Iter:  140 overflow: 0.993 HPWL: 48561113
+[NesterovSolve] Iter:  150 overflow: 0.989 HPWL: 57571219
+[NesterovSolve] Iter:  160 overflow: 0.984 HPWL: 70352429
+[NesterovSolve] Iter:  170 overflow: 0.976 HPWL: 85734340
+[NesterovSolve] Iter:  180 overflow: 0.967 HPWL: 102678949
+[NesterovSolve] Iter:  190 overflow: 0.954 HPWL: 121859881
+[NesterovSolve] Iter:  200 overflow: 0.938 HPWL: 144515483
+[NesterovSolve] Iter:  210 overflow: 0.919 HPWL: 172064809
+[NesterovSolve] Iter:  220 overflow: 0.892 HPWL: 203799233
+[NesterovSolve] Iter:  230 overflow: 0.853 HPWL: 237128289
+[NesterovSolve] Iter:  240 overflow: 0.821 HPWL: 271446233
+[NesterovSolve] Iter:  250 overflow: 0.790 HPWL: 299245007
+[NesterovSolve] Iter:  260 overflow: 0.750 HPWL: 326393392
+[NesterovSolve] Iter:  270 overflow: 0.712 HPWL: 347612803
+[NesterovSolve] Iter:  280 overflow: 0.678 HPWL: 371105376
+[NesterovSolve] Iter:  290 overflow: 0.633 HPWL: 396924582
+[NesterovSolve] Iter:  300 overflow: 0.586 HPWL: 417921606
+[NesterovSolve] Iter:  310 overflow: 0.543 HPWL: 428214100
+[NesterovSolve] Iter:  320 overflow: 0.501 HPWL: 437917222
+[NesterovSolve] Iter:  330 overflow: 0.462 HPWL: 442576259
+[NesterovSolve] Iter:  340 overflow: 0.421 HPWL: 448793509
+[NesterovSolve] Iter:  350 overflow: 0.384 HPWL: 451097604
+[NesterovSolve] Iter:  360 overflow: 0.349 HPWL: 453297911
+[NesterovSolve] Iter:  370 overflow: 0.320 HPWL: 452246858
+[NesterovSolve] Iter:  380 overflow: 0.293 HPWL: 452778745
+[NesterovSolve] Iter:  390 overflow: 0.265 HPWL: 452856687
+[NesterovSolve] Iter:  400 overflow: 0.240 HPWL: 453658706
+[NesterovSolve] Iter:  410 overflow: 0.215 HPWL: 454371487
+[NesterovSolve] Iter:  420 overflow: 0.191 HPWL: 455803382
+[NesterovSolve] Iter:  430 overflow: 0.166 HPWL: 457091440
+[NesterovSolve] Iter:  440 overflow: 0.143 HPWL: 458524161
+[NesterovSolve] Iter:  450 overflow: 0.123 HPWL: 460156088
+[NesterovSolve] Iter:  460 overflow: 0.104 HPWL: 461978347
+[NesterovSolve] Finished with Overflow: 0.098488
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               528    1981.90
+  Tap cell                               7315    9152.53
+  Buffer                                   46     172.67
+  Inverter                               1536    5765.53
+  Sequential cell                        2511   57108.52
+  Multi-Input combinational cell        20814  196726.18
+  Total                                 32750  270907.32
+Writing OpenROAD database to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/23-openroad-globalplacementskipio/FPU_32_controller.odb'…
+Writing netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/23-openroad-globalplacementskipio/FPU_32_controller.nl.v'…
+Writing powered netlist to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/23-openroad-globalplacementskipio/FPU_32_controller.pnl.v'…
+Writing layout to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/23-openroad-globalplacementskipio/FPU_32_controller.def'…
+Writing timing constraints to '/home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-13_16-57-15/23-openroad-globalplacementskipio/FPU_32_controller.sdc'…

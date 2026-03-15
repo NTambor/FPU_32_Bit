@@ -1,0 +1,936 @@
+
+Magic 8.3 revision 489 - Compiled on Thu Aug 22 13:45:15 UTC 2024.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/nix/store/svkrfkkpaij5qb9xjbcwfymcd4s8hczv-python3-3.11.9-env/lib/python3.11/site-packages/librelane/scripts/magic/wrapper.tcl" from command line.
+> lef read /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef
+Reading LEF data from file /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef.
+This action cannot be undone.
+LEF read, Line 82 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 83 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 116 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 118 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 119 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 125 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 126 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 127 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 160 (Message): Unknown keyword "MINENCLOSEDAREA" in LEF file; ignoring.
+LEF read, Line 168 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 169 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 171 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 172 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 173 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 210 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 211 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 213 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 214 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 215 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 252 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 253 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read, Line 255 (Message): Unknown keyword "MAXIMUMDENSITY" in LEF file; ignoring.
+LEF read, Line 256 (Message): Unknown keyword "DENSITYCHECKWINDOW" in LEF file; ignoring.
+LEF read, Line 257 (Message): Unknown keyword "DENSITYCHECKSTEP" in LEF file; ignoring.
+LEF read, Line 294 (Message): Unknown keyword "ANTENNAMODEL" in LEF file; ignoring.
+LEF read, Line 295 (Message): Unknown keyword "ANTENNADIFFSIDEAREARATIO" in LEF file; ignoring.
+LEF read: Processed 801 lines.
+> gds read /home/niko_tambornini/.ciel/ciel/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Warning: Calma reading is not undoable!  I hope that's OK.
+Library written using GDS-II Release 3.0
+Library name: sky130_fd_sc_hd
+Reading "sky130_fd_sc_hd__or4bb_4".
+Reading "sky130_fd_sc_hd__probe_p_8".
+Reading "sky130_fd_sc_hd__probec_p_8".
+Reading "sky130_fd_sc_hd__sdfbbn_1".
+Reading "sky130_fd_sc_hd__sdfsbp_2".
+Reading "sky130_fd_sc_hd__sdfsbp_1".
+Reading "sky130_fd_sc_hd__sdfrtp_4".
+Reading "sky130_fd_sc_hd__sdfrtp_2".
+Reading "sky130_fd_sc_hd__sdfrtp_1".
+Reading "sky130_fd_sc_hd__sdfrtn_1".
+Reading "sky130_fd_sc_hd__sdfrbp_2".
+Reading "sky130_fd_sc_hd__sdfrbp_1".
+Reading "sky130_fd_sc_hd__sdfbbp_1".
+Reading "sky130_fd_sc_hd__sdfbbn_2".
+Reading "sky130_fd_sc_hd__sdfstp_1".
+Reading "sky130_fd_sc_hd__sdfstp_2".
+Reading "sky130_fd_sc_hd__sdfstp_4".
+Reading "sky130_fd_sc_hd__sdfxbp_1".
+Reading "sky130_fd_sc_hd__sdfxbp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_1".
+Reading "sky130_fd_sc_hd__sdfxtp_2".
+Reading "sky130_fd_sc_hd__sdfxtp_4".
+Reading "sky130_fd_sc_hd__sdlclkp_1".
+Reading "sky130_fd_sc_hd__sdlclkp_2".
+Reading "sky130_fd_sc_hd__sdlclkp_4".
+Reading "sky130_fd_sc_hd__sedfxbp_1".
+Reading "sky130_fd_sc_hd__sedfxbp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_1".
+Reading "sky130_fd_sc_hd__sedfxtp_2".
+Reading "sky130_fd_sc_hd__sedfxtp_4".
+Reading "sky130_fd_sc_hd__tap_1".
+Reading "sky130_fd_sc_hd__tap_2".
+Reading "sky130_fd_sc_hd__xor2_1".
+Reading "sky130_fd_sc_hd__xnor3_4".
+Reading "sky130_fd_sc_hd__xnor3_2".
+Reading "sky130_fd_sc_hd__xnor3_1".
+Reading "sky130_fd_sc_hd__xnor2_4".
+Reading "sky130_fd_sc_hd__xnor2_2".
+Reading "sky130_fd_sc_hd__xnor2_1".
+Reading "sky130_fd_sc_hd__tapvpwrvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd_1".
+Reading "sky130_fd_sc_hd__tapvgnd2_1".
+Reading "sky130_fd_sc_hd__xor2_2".
+Reading "sky130_fd_sc_hd__xor2_4".
+Reading "sky130_fd_sc_hd__xor3_1".
+Reading "sky130_fd_sc_hd__xor3_2".
+Reading "sky130_fd_sc_hd__xor3_4".
+Reading "sky130_fd_sc_hd__o41a_4".
+Reading "sky130_fd_sc_hd__o41ai_1".
+Reading "sky130_fd_sc_hd__o41ai_2".
+Reading "sky130_fd_sc_hd__o41ai_4".
+Reading "sky130_fd_sc_hd__o211a_1".
+Reading "sky130_fd_sc_hd__o211a_2".
+Reading "sky130_fd_sc_hd__o211a_4".
+Reading "sky130_fd_sc_hd__o211ai_1".
+Reading "sky130_fd_sc_hd__o211ai_2".
+Reading "sky130_fd_sc_hd__o211ai_4".
+Reading "sky130_fd_sc_hd__o221a_1".
+Reading "sky130_fd_sc_hd__o221a_2".
+Reading "sky130_fd_sc_hd__o221a_4".
+Reading "sky130_fd_sc_hd__o221ai_1".
+Reading "sky130_fd_sc_hd__o221ai_2".
+Reading "sky130_fd_sc_hd__o221ai_4".
+Reading "sky130_fd_sc_hd__o2111a_4".
+Reading "sky130_fd_sc_hd__o2111a_2".
+Reading "sky130_fd_sc_hd__o2111a_1".
+Reading "sky130_fd_sc_hd__o311ai_4".
+Reading "sky130_fd_sc_hd__o311ai_2".
+Reading "sky130_fd_sc_hd__o311ai_1".
+Reading "sky130_fd_sc_hd__o311ai_0".
+Reading "sky130_fd_sc_hd__o311a_4".
+Reading "sky130_fd_sc_hd__o311a_2".
+Reading "sky130_fd_sc_hd__o311a_1".
+Reading "sky130_fd_sc_hd__o2111ai_1".
+Reading "sky130_fd_sc_hd__o2111ai_2".
+Reading "sky130_fd_sc_hd__o2111ai_4".
+Reading "sky130_fd_sc_hd__or2_0".
+Reading "sky130_fd_sc_hd__or2_1".
+Reading "sky130_fd_sc_hd__or2_2".
+Reading "sky130_fd_sc_hd__or2_4".
+Reading "sky130_fd_sc_hd__or2b_1".
+Reading "sky130_fd_sc_hd__or2b_2".
+Reading "sky130_fd_sc_hd__or2b_4".
+Reading "sky130_fd_sc_hd__or3_1".
+Reading "sky130_fd_sc_hd__or3_2".
+Reading "sky130_fd_sc_hd__or3_4".
+Reading "sky130_fd_sc_hd__or3b_1".
+Reading "sky130_fd_sc_hd__or3b_2".
+Reading "sky130_fd_sc_hd__or3b_4".
+Reading "sky130_fd_sc_hd__or4_1".
+Reading "sky130_fd_sc_hd__or4_2".
+Reading "sky130_fd_sc_hd__or4_4".
+Reading "sky130_fd_sc_hd__or4b_1".
+Reading "sky130_fd_sc_hd__or4b_2".
+Reading "sky130_fd_sc_hd__or4b_4".
+Reading "sky130_fd_sc_hd__or4bb_1".
+Reading "sky130_fd_sc_hd__or4bb_2".
+Reading "sky130_fd_sc_hd__nor3b_2".
+Reading "sky130_fd_sc_hd__nor3b_4".
+Reading "sky130_fd_sc_hd__nor4_1".
+Reading "sky130_fd_sc_hd__nor4_2".
+Reading "sky130_fd_sc_hd__nor4_4".
+Reading "sky130_fd_sc_hd__nor4b_1".
+Reading "sky130_fd_sc_hd__nor4b_2".
+Reading "sky130_fd_sc_hd__nor4b_4".
+Reading "sky130_fd_sc_hd__nor4bb_1".
+Reading "sky130_fd_sc_hd__nor4bb_2".
+Reading "sky130_fd_sc_hd__nor4bb_4".
+Moving label "k" from mvpsubdiff to ndiff in cell sky130_fd_sc_hd__nor4bb_4.
+Reading "sky130_fd_sc_hd__o2bb2a_1".
+Reading "sky130_fd_sc_hd__o2bb2a_2".
+Reading "sky130_fd_sc_hd__o2bb2a_4".
+Reading "sky130_fd_sc_hd__o2bb2ai_1".
+Reading "sky130_fd_sc_hd__o2bb2ai_2".
+Reading "sky130_fd_sc_hd__o2bb2ai_4".
+Reading "sky130_fd_sc_hd__o21a_1".
+Reading "sky130_fd_sc_hd__o21a_2".
+Reading "sky130_fd_sc_hd__o21ai_2".
+Reading "sky130_fd_sc_hd__o21ai_1".
+Reading "sky130_fd_sc_hd__o21ai_0".
+Reading "sky130_fd_sc_hd__o21a_4".
+Reading "sky130_fd_sc_hd__o21ba_2".
+Reading "sky130_fd_sc_hd__o21ba_1".
+Reading "sky130_fd_sc_hd__o21ai_4".
+Reading "sky130_fd_sc_hd__o21bai_2".
+Reading "sky130_fd_sc_hd__o21bai_1".
+Reading "sky130_fd_sc_hd__o21ba_4".
+Reading "sky130_fd_sc_hd__o21bai_4".
+Reading "sky130_fd_sc_hd__o22a_1".
+Reading "sky130_fd_sc_hd__o22a_2".
+Reading "sky130_fd_sc_hd__o22a_4".
+Reading "sky130_fd_sc_hd__o22ai_1".
+Reading "sky130_fd_sc_hd__o22ai_2".
+Reading "sky130_fd_sc_hd__o22ai_4".
+Reading "sky130_fd_sc_hd__o31a_1".
+Reading "sky130_fd_sc_hd__o31a_2".
+Reading "sky130_fd_sc_hd__o31a_4".
+Reading "sky130_fd_sc_hd__o31ai_1".
+Reading "sky130_fd_sc_hd__o31ai_2".
+Reading "sky130_fd_sc_hd__o31ai_4".
+Reading "sky130_fd_sc_hd__o32a_1".
+Reading "sky130_fd_sc_hd__o32a_2".
+Reading "sky130_fd_sc_hd__o32a_4".
+Reading "sky130_fd_sc_hd__o32ai_1".
+Reading "sky130_fd_sc_hd__o32ai_2".
+Reading "sky130_fd_sc_hd__o32ai_4".
+Reading "sky130_fd_sc_hd__o41a_1".
+Reading "sky130_fd_sc_hd__o41a_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1".
+CIF file read warning: CIF style sky130(): units rescaled by factor of 5 / 1
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2".
+Reading "sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4".
+Reading "sky130_fd_sc_hd__nor2_2".
+Reading "sky130_fd_sc_hd__nand2_2".
+Reading "sky130_fd_sc_hd__inv_2".
+Reading "sky130_fd_sc_hd__conb_1".
+Reading "sky130_fd_sc_hd__macro_sparecell".
+Reading "sky130_fd_sc_hd__maj3_1".
+Reading "sky130_fd_sc_hd__maj3_2".
+Reading "sky130_fd_sc_hd__maj3_4".
+Reading "sky130_fd_sc_hd__mux2_1".
+Reading "sky130_fd_sc_hd__mux2_2".
+Reading "sky130_fd_sc_hd__mux2_4".
+Reading "sky130_fd_sc_hd__mux2_8".
+Reading "sky130_fd_sc_hd__mux2i_1".
+Reading "sky130_fd_sc_hd__mux2i_2".
+Reading "sky130_fd_sc_hd__nand2_1".
+Reading "sky130_fd_sc_hd__nand2_4".
+Reading "sky130_fd_sc_hd__nand2_8".
+Reading "sky130_fd_sc_hd__nand2b_1".
+Reading "sky130_fd_sc_hd__mux2i_4".
+Reading "sky130_fd_sc_hd__mux4_1".
+Reading "sky130_fd_sc_hd__mux4_2".
+Reading "sky130_fd_sc_hd__mux4_4".
+Reading "sky130_fd_sc_hd__nand2b_2".
+Reading "sky130_fd_sc_hd__nand2b_4".
+Reading "sky130_fd_sc_hd__nand3_1".
+Reading "sky130_fd_sc_hd__nand3_2".
+Reading "sky130_fd_sc_hd__nand3_4".
+Reading "sky130_fd_sc_hd__nand3b_1".
+Reading "sky130_fd_sc_hd__nand3b_2".
+Reading "sky130_fd_sc_hd__nand3b_4".
+Reading "sky130_fd_sc_hd__nand4_1".
+Reading "sky130_fd_sc_hd__nand4_2".
+Reading "sky130_fd_sc_hd__nand4_4".
+Reading "sky130_fd_sc_hd__nand4b_1".
+Reading "sky130_fd_sc_hd__nand4b_2".
+Reading "sky130_fd_sc_hd__nand4b_4".
+Reading "sky130_fd_sc_hd__nand4bb_1".
+Reading "sky130_fd_sc_hd__nand4bb_2".
+Reading "sky130_fd_sc_hd__nand4bb_4".
+Reading "sky130_fd_sc_hd__nor2_1".
+Reading "sky130_fd_sc_hd__nor2_4".
+Reading "sky130_fd_sc_hd__nor2_8".
+Reading "sky130_fd_sc_hd__nor2b_1".
+Reading "sky130_fd_sc_hd__nor2b_2".
+Reading "sky130_fd_sc_hd__nor2b_4".
+Reading "sky130_fd_sc_hd__nor3_1".
+Reading "sky130_fd_sc_hd__nor3_2".
+Reading "sky130_fd_sc_hd__nor3_4".
+Reading "sky130_fd_sc_hd__nor3b_1".
+Reading "sky130_fd_sc_hd__einvp_1".
+Reading "sky130_fd_sc_hd__einvp_2".
+Reading "sky130_fd_sc_hd__einvp_4".
+Reading "sky130_fd_sc_hd__einvp_8".
+Reading "sky130_fd_sc_hd__fa_1".
+Reading "sky130_fd_sc_hd__fa_2".
+Reading "sky130_fd_sc_hd__fa_4".
+Reading "sky130_fd_sc_hd__fah_1".
+Reading "sky130_fd_sc_hd__fahcin_1".
+Reading "sky130_fd_sc_hd__fahcon_1".
+Reading "sky130_fd_sc_hd__fill_1".
+Reading "sky130_fd_sc_hd__fill_2".
+Reading "sky130_fd_sc_hd__fill_4".
+Reading "sky130_fd_sc_hd__fill_8".
+Reading "sky130_fd_sc_hd__ha_1".
+Reading "sky130_fd_sc_hd__ha_2".
+Reading "sky130_fd_sc_hd__ha_4".
+Reading "sky130_fd_sc_hd__inv_1".
+Reading "sky130_fd_sc_hd__inv_16".
+Reading "sky130_fd_sc_hd__inv_12".
+Reading "sky130_fd_sc_hd__inv_8".
+Reading "sky130_fd_sc_hd__inv_6".
+Reading "sky130_fd_sc_hd__inv_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_bleeder_1".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkbufkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_1".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_2".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_clkinvkapwr_16".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_3".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_4".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_6".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0n_1".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_12".
+Reading "sky130_fd_sc_hd__lpflow_decapkapwr_8".
+Reading "sky130_fd_sc_hd__lpflow_inputisolatch_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1p_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso1n_1".
+Reading "sky130_fd_sc_hd__lpflow_inputiso0p_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_4".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_2".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_1".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_8".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrc_16".
+Reading "sky130_fd_sc_hd__lpflow_isobufsrckapwr_16".
+Reading "sky130_fd_sc_hd__dfrtp_2".
+Reading "sky130_fd_sc_hd__dfrtp_4".
+Reading "sky130_fd_sc_hd__dfsbp_1".
+Reading "sky130_fd_sc_hd__dfsbp_2".
+Reading "sky130_fd_sc_hd__dfstp_1".
+Reading "sky130_fd_sc_hd__dfstp_2".
+Reading "sky130_fd_sc_hd__dfstp_4".
+Reading "sky130_fd_sc_hd__dfxbp_1".
+Reading "sky130_fd_sc_hd__dfxbp_2".
+Reading "sky130_fd_sc_hd__dfxtp_1".
+Reading "sky130_fd_sc_hd__dfxtp_2".
+Reading "sky130_fd_sc_hd__dfxtp_4".
+Reading "sky130_fd_sc_hd__diode_2".
+Reading "sky130_fd_sc_hd__dlclkp_1".
+Reading "sky130_fd_sc_hd__dlclkp_2".
+Reading "sky130_fd_sc_hd__dlclkp_4".
+Reading "sky130_fd_sc_hd__dlrbn_1".
+Reading "sky130_fd_sc_hd__dlrbp_1".
+Reading "sky130_fd_sc_hd__dlrtn_1".
+Reading "sky130_fd_sc_hd__dlrtn_2".
+Reading "sky130_fd_sc_hd__dlrbn_2".
+Reading "sky130_fd_sc_hd__dlrbp_2".
+Reading "sky130_fd_sc_hd__dlrtn_4".
+Reading "sky130_fd_sc_hd__dlrtp_1".
+Reading "sky130_fd_sc_hd__dlrtp_2".
+Reading "sky130_fd_sc_hd__dlrtp_4".
+Reading "sky130_fd_sc_hd__dlxbn_1".
+Reading "sky130_fd_sc_hd__dlxbn_2".
+Reading "sky130_fd_sc_hd__dlxbp_1".
+Reading "sky130_fd_sc_hd__dlxtn_1".
+Reading "sky130_fd_sc_hd__dlxtn_2".
+Reading "sky130_fd_sc_hd__dlxtn_4".
+Reading "sky130_fd_sc_hd__dlxtp_1".
+Reading "sky130_fd_sc_hd__dlygate4sd1_1".
+Reading "sky130_fd_sc_hd__dlygate4sd2_1".
+Reading "sky130_fd_sc_hd__dlygate4sd3_1".
+Reading "sky130_fd_sc_hd__dlymetal6s2s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s4s_1".
+Reading "sky130_fd_sc_hd__dlymetal6s6s_1".
+Reading "sky130_fd_sc_hd__ebufn_1".
+Reading "sky130_fd_sc_hd__ebufn_2".
+Reading "sky130_fd_sc_hd__ebufn_4".
+Reading "sky130_fd_sc_hd__einvn_0".
+Reading "sky130_fd_sc_hd__einvn_1".
+Reading "sky130_fd_sc_hd__einvn_2".
+Reading "sky130_fd_sc_hd__einvn_4".
+Reading "sky130_fd_sc_hd__ebufn_8".
+Reading "sky130_fd_sc_hd__edfxbp_1".
+Reading "sky130_fd_sc_hd__edfxtp_1".
+Reading "sky130_fd_sc_hd__einvn_8".
+Reading "sky130_fd_sc_hd__and4_4".
+Reading "sky130_fd_sc_hd__and4b_1".
+Reading "sky130_fd_sc_hd__and4b_2".
+Reading "sky130_fd_sc_hd__and4b_4".
+Reading "sky130_fd_sc_hd__and4bb_1".
+Reading "sky130_fd_sc_hd__and4bb_2".
+Reading "sky130_fd_sc_hd__and4bb_4".
+Reading "sky130_fd_sc_hd__buf_1".
+Reading "sky130_fd_sc_hd__buf_2".
+Reading "sky130_fd_sc_hd__buf_4".
+Reading "sky130_fd_sc_hd__buf_6".
+Reading "sky130_fd_sc_hd__buf_8".
+Reading "sky130_fd_sc_hd__buf_12".
+Reading "sky130_fd_sc_hd__buf_16".
+Reading "sky130_fd_sc_hd__bufbuf_8".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s15_1".
+Reading "sky130_fd_sc_hd__clkbuf_16".
+Reading "sky130_fd_sc_hd__clkbuf_8".
+Reading "sky130_fd_sc_hd__clkbuf_4".
+Reading "sky130_fd_sc_hd__clkbuf_2".
+Reading "sky130_fd_sc_hd__clkbuf_1".
+Reading "sky130_fd_sc_hd__bufinv_16".
+Reading "sky130_fd_sc_hd__bufinv_8".
+Reading "sky130_fd_sc_hd__bufbuf_16".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s18_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s25_2".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_1".
+Reading "sky130_fd_sc_hd__clkdlybuf4s50_2".
+Reading "sky130_fd_sc_hd__clkinv_1".
+Reading "sky130_fd_sc_hd__clkinv_2".
+Reading "sky130_fd_sc_hd__clkinv_4".
+Reading "sky130_fd_sc_hd__dfbbn_1".
+Reading "sky130_fd_sc_hd__decap_12".
+Reading "sky130_fd_sc_hd__decap_8".
+Reading "sky130_fd_sc_hd__decap_6".
+Reading "sky130_fd_sc_hd__decap_4".
+Reading "sky130_fd_sc_hd__decap_3".
+Reading "sky130_fd_sc_hd__clkinvlp_4".
+Reading "sky130_fd_sc_hd__clkinvlp_2".
+Reading "sky130_fd_sc_hd__clkinv_16".
+Reading "sky130_fd_sc_hd__clkinv_8".
+Reading "sky130_fd_sc_hd__dfbbn_2".
+Reading "sky130_fd_sc_hd__dfbbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_1".
+Reading "sky130_fd_sc_hd__dfrbp_2".
+Reading "sky130_fd_sc_hd__dfrtn_1".
+Reading "sky130_fd_sc_hd__dfrtp_1".
+Reading "sky130_fd_sc_hd__a32oi_1".
+Reading "sky130_fd_sc_hd__a32oi_2".
+Reading "sky130_fd_sc_hd__a32oi_4".
+Reading "sky130_fd_sc_hd__a41o_1".
+Reading "sky130_fd_sc_hd__a41o_2".
+Reading "sky130_fd_sc_hd__a41o_4".
+Reading "sky130_fd_sc_hd__a41oi_1".
+Reading "sky130_fd_sc_hd__a41oi_2".
+Reading "sky130_fd_sc_hd__a41oi_4".
+Reading "sky130_fd_sc_hd__a221o_4".
+Reading "sky130_fd_sc_hd__a221o_2".
+Reading "sky130_fd_sc_hd__a221oi_1".
+Reading "sky130_fd_sc_hd__a211oi_2".
+Reading "sky130_fd_sc_hd__a211oi_1".
+Reading "sky130_fd_sc_hd__a211o_4".
+Reading "sky130_fd_sc_hd__a211o_2".
+Reading "sky130_fd_sc_hd__a211o_1".
+Reading "sky130_fd_sc_hd__a221o_1".
+Reading "sky130_fd_sc_hd__a211oi_4".
+Reading "sky130_fd_sc_hd__a221oi_2".
+Reading "sky130_fd_sc_hd__a221oi_4".
+Reading "sky130_fd_sc_hd__a222oi_1".
+Reading "sky130_fd_sc_hd__a311o_1".
+Reading "sky130_fd_sc_hd__a311o_2".
+Reading "sky130_fd_sc_hd__a311o_4".
+Reading "sky130_fd_sc_hd__a311oi_1".
+Reading "sky130_fd_sc_hd__a311oi_2".
+Reading "sky130_fd_sc_hd__a311oi_4".
+Reading "sky130_fd_sc_hd__a2111o_1".
+Reading "sky130_fd_sc_hd__a2111o_2".
+Reading "sky130_fd_sc_hd__a2111o_4".
+Reading "sky130_fd_sc_hd__a2111oi_0".
+Reading "sky130_fd_sc_hd__a2111oi_1".
+CIF file read warning: Input off lambda grid by 2/5; snapped to grid.
+Reading "sky130_fd_sc_hd__a2111oi_2".
+Reading "sky130_fd_sc_hd__a2111oi_4".
+Reading "sky130_fd_sc_hd__and2_0".
+Reading "sky130_fd_sc_hd__and2_1".
+Reading "sky130_fd_sc_hd__and2b_1".
+Reading "sky130_fd_sc_hd__and2_4".
+Reading "sky130_fd_sc_hd__and2_2".
+Reading "sky130_fd_sc_hd__and2b_4".
+Reading "sky130_fd_sc_hd__and2b_2".
+Reading "sky130_fd_sc_hd__and3_4".
+Reading "sky130_fd_sc_hd__and3_2".
+Reading "sky130_fd_sc_hd__and3_1".
+Reading "sky130_fd_sc_hd__and3b_2".
+Reading "sky130_fd_sc_hd__and3b_1".
+Reading "sky130_fd_sc_hd__and3b_4".
+Reading "sky130_fd_sc_hd__and4_1".
+Reading "sky130_fd_sc_hd__and4_2".
+Reading "sky130_ef_sc_hd__decap_12".
+Reading "sky130_ef_sc_hd__fill_4".
+Reading "sky130_ef_sc_hd__fill_8".
+Reading "sky130_ef_sc_hd__fill_12".
+Reading "sky130_fd_sc_hd__a2bb2o_1".
+Reading "sky130_fd_sc_hd__a2bb2o_2".
+Reading "sky130_fd_sc_hd__a2bb2o_4".
+Reading "sky130_fd_sc_hd__a2bb2oi_1".
+Reading "sky130_fd_sc_hd__a2bb2oi_2".
+Reading "sky130_fd_sc_hd__a2bb2oi_4".
+Reading "sky130_fd_sc_hd__a21bo_1".
+Reading "sky130_fd_sc_hd__a21bo_2".
+Reading "sky130_fd_sc_hd__a21bo_4".
+Reading "sky130_fd_sc_hd__a21boi_0".
+Reading "sky130_fd_sc_hd__a21boi_1".
+Reading "sky130_fd_sc_hd__a21boi_2".
+Reading "sky130_fd_sc_hd__a21boi_4".
+Reading "sky130_fd_sc_hd__a21o_1".
+Reading "sky130_fd_sc_hd__a21o_2".
+Reading "sky130_fd_sc_hd__a22o_1".
+Reading "sky130_fd_sc_hd__a21oi_4".
+Reading "sky130_fd_sc_hd__a21oi_2".
+Reading "sky130_fd_sc_hd__a22oi_2".
+Reading "sky130_fd_sc_hd__a22oi_1".
+Reading "sky130_fd_sc_hd__a22o_4".
+Reading "sky130_fd_sc_hd__a22o_2".
+Reading "sky130_fd_sc_hd__a22oi_4".
+Reading "sky130_fd_sc_hd__a21oi_1".
+Reading "sky130_fd_sc_hd__a21o_4".
+Reading "sky130_fd_sc_hd__a31o_1".
+Reading "sky130_fd_sc_hd__a31o_2".
+Reading "sky130_fd_sc_hd__a31o_4".
+Reading "sky130_fd_sc_hd__a31oi_1".
+Reading "sky130_fd_sc_hd__a31oi_2".
+Reading "sky130_fd_sc_hd__a31oi_4".
+Reading "sky130_fd_sc_hd__a32o_1".
+Reading "sky130_fd_sc_hd__a32o_2".
+Reading "sky130_fd_sc_hd__a32o_4".
+Cell (REFRESHLAYOUT?) couldn't be read
+No such file or directory
+Creating new cell
+> def read /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-12_00-49-12/52-odb-cellfrequencytables/FP32_Div.def -noblockage -labels
+Reading DEF data from file /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-12_00-49-12/52-odb-cellfrequencytables/FP32_Div.def.
+This action cannot be undone.
+  Processed 4 vias total.
+  Processed 42413 subcell instances total.
+  Processed 99 pins total.
+  Processed 2 special nets total.
+  Processed 16712 nets total.
+DEF read: Processed 308254 lines.
+Moving label "_00018_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00026_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00032_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00036_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00043_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00045_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00047_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00071_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00072_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00076_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00086_" from metal1 to viali in cell FP32_Div.
+Moving label "_00088_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00089_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00101_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00110_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00153_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00175_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00180_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00225_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00227_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00234_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00237_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00245_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00357_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00423_" from metal1 to viali in cell FP32_Div.
+Moving label "_00443_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00451_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00453_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00457_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00462_" from metal2 to via1 in cell FP32_Div.
+Moving label "_00533_" from metal1 to viali in cell FP32_Div.
+Moving label "_00637_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00656_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00670_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00674_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00722_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00783_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00841_" from metal2 to via1 in cell FP32_Div.
+Moving label "_00843_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00856_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00903_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00922_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00940_" from metal2 to via2 in cell FP32_Div.
+Moving label "_00946_" from metal1 to via1 in cell FP32_Div.
+Moving label "_00989_" from metal2 to via1 in cell FP32_Div.
+Moving label "_01069_" from metal1 to viali in cell FP32_Div.
+Moving label "_01095_" from metal1 to via1 in cell FP32_Div.
+Moving label "_01138_" from metal1 to viali in cell FP32_Div.
+Moving label "_01147_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01153_" from metal1 to via1 in cell FP32_Div.
+Moving label "_01242_" from metal1 to via1 in cell FP32_Div.
+Moving label "_01281_" from metal1 to viali in cell FP32_Div.
+Moving label "_01499_" from metal1 to viali in cell FP32_Div.
+Moving label "_01503_" from metal2 to via1 in cell FP32_Div.
+Moving label "_01533_" from metal1 to via1 in cell FP32_Div.
+Moving label "_01600_" from metal1 to via1 in cell FP32_Div.
+Moving label "_01634_" from metal1 to viali in cell FP32_Div.
+Moving label "_01730_" from metal2 to via1 in cell FP32_Div.
+Moving label "_01862_" from metal2 to via1 in cell FP32_Div.
+Moving label "_01898_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01901_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01904_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01908_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01920_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01933_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01952_" from metal1 to viali in cell FP32_Div.
+Moving label "_01974_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01976_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01992_" from metal2 to via2 in cell FP32_Div.
+Moving label "_01999_" from metal2 to via2 in cell FP32_Div.
+Moving label "_02035_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02038_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02082_" from metal2 to via2 in cell FP32_Div.
+Moving label "_02273_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02371_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02416_" from metal1 to viali in cell FP32_Div.
+Moving label "_02491_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02608_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02625_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02645_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02662_" from metal2 to via1 in cell FP32_Div.
+Moving label "_02702_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02729_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02748_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02770_" from metal2 to via1 in cell FP32_Div.
+Moving label "_02793_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02823_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02878_" from metal2 to via2 in cell FP32_Div.
+Moving label "_02943_" from metal1 to via1 in cell FP32_Div.
+Moving label "_02987_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03033_" from metal2 to via2 in cell FP32_Div.
+Moving label "_03092_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03121_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03141_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03206_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03214_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03222_" from metal1 to viali in cell FP32_Div.
+Moving label "_03226_" from metal2 to via1 in cell FP32_Div.
+Moving label "_03284_" from metal2 to via2 in cell FP32_Div.
+Moving label "_03291_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03315_" from metal1 to viali in cell FP32_Div.
+Moving label "_03343_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03378_" from metal2 to via2 in cell FP32_Div.
+Moving label "_03493_" from metal2 to via1 in cell FP32_Div.
+Moving label "_03612_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03665_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03742_" from metal2 to via2 in cell FP32_Div.
+Moving label "_03851_" from metal3 to via3 in cell FP32_Div.
+Moving label "_03874_" from metal1 to via1 in cell FP32_Div.
+Moving label "_03899_" from metal2 to via2 in cell FP32_Div.
+Moving label "_03932_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04161_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04165_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04176_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04182_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04220_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04237_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04244_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04311_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04328_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04332_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04374_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04379_" from metal3 to via3 in cell FP32_Div.
+Moving label "_04380_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04382_" from metal1 to viali in cell FP32_Div.
+Moving label "_04384_" from metal3 to via3 in cell FP32_Div.
+Moving label "_04389_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04403_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04429_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04440_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04475_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04537_" from metal3 to via3 in cell FP32_Div.
+Moving label "_04568_" from metal2 to via2 in cell FP32_Div.
+Moving label "_04601_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04636_" from metal2 to via1 in cell FP32_Div.
+Moving label "_04689_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04755_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04777_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04848_" from metal1 to via1 in cell FP32_Div.
+Moving label "_04877_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05000_" from metal2 to via2 in cell FP32_Div.
+Moving label "_05009_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05022_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05109_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05121_" from metal2 to via2 in cell FP32_Div.
+Moving label "_05133_" from metal2 to via2 in cell FP32_Div.
+Moving label "_05193_" from metal2 to via1 in cell FP32_Div.
+Moving label "_05205_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05281_" from metal1 to viali in cell FP32_Div.
+Moving label "_05293_" from metal1 to viali in cell FP32_Div.
+Moving label "_05363_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05378_" from metal1 to viali in cell FP32_Div.
+Moving label "_05409_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05430_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05541_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05609_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05614_" from metal2 to via1 in cell FP32_Div.
+Moving label "_05665_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05705_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05745_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05813_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05840_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05855_" from metal2 to via2 in cell FP32_Div.
+Moving label "_05913_" from metal1 to via1 in cell FP32_Div.
+Moving label "_05922_" from metal2 to via1 in cell FP32_Div.
+Moving label "_05961_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06072_" from metal2 to via1 in cell FP32_Div.
+Moving label "_06108_" from metal1 to via1 in cell FP32_Div.
+Moving label "_06150_" from metal1 to via1 in cell FP32_Div.
+Moving label "_06197_" from metal1 to viali in cell FP32_Div.
+Moving label "_06272_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06285_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06296_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06298_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06464_" from metal1 to via1 in cell FP32_Div.
+Moving label "_06490_" from metal2 to via1 in cell FP32_Div.
+Moving label "_06536_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06540_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06548_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06549_" from metal1 to viali in cell FP32_Div.
+Moving label "_06696_" from metal1 to via1 in cell FP32_Div.
+Moving label "_06725_" from metal1 to via1 in cell FP32_Div.
+Moving label "_06900_" from metal1 to viali in cell FP32_Div.
+Moving label "_06915_" from metal1 to viali in cell FP32_Div.
+Moving label "_06961_" from metal2 to via2 in cell FP32_Div.
+Moving label "_06975_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07000_" from metal2 to via1 in cell FP32_Div.
+Moving label "_07083_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07137_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07400_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07411_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07422_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07428_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07499_" from metal1 to viali in cell FP32_Div.
+Moving label "_07590_" from metal1 to viali in cell FP32_Div.
+Moving label "_07686_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07716_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07725_" from metal2 to via2 in cell FP32_Div.
+Moving label "_07783_" from metal2 to via2 in cell FP32_Div.
+Moving label "_07826_" from metal1 to via1 in cell FP32_Div.
+Moving label "_07846_" from metal1 to viali in cell FP32_Div.
+Moving label "_07853_" from metal2 to via2 in cell FP32_Div.
+Moving label "_07862_" from metal1 to viali in cell FP32_Div.
+Moving label "_07969_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08015_" from metal1 to viali in cell FP32_Div.
+Moving label "_08017_" from metal1 to viali in cell FP32_Div.
+Moving label "_08030_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08077_" from metal2 to via1 in cell FP32_Div.
+Moving label "_08087_" from metal2 to via2 in cell FP32_Div.
+Moving label "_08142_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08169_" from metal1 to viali in cell FP32_Div.
+Moving label "_08199_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08202_" from metal2 to via2 in cell FP32_Div.
+Moving label "_08222_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08301_" from metal1 to viali in cell FP32_Div.
+Moving label "_08417_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08479_" from metal2 to via1 in cell FP32_Div.
+Moving label "_08562_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08583_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08592_" from metal1 to via1 in cell FP32_Div.
+Moving label "_08596_" from metal2 to via2 in cell FP32_Div.
+Moving label "_08616_" from metal1 to viali in cell FP32_Div.
+Moving label "_08648_" from metal1 to viali in cell FP32_Div.
+Moving label "_08661_" from metal1 to viali in cell FP32_Div.
+Moving label "_08728_" from metal2 to via1 in cell FP32_Div.
+Moving label "_08738_" from metal2 to via1 in cell FP32_Div.
+Moving label "_08773_" from metal2 to via2 in cell FP32_Div.
+Moving label "_08883_" from metal2 to via1 in cell FP32_Div.
+Moving label "_09018_" from metal1 to viali in cell FP32_Div.
+Moving label "_09096_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09188_" from metal2 to via2 in cell FP32_Div.
+Moving label "_09196_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09243_" from metal1 to viali in cell FP32_Div.
+Moving label "_09245_" from metal2 to via2 in cell FP32_Div.
+Moving label "_09294_" from metal1 to viali in cell FP32_Div.
+Moving label "_09328_" from metal1 to viali in cell FP32_Div.
+Moving label "_09361_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09393_" from metal2 to via1 in cell FP32_Div.
+Moving label "_09408_" from metal2 to via2 in cell FP32_Div.
+Moving label "_09504_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09522_" from metal1 to viali in cell FP32_Div.
+Moving label "_09536_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09685_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09729_" from metal2 to via1 in cell FP32_Div.
+Moving label "_09797_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09844_" from metal2 to via1 in cell FP32_Div.
+Moving label "_09890_" from metal1 to viali in cell FP32_Div.
+Moving label "_09897_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09964_" from metal1 to viali in cell FP32_Div.
+Moving label "_09973_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09986_" from metal1 to via1 in cell FP32_Div.
+Moving label "_09989_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10008_" from metal1 to viali in cell FP32_Div.
+Moving label "_10122_" from metal2 to via1 in cell FP32_Div.
+Moving label "_10146_" from metal1 to viali in cell FP32_Div.
+Moving label "_10280_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10352_" from metal2 to via1 in cell FP32_Div.
+Moving label "_10453_" from metal1 to viali in cell FP32_Div.
+Moving label "_10472_" from metal1 to viali in cell FP32_Div.
+Moving label "_10478_" from metal2 to via2 in cell FP32_Div.
+Moving label "_10500_" from metal2 to via2 in cell FP32_Div.
+Moving label "_10533_" from metal2 to via2 in cell FP32_Div.
+Moving label "_10550_" from metal2 to via1 in cell FP32_Div.
+Moving label "_10551_" from metal1 to viali in cell FP32_Div.
+Moving label "_10584_" from metal2 to via2 in cell FP32_Div.
+Moving label "_10601_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10627_" from metal2 to via2 in cell FP32_Div.
+Moving label "_10652_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10713_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10735_" from metal2 to via1 in cell FP32_Div.
+Moving label "_10737_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10792_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10864_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10886_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10890_" from metal1 to via1 in cell FP32_Div.
+Moving label "_10900_" from metal3 to via3 in cell FP32_Div.
+Moving label "_10947_" from metal1 to viali in cell FP32_Div.
+Moving label "_11285_" from metal2 to via1 in cell FP32_Div.
+Moving label "_11291_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11319_" from metal2 to via2 in cell FP32_Div.
+Moving label "_11374_" from metal1 to viali in cell FP32_Div.
+Moving label "_11392_" from metal1 to viali in cell FP32_Div.
+Moving label "_11424_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11504_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11538_" from metal1 to viali in cell FP32_Div.
+Moving label "_11582_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11643_" from metal2 to via1 in cell FP32_Div.
+Moving label "_11675_" from metal2 to via2 in cell FP32_Div.
+Moving label "_11677_" from metal1 to viali in cell FP32_Div.
+Moving label "_11781_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11803_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11867_" from metal1 to viali in cell FP32_Div.
+Moving label "_11908_" from metal1 to via1 in cell FP32_Div.
+Moving label "_11925_" from metal1 to viali in cell FP32_Div.
+Moving label "_11984_" from metal2 to via1 in cell FP32_Div.
+Moving label "_12018_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12191_" from metal2 to via2 in cell FP32_Div.
+Moving label "_12231_" from metal2 to via2 in cell FP32_Div.
+Moving label "_12232_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12404_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12410_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12431_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12474_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12495_" from metal1 to viali in cell FP32_Div.
+Moving label "_12499_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12519_" from metal2 to via1 in cell FP32_Div.
+Moving label "_12528_" from metal1 to viali in cell FP32_Div.
+Moving label "_12595_" from metal2 to via1 in cell FP32_Div.
+Moving label "_12695_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12707_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12750_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12771_" from metal2 to via2 in cell FP32_Div.
+Moving label "_12786_" from metal1 to via1 in cell FP32_Div.
+Moving label "_12798_" from metal1 to viali in cell FP32_Div.
+Moving label "_12873_" from metal2 to via2 in cell FP32_Div.
+Moving label "_12890_" from metal1 to viali in cell FP32_Div.
+Moving label "_12930_" from metal1 to viali in cell FP32_Div.
+Moving label "_12946_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13032_" from metal1 to viali in cell FP32_Div.
+Moving label "_13045_" from metal2 to via2 in cell FP32_Div.
+Moving label "_13120_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13121_" from metal2 to via2 in cell FP32_Div.
+Moving label "_13149_" from metal3 to via3 in cell FP32_Div.
+Moving label "_13160_" from metal2 to via1 in cell FP32_Div.
+Moving label "_13198_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13200_" from metal2 to via1 in cell FP32_Div.
+Moving label "_13231_" from metal1 to viali in cell FP32_Div.
+Moving label "_13262_" from metal2 to via1 in cell FP32_Div.
+Moving label "_13350_" from metal1 to viali in cell FP32_Div.
+Moving label "_13374_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13403_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13593_" from metal1 to viali in cell FP32_Div.
+Moving label "_13605_" from metal2 to via2 in cell FP32_Div.
+Moving label "_13776_" from metal1 to viali in cell FP32_Div.
+Moving label "_13783_" from metal1 to viali in cell FP32_Div.
+Moving label "_13942_" from metal1 to via1 in cell FP32_Div.
+Moving label "_13952_" from metal2 to via1 in cell FP32_Div.
+Moving label "_14103_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14185_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14186_" from metal2 to via1 in cell FP32_Div.
+Moving label "_14202_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14263_" from metal2 to via2 in cell FP32_Div.
+Moving label "_14352_" from metal2 to via2 in cell FP32_Div.
+Moving label "_14382_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14514_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14544_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14584_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14600_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14603_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14606_" from metal1 to viali in cell FP32_Div.
+Moving label "_14690_" from metal2 to via2 in cell FP32_Div.
+Moving label "_14696_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14708_" from metal2 to via2 in cell FP32_Div.
+Moving label "_14753_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14789_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14912_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14915_" from metal2 to via2 in cell FP32_Div.
+Moving label "_14969_" from metal1 to via1 in cell FP32_Div.
+Moving label "_14989_" from metal2 to via1 in cell FP32_Div.
+Moving label "_14996_" from metal1 to via1 in cell FP32_Div.
+Moving label "_15002_" from metal2 to via2 in cell FP32_Div.
+Moving label "_15011_" from metal2 to via2 in cell FP32_Div.
+Moving label "_15025_" from metal2 to via2 in cell FP32_Div.
+Moving label "_15080_" from metal2 to via1 in cell FP32_Div.
+Moving label "clknet_0_clk" from metal2 to via2 in cell FP32_Div.
+Moving label "clknet_2_1__leaf_clk" from metal3 to via3 in cell FP32_Div.
+Moving label "exp[0]" from metal2 to via2 in cell FP32_Div.
+Moving label "exp[2]" from metal2 to via2 in cell FP32_Div.
+Moving label "exp[5]" from metal2 to via2 in cell FP32_Div.
+Moving label "expa[1]" from metal2 to via2 in cell FP32_Div.
+Moving label "expa[5]" from metal2 to via2 in cell FP32_Div.
+Moving label "expa[6]" from metal2 to via2 in cell FP32_Div.
+Moving label "expb[0]" from metal2 to via2 in cell FP32_Div.
+Moving label "expb[5]" from metal2 to via2 in cell FP32_Div.
+Moving label "expb[6]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaB[3]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaB[5]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaBshift\[0\]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaBshift\[13\]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaBshift\[17\]" from metal3 to via3 in cell FP32_Div.
+Moving label "mantisa[0]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisa[16]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisa[9]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaresult\[21\]" from metal2 to via2 in cell FP32_Div.
+Moving label "mantisaresult\[8\]" from metal2 to via2 in cell FP32_Div.
+Moving label "net1011" from metal1 to viali in cell FP32_Div.
+Moving label "net1044" from metal2 to via2 in cell FP32_Div.
+Moving label "net1099" from metal1 to via1 in cell FP32_Div.
+Moving label "net1101" from metal1 to via1 in cell FP32_Div.
+Moving label "net1105" from metal1 to via1 in cell FP32_Div.
+Moving label "net1141" from metal1 to via1 in cell FP32_Div.
+Moving label "net1147" from metal1 to via1 in cell FP32_Div.
+Moving label "net1151" from metal1 to via1 in cell FP32_Div.
+Moving label "net155" from metal1 to via1 in cell FP32_Div.
+Moving label "net2" from metal1 to via1 in cell FP32_Div.
+Moving label "net256" from metal2 to via2 in cell FP32_Div.
+Moving label "net322" from metal1 to via1 in cell FP32_Div.
+Moving label "net337" from metal1 to via1 in cell FP32_Div.
+Moving label "net384" from metal1 to via1 in cell FP32_Div.
+Moving label "net416" from metal2 to via1 in cell FP32_Div.
+Moving label "net429" from metal1 to via1 in cell FP32_Div.
+Moving label "net482" from metal1 to via1 in cell FP32_Div.
+Moving label "net516" from metal2 to via2 in cell FP32_Div.
+Moving label "net517" from metal2 to via2 in cell FP32_Div.
+Moving label "net546" from metal2 to via1 in cell FP32_Div.
+Moving label "net550" from metal3 to via3 in cell FP32_Div.
+Moving label "net554" from metal2 to via2 in cell FP32_Div.
+Moving label "net561" from metal1 to viali in cell FP32_Div.
+Moving label "net569" from metal2 to via2 in cell FP32_Div.
+Moving label "net617" from metal2 to via2 in cell FP32_Div.
+Moving label "net646" from metal2 to via2 in cell FP32_Div.
+Moving label "net663" from metal2 to via2 in cell FP32_Div.
+Moving label "net746" from metal2 to via2 in cell FP32_Div.
+Moving label "net754" from metal3 to via3 in cell FP32_Div.
+Moving label "net765" from metal2 to via2 in cell FP32_Div.
+Moving label "net790" from metal3 to via2 in cell FP32_Div.
+Moving label "net804" from metal2 to via1 in cell FP32_Div.
+Moving label "net829" from metal2 to via2 in cell FP32_Div.
+Moving label "net881" from metal2 to via2 in cell FP32_Div.
+Moving label "net906" from metal3 to via3 in cell FP32_Div.
+Moving label "net910" from metal2 to via2 in cell FP32_Div.
+Moving label "net921" from metal2 to via2 in cell FP32_Div.
+Moving label "net943" from metal2 to via2 in cell FP32_Div.
+Moving label "net962" from metal2 to via2 in cell FP32_Div.
+[INFO] Ignoring 'VPWR VGND'
+[INFO] Writing abstract LEF…
+[INFO] Not specifiying -pinonly (nets connected to pins on the same layer are declared as part of the pin)…
+Generating LEF output /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/runs/RUN_2026-03-12_00-49-12/58-magic-writelef/FP32_Div.lef for cell FP32_Div:
+Diagnostic:  Write LEF header for cell FP32_Div
+Diagnostic:  Writing LEF output for cell FP32_Div
+Diagnostic:  Scale value is 0.005000
+[INFO] LEF Write Complete.

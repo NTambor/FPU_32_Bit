@@ -150,7 +150,7 @@ module FPU_32_controller #(
         .mantisa(div_mantisa)
     );
     
-    FP32_Add adder_instance(
+    FP32_ADD adder_instance(
         .clk(clk),
         .op(sub),
         .signa(add_signA),

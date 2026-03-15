@@ -1,0 +1,4 @@
+%Error: /home/niko_tambornini/EE531/my_designs/FPU_32_Bit/FPU_32_controller.sv:168:5: syntax error, unexpected IDENTIFIER, expecting ',' or ';'
+  168 |     FIFO #(.FIFO_SIZE(ADDER_FIFO_SIZE)) adder_buffer(
+      |     ^~~~
+%Error: Exiting due to 1 error(s)
